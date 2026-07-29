@@ -1,0 +1,9 @@
+gazebo_msgs
+geometry_msgs
+moveit_msgs
+setuptoolsrclpy
+shape_msgs
+tf2_ros
+
+[test]
+pytest

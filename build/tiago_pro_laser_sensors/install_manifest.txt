@@ -1,0 +1,15 @@
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_pro_laser_sensors
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_pro_laser_sensors
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/ament_prefix_path.sh
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/ament_prefix_path.dsv
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/path.sh
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/path.dsv
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.bash
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.sh
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.zsh
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.dsv
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/package.dsv
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/packages/tiago_pro_laser_sensors
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/cmake/tiago_pro_laser_sensorsConfig.cmake
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/cmake/tiago_pro_laser_sensorsConfig-version.cmake
+/home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/package.xml

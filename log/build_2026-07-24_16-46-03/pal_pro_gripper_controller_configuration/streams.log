@@ -1,0 +1,52 @@
+[0.005s] Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exchange/workspace/src/pal_pro_gripper/pal_pro_gripper_controller_configuration -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.075s] -- The CXX compiler identification is GNU 11.4.0
+[0.081s] -- Detecting C compiler ABI info
+[0.121s] -- Detecting C compiler ABI info - done
+[0.125s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.125s] -- Detecting C compile features
+[0.125s] -- Detecting C compile features - done
+[0.127s] -- Detecting CXX compiler ABI info
+[0.175s] -- Detecting CXX compiler ABI info - done
+[0.180s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.182s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.277s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.385s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.399s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.400s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.401s] -- Added test 'lint_cmake' to check CMake code style
+[0.401s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.401s] -- Added test 'xmllint' to check XML markup files
+[0.402s] -- Configuring done
+[0.404s] -- Generating done
+[0.405s] -- Build files have been written to: /home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration
+[0.409s] Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exchange/workspace/src/pal_pro_gripper/pal_pro_gripper_controller_configuration -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration
+[0.409s] Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration -- -j12 -l12
+[0.433s] Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration -- -j12 -l12
+[0.434s] Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration
+[0.439s] -- Install configuration: ""
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/config
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/config/joint_state_broadcaster.yaml
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/config/gazebo_controller_manager_cfg.yaml
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/config/gripper_controller.yaml
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/launch
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/launch/pal_pro_gripper_controller_standalone.launch.py
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/launch/pal_pro_gripper_controller.launch.py
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_controller_configuration
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_controller_configuration
+[0.439s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/environment/ament_prefix_path.sh
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/environment/ament_prefix_path.dsv
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/environment/path.sh
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/environment/path.dsv
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/local_setup.bash
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/local_setup.sh
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/local_setup.zsh
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/local_setup.dsv
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/package.dsv
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/ament_index/resource_index/packages/pal_pro_gripper_controller_configuration
+[0.440s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/cmake/pal_pro_gripper_controller_configurationConfig.cmake
+[0.448s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/cmake/pal_pro_gripper_controller_configurationConfig-version.cmake
+[0.448s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/package.xml
+[0.448s] Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_controller_configuration

@@ -1,0 +1,111 @@
+[0.006s] Invoking command in '/home/user/exchange/workspace/build/tiago_pro_description': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exchange/workspace/src/tiago_pro_robot/tiago_pro_description -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/tiago_pro_description
+[0.038s] -- The C compiler identification is GNU 11.4.0
+[0.085s] -- The CXX compiler identification is GNU 11.4.0
+[0.089s] -- Detecting C compiler ABI info
+[0.131s] -- Detecting C compiler ABI info - done
+[0.136s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.136s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.192s] -- Detecting CXX compiler ABI info - done
+[0.197s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.197s] -- Detecting CXX compile features
+[0.198s] -- Detecting CXX compile features - done
+[0.199s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.286s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.401s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.424s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.436s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.443s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.443s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.443s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.443s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.455s] -- Found PythonExtra: .so  
+[0.652s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.655s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.655s] -- Added test 'lint_cmake' to check CMake code style
+[0.656s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.657s] -- Added test 'xmllint' to check XML markup files
+[0.658s] -- Configuring done
+[0.660s] -- Generating done
+[0.661s] -- Build files have been written to: /home/user/exchange/workspace/build/tiago_pro_description
+[0.664s] Invoked command in '/home/user/exchange/workspace/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exchange/workspace/src/tiago_pro_robot/tiago_pro_description -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/tiago_pro_description
+[0.665s] Invoking command in '/home/user/exchange/workspace/build/tiago_pro_description': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_pro_description -- -j12 -l12
+[0.697s] Built target ament_cmake_python_copy_tiago_pro_description
+[0.828s] running egg_info
+[0.829s] creating tiago_pro_description.egg-info
+[0.829s] writing tiago_pro_description.egg-info/PKG-INFO
+[0.829s] writing dependency_links to tiago_pro_description.egg-info/dependency_links.txt
+[0.829s] writing top-level names to tiago_pro_description.egg-info/top_level.txt
+[0.829s] writing manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[0.830s] reading manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[0.831s] writing manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[0.850s] Built target ament_cmake_python_build_tiago_pro_description_egg
+[0.856s] Invoked command in '/home/user/exchange/workspace/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_pro_description -- -j12 -l12
+[0.857s] Invoking command in '/home/user/exchange/workspace/build/tiago_pro_description': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exchange/workspace/build/tiago_pro_description
+[0.860s] -- Install configuration: ""
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/pythonpath.sh
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/pythonpath.dsv
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.4.1-py3.10.egg-info
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.4.1-py3.10.egg-info/SOURCES.txt
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.4.1-py3.10.egg-info/dependency_links.txt
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.4.1-py3.10.egg-info/top_level.txt
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.4.1-py3.10.egg-info/PKG-INFO
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/launch_arguments.py
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/tiago_pro_launch_utils.py
+[0.861s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/__init__.py
+[0.883s] Listing '/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description'...
+[0.883s] Compiling '/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/__init__.py'...
+[0.883s] Compiling '/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/launch_arguments.py'...
+[0.883s] Compiling '/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/tiago_pro_launch_utils.py'...
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/config
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/config/tiago_pro_configuration.yaml
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/config/show_front.rviz
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/config/show.rviz
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/launch
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/launch/robot_state_publisher.launch.py
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/launch/show.launch.py
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/robots
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/robots/tiago_pro.urdf.xacro
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station
+[0.886s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station/fixed_sit_station.stl
+[0.889s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station/teleop_handle.stl
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_fixed.stl
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_lift_link_collision.stl
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/laptop_tray_collision.stl
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_fixed_collision.stl
+[0.891s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_lift_link.stl
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/ros2_control
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/ros2_control/ros2_control.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station/basestation.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station/teleop_handle.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/arm.mounting.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/torso
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.ros2_control.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.transmission.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration/calibration_offset.urdf.xacro
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration/calibration_offset.urdf.xacro.j2
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/ament_index/resource_index/package_run_dependencies/tiago_pro_description
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/ament_index/resource_index/parent_prefix_path/tiago_pro_description
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/ament_prefix_path.sh
+[0.892s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/ament_prefix_path.dsv
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/path.sh
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/environment/path.dsv
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/local_setup.bash
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/local_setup.sh
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/local_setup.zsh
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/local_setup.dsv
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/package.dsv
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/ament_index/resource_index/packages/tiago_pro_description
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/cmake/tiago_pro_descriptionConfig.cmake
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/cmake/tiago_pro_descriptionConfig-version.cmake
+[0.893s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/package.xml
+[0.895s] Invoked command in '/home/user/exchange/workspace/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exchange/workspace/build/tiago_pro_description

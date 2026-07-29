@@ -1,0 +1,17 @@
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/robot_spawn.launch.py
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/pal_pro_gripper_gazebo.launch.py
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_simulation
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_simulation
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.sh
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.dsv
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.sh
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.dsv
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.bash
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.sh
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.zsh
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.dsv
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.dsv
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/ament_index/resource_index/packages/pal_pro_gripper_simulation
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig.cmake
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig-version.cmake
+/home/user/exchange/workspace/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.xml

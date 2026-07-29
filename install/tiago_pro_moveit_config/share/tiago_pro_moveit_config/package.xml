@@ -1,0 +1,37 @@
+<package format="3">
+  <name>tiago_pro_moveit_config</name>
+  <version>1.5.1</version>
+  <description>
+     An automatically generated package with all the configuration and launch files for using the tiago_pro with the MoveIt! Motion Planning Framework
+  </description>
+  <author email="narcis.miguel@pal-robotics.com">Narcis Miguel</author>
+  <maintainer email="narcis.miguel@pal-robotics.com">Narcis Miguel</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_ros_control_interface</exec_depend>
+  <exec_depend>moveit_ros_perception</exec_depend>
+  <exec_depend>moveit_planners_chomp</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>tiago_pro_description</exec_depend>
+  <exec_depend>pal_sea_arm_moveit_config</exec_depend>
+  <exec_depend>moveit_task_constructor_capabilities</exec_depend>
+
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

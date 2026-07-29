@@ -1,0 +1,51 @@
+ricordati di fare le operazioni nerlla cartella di workspace 
+
+
+1) Fai partire il container con il comando :
+
+    xhost +
+    docker run -it --rm --privileged --gpus all \
+               --name pal_docker_test_sim_nv \
+               -e DISPLAY=$DISPLAY \
+               -e NVIDIA_DRIVER_CAPABILITIES=all \
+               -e NVIDIA_DRIVER_CAPABILITIES=compute,utility \
+               -e QT_X11_NO_MITSHM=1 \
+               -v /tmp/.X11-unix:/tmp/.X11-unix \
+               -v ~/exchange:/home/user/exchange \
+               palrobotics/public-simulation-humble-public:latest
+
+2) Connettiti ad un altro terminale utilizzando il comando 
+    
+     docker exec -it  pal_docker_test_sim_nv /bin/bash
+
+3) fai partie movit
+    ros2 launch tiago_pro_moveit_config move_group.launch.py use_sim_time:=True
+
+4) Connettiti ad un altro terminale utilizzando il comando 
+    
+     docker exec -it  pal_docker_test_sim_nv /bin/bash
+
+5) lancia la simulazione di gazebo
+    ros2 launch tiago_pro_gazebo tiago_pro_gazebo.launch.py world_name:=poliBaMaster is_public_sim:=True
+
+6) Connettiti ad un altro terminale utilizzando il comando 
+    
+     docker exec -it  pal_docker_test_sim_nv /bin/bash
+
+7) lancia Rviz dove si collegherà moveit
+    ros2 launch tiago_pro_moveit_config moveit_rviz.launch.py
+
+
+
+cd home/user/exchange/workspace
+
+source install/setup
+
+colcon build 
+
+una volta aperto il docker effettuato build con il colcon e posizionato nella cartella corretta 
+del workspace esegui terminator -u 
+
+
+
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/user/exchange/workspace/src/pal_gazebo_worlds/models

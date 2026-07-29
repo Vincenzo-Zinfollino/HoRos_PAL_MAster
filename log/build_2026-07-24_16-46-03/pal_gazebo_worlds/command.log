@@ -1,0 +1,6 @@
+Invoking command in '/home/user/exchange/workspace/build/pal_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/exchange/workspace/src/pal_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/pal_gazebo_worlds
+Invoked command in '/home/user/exchange/workspace/build/pal_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/exchange/workspace/src/pal_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/user/exchange/workspace/install/pal_gazebo_worlds
+Invoking command in '/home/user/exchange/workspace/build/pal_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_gazebo_worlds -- -j12 -l12
+Invoked command in '/home/user/exchange/workspace/build/pal_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_gazebo_worlds -- -j12 -l12
+Invoking command in '/home/user/exchange/workspace/build/pal_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_gazebo_worlds
+Invoked command in '/home/user/exchange/workspace/build/pal_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_gazebo_worlds

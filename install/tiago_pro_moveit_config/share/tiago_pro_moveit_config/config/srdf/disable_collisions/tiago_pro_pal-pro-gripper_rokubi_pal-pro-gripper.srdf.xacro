@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="tiago_pro" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find tiago_pro_moveit_config)/config/srdf/disable_collisions/tiago_pro_no-ee_no-ee.srdf.xacro" />
+  <xacro:include filename="$(find tiago_pro_moveit_config)/config/srdf/disable_collisions/tiago_pro_pal-pro-gripper_rokubi_no-arm-right.srdf.xacro" />
+  <xacro:include filename="$(find tiago_pro_moveit_config)/config/srdf/disable_collisions/tiago_pro_no-arm-left_pal-pro-gripper.srdf.xacro" />
+    <disable_collisions link1="arm_left_1_link" link2="wrist_left_ft_link" reason="Never"/>
+    <disable_collisions link1="arm_left_7_link" link2="torso_arm_left_link" reason="Never"/>
+</robot>
