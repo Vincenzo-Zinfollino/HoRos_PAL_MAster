@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="pal_sea_arm" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find pal_sea_arm_moveit_config)/config/srdf/disable_collisions/pal-pro-gripper.srdf.xacro" />
+    <disable_collisions link1="gripper_base_link" link2="wrist_ft_link" reason="Default"/>
+    <disable_collisions link1="gripper_base_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+    <disable_collisions link1="gripper_fingertip_left_dummy_mimic_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_left_dummy_mimic_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_left_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_left_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_right_dummy_mimic_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_right_dummy_mimic_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_right_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_fingertip_right_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_left_dummy_mimic_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_left_dummy_mimic_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_left_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_left_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_right_dummy_mimic_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_right_dummy_mimic_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_right_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_inner_finger_right_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_left_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_left_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_right_dummy_mimic_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_right_dummy_mimic_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_right_link" link2="wrist_ft_link" reason="Never"/>
+    <disable_collisions link1="gripper_outer_finger_right_link" link2="wrist_ft_tool_link" reason="Never"/>
+    <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+</robot>

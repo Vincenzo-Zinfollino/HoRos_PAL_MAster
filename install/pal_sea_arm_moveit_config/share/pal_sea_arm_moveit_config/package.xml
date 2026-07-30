@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pal_sea_arm_moveit_config</name>
+  <version>1.0.7</version>
+  <description>
+     An automatically generated package with all the configuration and launch files for using the pal_sea_arm with the MoveIt Motion Planning Framework
+  </description>
+  <author email="thomas.peyrucain@pal-robotics.com">Thomas Peyrucain</author>
+  <maintainer email="thomas.peyrucain@pal-robotics.com">Thomas Peyrucain</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <url type="website">http://moveit.ros.org/</url>
+  <url type="bugtracker">https://github.com/ros-planning/moveit/issues</url>
+  <url type="repository">https://github.com/ros-planning/moveit</url>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>moveit_ros_control_interface</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_perception</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_planners_chomp</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>pal_sea_arm_description</exec_depend>
+
+  <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
+  <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+      <build_type>ament_cmake</build_type>
+  </export>
+</package>

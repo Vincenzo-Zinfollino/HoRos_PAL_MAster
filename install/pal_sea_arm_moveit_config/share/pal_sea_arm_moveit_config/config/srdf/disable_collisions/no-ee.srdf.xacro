@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<robot name="pal_sea_arm" xmlns:xacro="http://ros.org/wiki/xacro">
+
+</robot>

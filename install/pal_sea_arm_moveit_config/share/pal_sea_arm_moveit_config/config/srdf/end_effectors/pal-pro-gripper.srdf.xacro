@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:property name="end_effector_name" value="gripper" />
+    <xacro:macro name="define_end_effector" params="arm name">
+        <group name="${name}">
+            <link name="${name}_base_link" />
+            <link name="${name}_inner_finger_left_link" />
+            <link name="${name}_inner_finger_right_link" />
+            <link name="${name}_outer_finger_left_link" />
+            <link name="${name}_outer_finger_right_link" />
+            <link name="${name}_fingertip_left_link" />
+            <link name="${name}_fingertip_right_link" />
+            <joint name="${name}_finger_joint" />
+        </group>
+        <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+        <passive_joint name="${name}_inner_finger_left_joint" />
+        <passive_joint name="${name}_inner_finger_right_joint" />
+        <passive_joint name="${name}_outer_finger_right_joint" />
+        <passive_joint name="${name}_fingertip_left_joint" />
+        <passive_joint name="${name}_fingertip_right_joint" />
+        
+        <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+        <end_effector name="${name}" parent_link="${arm}_tool_link" group="${name}" parent_group="${arm}" />
+    </xacro:macro>
+
+</robot>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:property name="end_effector_name" value="gripper" />
+    
+    <xacro:macro name="define_end_effector" params="arm name">
+        <group name="gripper_${side}">
+              <joint name="gripper_${side}_coupler_joint"/>
+              <joint name="gripper_${side}_tc_joint"/>
+              <joint name="gripper_${side}_palm_joint"/>
+              <joint name="gripper_${side}_finger_1_rotatory_joint"/>
+              <joint name="gripper_${side}_finger_1_flexor_1_joint"/>
+              <joint name="gripper_${side}_finger_1_flexor_2_joint"/>
+              <joint name="gripper_${side}_finger_1_flexor_3_joint"/>
+              <joint name="gripper_${side}_finger_1_tip_joint"/>
+              <joint name="gripper_${side}_finger_2_rotatory_joint"/>
+              <joint name="gripper_${side}_finger_2_flexor_2_joint"/>
+              <joint name="gripper_${side}_finger_2_flexor_1_joint"/>
+              <joint name="gripper_${side}_finger_2_flexor_3_joint"/>
+              <joint name="gripper_${side}_finger_2_tip_joint"/>
+              <joint name="gripper_${side}_finger_3_rotatory_joint"/>
+              <joint name="gripper_${side}_finger_3_flexor_1_joint"/>
+              <joint name="gripper_${side}_finger_3_flexor_2_joint"/>
+              <joint name="gripper_${side}_finger_3_flexor_3_joint"/>
+              <joint name="gripper_${side}_finger_3_tip_joint"/>
+              <joint name="gripper_${side}_thumb_rotatory_joint"/>
+              <joint name="gripper_${side}_thumb_flexor_1_joint"/>
+              <joint name="gripper_${side}_thumb_flexor_2_joint"/>
+              <joint name="gripper_${side}_thumb_flexor_3_joint"/>
+              <joint name="gripper_${side}_thumb_finger_tip_joint"/>
+        </group>
+      </xacro:macro>
+      
+</robot>

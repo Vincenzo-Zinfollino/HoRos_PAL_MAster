@@ -5,7 +5,8 @@ import time
 import xml.etree.ElementTree as ET
 
 from ament_index_python.packages import get_package_share_directory
-from gazebo_msgs.msg import ModelStates
+from gazebo_msgs.msg import EntityState, ModelStates
+from gazebo_msgs.srv import SetEntityState
 from geometry_msgs.msg import Point, Pose
 from moveit_msgs.msg import CollisionObject, PlanningScene, PlanningSceneComponents
 from moveit_msgs.srv import GetPlanningScene
@@ -21,28 +22,37 @@ class GazeboToMoveItSpawner(Node):
     super().__init__('scene_spawner_node')
 
     self.get_logger().info(
-        '=== [1/4] Inizializzazione nodo GazeboToMoveItSpawner ==='
+        '=== [1/5] Inizializzazione nodo GazeboToMoveItSpawner ==='
     )
 
     self.scene_pub = self.create_publisher(PlanningScene, '/planning_scene', 10)
     self.frame_id = 'base_link'
     self.first_sync_done = False
     self.scene_cleaned = False
+    self.robot_reset_done = False
 
-    # Client per interrogare MoveIt sui contenuti attuali della Planning Scene
+    # COORDINATE INIZIALI DESIDERATE PER IL ROBOT IN GAZEBO (x, y, z, yaw in radianti)
+    self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
+    self.robot_model_name = 'tiago-pro'
+
+    # Client MoveIt per pulire la Planning Scene
     self.get_scene_client = self.create_client(
         GetPlanningScene, 'get_planning_scene'
+    )
+
+    # Client Gazebo per reimpostare la posizione del robot
+    self.set_entity_client = self.create_client(
+        SetEntityState, '/gazebo/set_entity_state'
     )
 
     # 1. Ricerca dinamica del file SDF della bookshelf (bookshelf.sdf)
     self.bookshelf_sdf_path = self.find_bookshelf_sdf()
 
-    # 2. Timer per attendere il servizio e svuotare completamente la scena all'avvio
+    # 2. Timer per attendere i servizi (reset MoveIt + reset posizione Gazebo)
     self.get_logger().info(
-        '=== [2/4] In attesa del servizio MoveIt per il reset totale della'
-        ' scena... ==='
+        '=== [2/5] In attesa dei servizi di reset (MoveIt & Gazebo)... ==='
     )
-    self.clean_timer = self.create_timer(1.0, self.query_and_clear_scene)
+    self.init_timer = self.create_timer(1.0, self.startup_routine)
 
     self.gazebo_sub = self.create_subscription(
         ModelStates,
@@ -51,19 +61,68 @@ class GazeboToMoveItSpawner(Node):
         10,
     )
     self.get_logger().info(
-        '=== [3/4] In attesa dei dati da /gazebo/model_states... ==='
+        '=== [3/5] In attesa dei dati da /gazebo/model_states... ==='
     )
 
-  def query_and_clear_scene(self):
-    """Interroga MoveIt via servizio per scoprire qualsiasi oggetto attivo e lo elimina."""
-    if not self.get_scene_client.service_is_ready():
+  def startup_routine(self):
+    """Esegue il reset della scena e della posizione del robot all'avvio."""
+    if (
+        not self.get_scene_client.service_is_ready()
+        or not self.set_entity_client.service_is_ready()
+    ):
       self.get_logger().info(
-          '[ATTESA] Servizio get_planning_scene non ancora pronto, riprovo...'
+          '[ATTESA] Servizi di reset non ancora pronti, riprovo...'
       )
       return
 
-    self.clean_timer.cancel()
+    self.init_timer.cancel()
 
+    # 1. Reset Posizione Robot in Gazebo
+    self.reset_robot_pose()
+
+    # 2. Pulizia Planning Scene MoveIt
+    self.query_and_clear_scene()
+
+  def reset_robot_pose(self):
+    """Teletrasporta il robot alla posizione desiderata in Gazebo."""
+    req = SetEntityState.Request()
+    req.state.name = self.robot_model_name
+    req.state.reference_frame = 'world'
+
+    req.state.pose.position.x = float(self.target_robot_pose['x'])
+    req.state.pose.position.y = float(self.target_robot_pose['y'])
+    req.state.pose.position.z = float(self.target_robot_pose['z'])
+
+    q = self.quat_from_rpy(0.0, 0.0, self.target_robot_pose['yaw'])
+    req.state.pose.orientation.x = q[0]
+    req.state.pose.orientation.y = q[1]
+    req.state.pose.orientation.z = q[2]
+    req.state.pose.orientation.w = q[3]
+
+    future = self.set_entity_client.call_async(req)
+    future.add_done_callback(self.reset_robot_callback)
+
+  def reset_robot_callback(self, future):
+    try:
+      response = future.result()
+      if response.success:
+        self.get_logger().info(
+            '[RESET ROBOT] Posizione robot in Gazebo re-impostata a:'
+            f" (x={self.target_robot_pose['x']}, y={self.target_robot_pose['y']}, yaw={self.target_robot_pose['yaw']})"
+        )
+      else:
+        self.get_logger().warn(
+            f'[RESET ROBOT WARNING] Gazebo ha rifiutato il reset pose: {response.status_message}'
+        )
+    except Exception as e:
+      self.get_logger().error(
+          f'Errore nella chiamata a /gazebo/set_entity_state: {e}'
+      )
+
+    self.robot_reset_done = True
+
+  def query_and_clear_scene(self):
+    """Interroga MoveIt via servizio per scoprire qualsiasi oggetto attivo e lo elimina."""
     req = GetPlanningScene.Request()
     req.components.components = PlanningSceneComponents.WORLD_OBJECT_NAMES
     future = self.get_scene_client.call_async(req)
@@ -105,8 +164,7 @@ class GazeboToMoveItSpawner(Node):
           time.sleep(0.05)
       else:
         self.get_logger().info(
-            '[PULIZIA TOTALE] La Planning Scene di MoveIt è già completamente'
-            ' vuota.'
+            '[PULIZIA TOTALE] La Planning Scene di MoveIt è già pulita.'
         )
 
     except Exception as e:
@@ -116,8 +174,7 @@ class GazeboToMoveItSpawner(Node):
 
     self.scene_cleaned = True
     self.get_logger().info(
-        '=== [PULIZIA COMPLETATA] Scena azzerata. Pronti per la sincronizzazione'
-        ' da Gazebo. ==='
+        '=== [4/5] Ambiente azzerato e robot riposizionato. ==='
     )
 
   def find_bookshelf_sdf(self) -> str:
@@ -154,7 +211,8 @@ class GazeboToMoveItSpawner(Node):
     return None
 
   def model_states_callback(self, msg: ModelStates):
-    if not self.scene_cleaned:
+    # Attendiamo che sia il reset di MoveIt sia il posizionamento del robot siano terminati
+    if not self.scene_cleaned or not self.robot_reset_done:
       return
 
     robot_idx = None
@@ -174,7 +232,7 @@ class GazeboToMoveItSpawner(Node):
     verbose = not self.first_sync_done
     if verbose:
       self.get_logger().info(
-          '=== [4/4] Prima sincronizzazione scena in corso ==='
+          '=== [5/5] Prima sincronizzazione scena in corso ==='
       )
       self.get_logger().info(
           f"[SYNC] Robot di riferimento individuato: '{msg.name[robot_idx]}'"
@@ -192,7 +250,7 @@ class GazeboToMoveItSpawner(Node):
 
       world_pose = msg.pose[idx]
 
-      # 1. TAVOLO
+      # 1. TAVOLO DI LAVORO
       if model_name == 's3_table':
         if verbose:
           self.get_logger().info(f"[SYNC -> TAVOLO] Elaborazione '{model_name}'")
@@ -201,9 +259,8 @@ class GazeboToMoveItSpawner(Node):
             world_pose,
             robot_pose,
             'BOX',
-            [1.0, 0.8, 0.75],
-            z_offset=(0.75 / 2.0),
-            
+            [1.0, 0.8, 0.03],
+            z_offset=0.80,
         )
         scene_msg.world.collision_objects.append(obj)
         new_active_ids.add(model_name)
@@ -220,7 +277,7 @@ class GazeboToMoveItSpawner(Node):
             robot_pose,
             'CYLINDER',
             [0.15, 0.04],
-            z_offset=0.00,
+            z_offset=0.06,
         )
         scene_msg.world.collision_objects.append(obj)
         new_active_ids.add(model_name)

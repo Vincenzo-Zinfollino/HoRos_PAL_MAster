@@ -6,6 +6,7 @@
 . "/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/package.sh"
 . "/home/user/exchange/workspace/install/pal_sea_arm_description/share/pal_sea_arm_description/package.sh"
 . "/home/user/exchange/workspace/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/package.sh"
+. "/home/user/exchange/workspace/install/pal_sea_arm_moveit_config/share/pal_sea_arm_moveit_config/package.sh"
 . "/home/user/exchange/workspace/install/tiago_pro_bringup/share/tiago_pro_bringup/package.sh"
 . "/home/user/exchange/workspace/install/tiago_pro_description/share/tiago_pro_description/package.sh"
 . "/home/user/exchange/workspace/install/tiago_pro_moveit_config/share/tiago_pro_moveit_config/package.sh"

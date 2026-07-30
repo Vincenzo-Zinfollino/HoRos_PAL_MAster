@@ -11,6 +11,7 @@ setup.py
 pick_task/__init__.py
 pick_task/kinematics_metrics.py
 pick_task/main_task_node.py
+pick_task/pick_task_node.py
 pick_task/scene_spawner.py
 resource/pick_task
 test/test_copyright.py

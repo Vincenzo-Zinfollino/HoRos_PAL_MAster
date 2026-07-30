@@ -34,6 +34,7 @@ setup(
         'console_scripts': [
             'scene_spawner = pick_task.scene_spawner:main',
             'main_task_node = pick_task.main_task_node:main',
+            'pick_task_node=pick_task.pick_task_node:main',
 
         ],
     },
