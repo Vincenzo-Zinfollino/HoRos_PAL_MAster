@@ -49,3 +49,17 @@ del workspace esegui terminator -u
 
 
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/user/exchange/workspace/src/pal_gazebo_worlds/models
+
+
+
+NODO scene spawner: -> ricordati che devi installare la libreria  pip install trimesh
+
+
+ros2 run pick_task scene_spawner 
+
+
+ros2 run pick_task main_task_node.py
+
+
+
+colcon build --packages-select tiago_manipulation_tasks pick_task

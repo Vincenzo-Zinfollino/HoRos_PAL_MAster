@@ -10,6 +10,7 @@
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task/__pycache__/kinematics_metrics.cpython-310.pyc
 /home/user/exchange/workspace/install/pick_task/share/ament_index/resource_index/packages/pick_task
 /home/user/exchange/workspace/install/pick_task/share/pick_task/package.xml
+/home/user/exchange/workspace/install/pick_task/share/pick_task/launch/manipulation_pipeline.launch.py
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info/requires.txt
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info/dependency_links.txt
@@ -18,5 +19,4 @@
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info/entry_points.txt
 /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info/PKG-INFO
 /home/user/exchange/workspace/install/pick_task/lib/pick_task/main_task_node
-/home/user/exchange/workspace/install/pick_task/lib/pick_task/pick_task_node
 /home/user/exchange/workspace/install/pick_task/lib/pick_task/scene_spawner

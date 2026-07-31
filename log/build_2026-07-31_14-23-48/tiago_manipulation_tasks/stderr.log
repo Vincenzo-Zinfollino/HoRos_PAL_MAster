@@ -1,0 +1,11 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::rotateBase(double, int)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:53:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   53 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:61:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kwhile[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+   61 |     [01;35m[Kwhile[m[K(!rotateBase(0.3, 3)); // Esempio: ruota in senso antiorario per 3 secondi
+      |     [01;35m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:62:5:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kwhile[m[K’
+   62 |     [01;36m[K{[m[K
+      |     [01;36m[K^[m[K

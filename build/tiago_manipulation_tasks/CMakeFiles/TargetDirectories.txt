@@ -1,0 +1,11 @@
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/uninstall.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/tiago_manipulation_tasks_uninstall.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/pick_macro_task_node.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/place_macro_task_node.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/test.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/edit_cache.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/rebuild_cache.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/list_install_components.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/install.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/install/local.dir
+/home/user/exchange/workspace/build/tiago_manipulation_tasks/CMakeFiles/install/strip.dir

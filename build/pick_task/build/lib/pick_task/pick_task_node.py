@@ -3,11 +3,21 @@ import math
 import threading
 import time
 
+from ament_index_python.packages import get_package_share_directory
+from moveit_configs_utils import MoveItConfigsBuilder
+import yaml
+
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
+
+
+
+
+from moveit.planning import MoveItPy  
+from moveit_msgs.msg import Constraints, OrientationConstraint
 
 
 class PickAndPlaceTaskNode(Node):
@@ -35,6 +45,12 @@ class PickAndPlaceTaskNode(Node):
     self.abort_requested = False
 
     self.tiago_moveit = MoveItPy(node=self)
+    # Gruppo di manipolazione per la pinza destra
+    self.gripper_group = self.tiago_moveit.get_planning_component('gripper_right')
+    # Gruppo di manipolazione per il braccio destro
+    self.arm_group = self.tiago_moveit.get_planning_component('arm_right')
+    # Se volessimo sfruttare anche il torso dobbiamo usare il seguente 
+    #self.arm_group = self.tiago_moveit.get_planning_component('arm_right_torso')
 
     # Agganciamo il gruppo di manipolazione della pinza
     self.gripper_group = self.tiago_moveit.get_planning_component('gripper')
@@ -222,19 +238,111 @@ class PickAndPlaceTaskNode(Node):
 
   # --- Funzioni di supporto MoveIt ---
   def open_gripper(self):
-    self.get_logger().info(' -> Apertura pinza...')
+    """Apre la pinza destra del TIAGo Pro usando il target nominato 'open'."""
+    self.get_logger().info(
+        ' [MOVEIT] -> Avvio procedura: Apertura pinza destra...'
+    )
 
+    if self.check_abort():
+      return False
 
+    # 1. Allinea lo stato iniziale del gruppo allo stato reale del robot in Gazebo
+    self.gripper_group.set_start_state_to_current_state()
 
+    # 2. Imposta il goal sul target nominato "open"
+    try:
+      self.gripper_group.set_goal_state(configuration_name='open')
+    except Exception as e:
+      self.get_logger().error(
+          f" [MOVEIT ERRORE] Target 'open' non trovato su gripper_right: {e}"
+      )
+      return False
 
+    # 3. Pianifica la traiettoria
+    plan_result = self.gripper_group.plan()
+    if not plan_result:
+      self.get_logger().error(
+          ' [MOVEIT ERRORE] Pianificazione fallita per apertura pinza destra!'
+      )
+      return False
 
+    # 4. Esegui il movimento
+    self.get_logger().info(' [MOVEIT] Esecuzione apertura pinza in corso...')
+    execute_result = self.tiago_moveit.execute(
+        plan_result.trajectory, controllers=[]
+    )
 
-    
-    time.sleep(0.10)
+    if execute_result:
+      self.get_logger().info(
+          ' [MOVEIT SUCCESSO] Pinza destra aperta correttamente.'
+      )
+      time.sleep(0.5)  # Pausa di assestamento per il motore fisico
+      return True
+    else:
+      self.get_logger().error(
+          ' [MOVEIT ERRORE] Esecuzione apertura pinza fallita o interrotta!'
+      )
+      return False
 
-  def close_gripper(self):
-    self.get_logger().info(' -> Chiusura pinza...')
-    time.sleep(1.0)
+#Ricorda di gestire lattachment 
+  def close_gripper(self, attach_object: bool = True, object_id: str = 's3_cocacola') -> bool:
+    """Chiude la pinza destra del TIAGo Pro e opzionalmente aggancia l'oggetto alla Planning Scene."""
+    self.get_logger().info(
+        ' [MOVEIT] -> Avvio procedura: Chiusura pinza destra...'
+    )
+
+    # 1. Check di interruzione anticipata
+    if self.check_abort():
+      return False
+
+    # 2. Allinea lo stato di partenza allo stato reale corrente
+    self.gripper_group.set_start_state_to_current_state()
+
+    # 3. Imposta il goal sul target nominato "close"
+    try:
+      self.gripper_group.set_goal_state(configuration_name='close')
+    except Exception as e:
+      self.get_logger().error(
+          f" [MOVEIT ERRORE] Target 'close' non trovato su gripper_right: {e}"
+      )
+      return False
+
+    # 4. Pianificazione della chiusura
+    self.get_logger().info(' [MOVEIT] Pianificazione chiusura pinza...')
+    plan_result = self.gripper_group.plan()
+    if not plan_result:
+      self.get_logger().error(
+          ' [MOVEIT ERRORE] Pianificazione fallita per chiusura pinza destra!'
+      )
+      return False
+
+    # 5. Esecuzione movimento
+    self.get_logger().info(' [MOVEIT] Esecuzione chiusura pinza in corso...')
+    execute_result = self.tiago_moveit.execute(
+        plan_result.trajectory, controllers=[]
+    )
+
+    if not execute_result:
+      self.get_logger().error(
+          ' [MOVEIT ERRORE] Esecuzione chiusura pinza fallita o interrotta!'
+      )
+      return False
+
+    self.get_logger().info(
+        ' [MOVEIT SUCCESSO] Pinza destra chiusa correttamente.'
+    )
+    time.sleep(0.5)  # Pausa di assestamento fisico in Gazebo
+
+    # 6. ATTACH LOGICO DELL'OGGETTO ALLA SCENA (Se richiesto)
+    if attach_object and object_id:
+      if not self.attach_object_to_gripper(object_id=object_id):
+        self.get_logger().warn(
+            f" [MOVEIT ATTENZIONE] Chiusura completata, ma l'attach di '{object_id}' è fallito."
+        )
+        # Scegli se considerare l'intera operazione fallita o procedere comunque
+        # return False
+
+    return True
 
   def move_to_pre_grasp_pose(self):
     self.get_logger().info(' -> Pianificazione verso Pre-Grasp...')
@@ -253,6 +361,50 @@ class PickAndPlaceTaskNode(Node):
   def move_to_pre_place_pose(self):
     self.get_logger().info(' -> Posa di Pre-Place...')
     time.sleep(1.5)
+
+def attach_object_to_gripper(self,object_id: str = 's3_cocacola',link_name: str = 'arm_right_tool_link') -> bool:
+    """Aggancia logicamente l'oggetto di collisione al link terminale del braccio destro."""
+    self.get_logger().info(
+        f" [MOVEIT ATTACH] Aggancio logico di '{object_id}' a '{link_name}'..."
+    )
+
+    try:
+      # Accesso al monitor della scena di pianificazione di MoveItPy
+      planning_scene_monitor = self.tiago_moveit.get_planning_scene_monitor()
+
+      # Blocchiamo la scena in scrittura per applicare la modifica in modo thread-safe
+      with planning_scene_monitor.read_write() as scene:
+        # Verifica che l'oggetto esista effettivamente nella scena prima di agganciarlo
+        if not scene.world.has_object(object_id):
+          self.get_logger().error(
+              f" [MOVEIT ERRORE] Oggetto '{object_id}' non trovato nella"
+              ' Planning Scene!'
+          )
+          return False
+
+        # Effettua l'attach specificando il link del robot a cui vincolarlo
+        # Notare: i link dei giunti delle dita vengono ignorati nel check collisioni col pezzo
+        scene.current_state.attach_body(
+            object_id,
+            link_name,
+            touch_links=[
+                'gripper_right_left_finger_link',
+                'gripper_right_right_finger_link',
+                link_name,
+            ],
+        )
+
+      self.get_logger().info(
+          f" [MOVEIT SUCCESSO] Oggetto '{object_id}' agganciato a '{link_name}'."
+      )
+      return True
+
+    except Exception as e:
+      self.get_logger().error(f' [MOVEIT ERRORE] Eccezione durante attach: {e}')
+      return False
+
+
+
 
 
 def main(args=None):

@@ -1,0 +1,17 @@
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/pick_macro_task_node
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/place_macro_task_node
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/package_run_dependencies/tiago_manipulation_tasks
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/parent_prefix_path/tiago_manipulation_tasks
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.sh
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.dsv
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.sh
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.dsv
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.bash
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.sh
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.zsh
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.dsv
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.dsv
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/packages/tiago_manipulation_tasks
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig.cmake
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig-version.cmake
+/home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.xml

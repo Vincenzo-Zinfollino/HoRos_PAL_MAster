@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tiago_manipulation_tasks</name>
+  <version>0.0.0</version>
+  <description>Esecutori C++ per macro task di Pick and Place su TIAGo Pro</description>
+  <maintainer email="user@todo.todo">user</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dipendenze Core C++ e Trasformazioni -->
+  <depend>rclcpp</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- Dipendenze Messaggi -->
+  <depend>geometry_msgs</depend>
+  <depend>shape_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>moveit_msgs</depend>
+
+  <!-- Dipendenze MoveIt 2 C++ -->
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_core</depend>
+
+  <!-- Dipendenze Runtime PAL Robotics e TIAGo Pro -->
+  <exec_depend>tiago_pro_moveit_config</exec_depend>
+  <exec_depend>tiago_pro_simulation</exec_depend>
+  <exec_depend>tiago_pro_robot</exec_depend>
+  <exec_depend>pal_sea_arm</exec_depend>
+  <exec_depend>pal_pro_gripper</exec_depend>
+  <exec_depend>pal_gazebo_worlds</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

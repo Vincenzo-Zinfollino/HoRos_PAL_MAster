@@ -1,3 +1,6 @@
+import os
+from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'pick_task'
@@ -10,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=[
         'setuptools'
@@ -34,7 +38,7 @@ setup(
         'console_scripts': [
             'scene_spawner = pick_task.scene_spawner:main',
             'main_task_node = pick_task.main_task_node:main',
-            'pick_task_node=pick_task.pick_task_node:main',
+            
 
         ],
     },

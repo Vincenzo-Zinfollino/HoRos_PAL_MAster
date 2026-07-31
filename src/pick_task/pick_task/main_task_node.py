@@ -1,57 +1,163 @@
-
 #!/usr/bin/env python3
+from enum import Enum, auto
+from geometry_msgs.msg import PoseStamped
 import rclpy
 from rclpy.node import Node
-from moveit_msgs.msg import OrientationConstraint, Constraints
-from geometry_msgs.msg import Quaternion
-from pick_task.kinematics_metrics import evaluate_trajectory_difficulty
+from std_msgs.msg import Bool, Empty
 
 
-class MainTaskNode(Node):
-    def __init__(self):
-        super().__init__('main_task_node')
-        
-        self.end_effector_link = 'arm_tool_link'  # Link finale del braccio SEA PAL
-        self.reference_frame = 'world'
-        
-        self.get_logger().info('Nodo Task Pick & Place avviato con successo.')
+class MissionState(Enum):
+  INIT = auto()
+  SETUP_SCENE = auto()
+  PICKING = auto()
+  PLACING = auto()
+  DONE = auto()
+  ABORTED = auto()
 
-    def create_upright_constraint(self) -> Constraints:
-        """
-        Crea un vincolo per mantenere la parte superiore della lattina
-        sempre rivolta verso l'alto durante il movimento.
-        """
-        oc = OrientationConstraint()
-        oc.header.frame_id = self.reference_frame
-        oc.link_name = self.end_effector_link
 
-        # Orientamento nominale desiderato (verticale: w=1.0)
-        oc.orientation = Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
+class ManipulationOrchestrator(Node):
 
-        # Tolleranze strettissime su Roll (X) e Pitch (Y) per impedire inclinazioni
-        oc.absolute_x_axis_tolerance = 0.05
-        oc.absolute_y_axis_tolerance = 0.05
+  def __init__(self):
+    super().__init__('main_manipulation_orchestrator')
 
-        # Tolleranza libera su Yaw (Z): la lattina può ruotare su se stessa
-        oc.absolute_z_axis_tolerance = 3.14159
-        oc.weight = 1.0
+    self.state = MissionState.INIT
+    self.get_logger().info(
+        '=== [ORCHESTRATOR FSM] Inizializzazione nodo orchestratore ==='
+    )
 
-        constraints = Constraints()
-        constraints.orientation_constraints.append(oc)
-        return constraints
+    # --- PUBLISHERS ---
+    # 1. Trigger di reset per scene_spawner
+    self.reset_scene_pub = self.create_publisher(Empty, '/scene/reset', 10)
+
+    # 2. Trigger per i Macro Task C++
+    self.pick_req_pub = self.create_publisher(
+        Bool, '/task/pick_macro_request', 10
+    )
+    self.place_req_pub = self.create_publisher(
+        PoseStamped, '/task/place_macro_request', 10
+    )
+
+    # --- SUBSCRIBERS ---
+    # Feedback di completamento dai nodi C++
+    self.pick_sub = self.create_subscription(
+        Bool, '/task/pick_macro_completed', self.on_pick_completed, 10
+    )
+    self.place_sub = self.create_subscription(
+        Bool, '/task/place_macro_completed', self.on_place_completed, 10
+    )
+
+    # Timer iniziale: dopo 2 secondi avvia la sequenza di Setup/Reset
+    self.init_timer = self.create_timer(2.0, self.start_scene_setup)
+    self.setup_timer = None
+
+  def start_scene_setup(self):
+    """Fase 1: Richiede il reset completo della scena all'avvio."""
+    self.init_timer.cancel()
+    self.state = MissionState.SETUP_SCENE
+
+    self.get_logger().info(
+        '=== [FSM -> SETUP_SCENE] Invio comando di reset su /scene/reset ==='
+    )
+    # Pubblica il messaggio vuoto per attivare reset_topic_callback in scene_spawner.py
+    self.reset_scene_pub.publish(Empty())
+
+    self.get_logger().info(
+        '-> Attesa 4 secondi per sincronizzazione Gazebo e MoveIt 2...'
+    )
+    # Impostiamo un timer di 4 secondi per dar tempo ad ambiente e collisioni di stabilizzarsi
+    self.setup_timer = self.create_timer(4.0, self.start_picking_phase)
+
+  def start_picking_phase(self):
+    """Fase 2: Scena pronta, avvio del Macro Task 1 (Pick & Navigate)."""
+    if self.setup_timer:
+      self.setup_timer.cancel()
+
+    self.state = MissionState.PICKING
+    self.get_logger().info(
+        '=== [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)...'
+        ' ==='
+    )
+    self.pick_req_pub.publish(Bool(data=True))
+
+  def on_pick_completed(self, msg: Bool):
+    """Callback di completamento del Macro Task 1."""
+    if self.state != MissionState.PICKING:
+      return
+
+    if msg.data:
+      self.get_logger().info(
+          '<<< [FSM -> PLACING] Pick completato con SUCCESSO! >>>'
+      )
+      self.state = MissionState.PLACING
+
+      # --- CALCOLO POSIZIONE DI PLACE VARIABILE ---
+      # Qui definiamo dinamicamente le coordinate di deposito sulla libreria
+      target_pose = self.generate_variable_place_pose(
+          x=0.65, y=0.10, z=1.15
+      )
+
+      self.get_logger().info(
+          '-> Invio target di Place:'
+          f' [x={target_pose.pose.position.x:.2f},'
+          f' y={target_pose.pose.position.y:.2f},'
+          f' z={target_pose.pose.position.z:.2f}]'
+      )
+      self.place_req_pub.publish(target_pose)
+    else:
+      self.get_logger().error(
+          '<<< [ERRORE] Macro Task 1 fallito! Missione interrotta. >>>'
+      )
+      self.state = MissionState.ABORTED
+
+  def on_place_completed(self, msg: Bool):
+    """Callback di completamento del Macro Task 2."""
+    if self.state != MissionState.PLACING:
+      return
+
+    if msg.data:
+      self.get_logger().info(
+          '=== [FSM -> DONE] MISSIONE COMPLETATA CON SUCCESSO! Lattina'
+          ' posizionata! ==='
+      )
+      self.state = MissionState.DONE
+    else:
+      self.get_logger().error(
+          '<<< [ERRORE] Macro Task 2 fallito! Missione interrotta. >>>'
+      )
+      self.state = MissionState.ABORTED
+
+  def generate_variable_place_pose(
+      self, x: float, y: float, z: float
+  ) -> PoseStamped:
+    """Genera un messaggio PoseStamped per la destinazione del Place."""
+    pose_msg = PoseStamped()
+    pose_msg.header.stamp = self.get_clock().now().to_msg()
+    pose_msg.header.frame_id = 'base_footprint'
+
+    pose_msg.pose.position.x = x
+    pose_msg.pose.position.y = y
+    pose_msg.pose.position.z = z
+
+    # Orientamento neutro per la pinza rivolta in avanti
+    pose_msg.pose.orientation.x = 0.0
+    pose_msg.pose.orientation.y = 0.0
+    pose_msg.pose.orientation.z = 0.0
+    pose_msg.pose.orientation.w = 1.0
+
+    return pose_msg
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    node = MainTaskNode()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+  rclpy.init(args=args)
+  node = ManipulationOrchestrator()
+  try:
+    rclpy.spin(node)
+  except KeyboardInterrupt:
+    pass
+  finally:
+    node.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
-    main()
+  main()

@@ -16,6 +16,7 @@
 
 
   <depend>moveit_msgs</depend>
+  <depend>moveit_py</depend>
   <depend>gazebo_msgs</depend>
 
   <exec_depend>tiago_pro_moveit_config</exec_depend>
