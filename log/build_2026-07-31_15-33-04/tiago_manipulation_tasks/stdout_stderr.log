@@ -1,0 +1,123 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[ 50%] Built target place_macro_task_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:43:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   43 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "=== [MACRO TASK 1: PICK] Pronto su /task/pick_macro_request ===");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:43:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   43 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "=== [MACRO TASK 1: PICK] Pronto su /task/pick_macro_request ===");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:44:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   44 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:14:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Knode_[m[K’
+   14 |   : [01;31m[Knode_[m[K(node), is_running_(false)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:14:18:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kis_running_[m[K’
+   14 |   : node_(node), [01;31m[Kis_running_[m[K(false)
+      |                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+   16 |     [01;31m[Karm_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_right");
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:16:83:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Knode[m[K’?
+   16 |     arm_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>([01;31m[Knode_[m[K, "arm_right");
+      |                                                                                   [01;31m[K^~~~~[m[K
+      |                                                                                   [32m[Knode[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_group_[m[K’ was not declared in this scope
+   17 |     [01;31m[Kgripper_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "gripper_right");
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   23 |     [01;31m[Kcmd_vel_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/mobile_base_controller/cmd_vel_unstamped", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:23:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kcreate_publisher[m[K’
+   23 |     cmd_vel_pub_ = this->[01;31m[Kcreate_publisher[m[K<geometry_msgs::msg::Twist>("/mobile_base_controller/cmd_vel_unstamped", 10);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:23:68:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   23 |     cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("/mobile_base_controller/cmd_vel_unstamped", 10);
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:23:70:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   23 |     cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>([01;35m[K"/mobile_base_controller/cmd_vel_unstamped"[m[K, 10);
+      |                                                                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompleted_pub_[m[K’ was not declared in this scope
+   25 |     [01;31m[Kcompleted_pub_[m[K = node_->create_publisher<std_msgs::msg::Bool>("/task/pick_macro_completed", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:25:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   25 |     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool[01;31m[K>[m[K("/task/pick_macro_completed", 10);
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:25:67:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   25 |     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool>([01;35m[K"/task/pick_macro_completed"[m[K, 10);
+      |                                                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_sub_[m[K’ was not declared in this scope
+   26 |     [01;31m[Krequest_sub_[m[K = node_->create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:66:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |     request_sub_ = node_->create_subscription<std_msgs::msg::Bool[01;31m[K>[m[K(
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:27:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   27 |       [01;35m[K"/task/pick_macro_request"[m[K, 10,
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:28:37:[m[K [01;31m[Kerror: [m[K‘[01m[KonRequestReceived[m[K’ is not a member of ‘[01m[KPickMacroTaskNode[m[K’
+   28 |       std::bind(&PickMacroTaskNode::[01;31m[KonRequestReceived[m[K, this, std::placeholders::_1)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+   32 |         [01;31m[Kodom_sub_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:32:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kcreate_subscription[m[K’
+   32 |         odom_sub_ = this->[01;31m[Kcreate_subscription[m[K<nav_msgs::msg::Odometry>(
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:32:47:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ has not been declared
+   32 |         odom_sub_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>(
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:33:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   33 |             [01;35m[K"/odom"[m[K, 10,
+      |             [01;35m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:34:43:[m[K [01;31m[Kerror: [m[K‘[01m[KodomCallback[m[K’ is not a member of ‘[01m[KPickMacroTaskNode[m[K’
+   34 |             std::bind(&PickMacroTaskNode::[01;31m[KodomCallback[m[K, this, std::placeholders::_1));
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x[m[K’ was not declared in this scope
+   36 |         [01;31m[Kcurrent_x[m[K=0.0;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y[m[K’ was not declared in this scope
+   37 |         [01;31m[Kcurrent_y[m[K=0.0;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+   38 |         [01;31m[Kcurrent_yaw_[m[K = 0.0;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_received_[m[K’ was not declared in this scope
+   39 |         [01;31m[Kodom_received_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K At global scope:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:46:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   46 |   [01;31m[Kprivate[m[K:
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:64:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   64 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:70:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   70 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:134:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+  134 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:144:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+  144 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:216:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  216 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

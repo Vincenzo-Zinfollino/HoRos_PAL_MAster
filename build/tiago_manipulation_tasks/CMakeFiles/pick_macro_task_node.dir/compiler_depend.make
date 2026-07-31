@@ -1368,8 +1368,29 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp
 
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
 
@@ -2067,6 +2088,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/workspace_parameters__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/types.h:
@@ -2093,6 +2116,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h:
+
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
@@ -2104,6 +2129,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__struct.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -2787,6 +2814,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 
 /usr/include/c++/11/typeinfo:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/stdint.h:
@@ -2989,6 +3018,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 
 /usr/include/c++/11/iomanip:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/locale:
@@ -3142,6 +3173,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
 
 /usr/include/c++/11/algorithm:
 
@@ -3426,6 +3459,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 /usr/include/c++/11/bits/allocator.h:
 
 /usr/include/linux/limits.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
 
@@ -4068,6 +4103,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 /opt/ros/humble/include/moveit/robot_model/revolute_joint_model.h:
 
 /opt/ros/humble/include/moveit/transforms/transforms.h:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 

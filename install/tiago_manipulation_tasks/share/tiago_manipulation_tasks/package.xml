@@ -24,6 +24,9 @@
   <!-- Dipendenze MoveIt 2 C++ -->
   <depend>moveit_ros_planning_interface</depend>
   <depend>moveit_core</depend>
+ <!-- Dipendenze per la Rotazione -->
+  <depend>nav_msgs</depend>
+  <depend>tf2</depend>
 
   <!-- Dipendenze Runtime PAL Robotics e TIAGo Pro -->
   <exec_depend>tiago_pro_moveit_config</exec_depend>

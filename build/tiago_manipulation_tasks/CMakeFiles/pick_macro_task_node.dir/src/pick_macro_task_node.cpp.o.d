@@ -1287,4 +1287,17 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp
