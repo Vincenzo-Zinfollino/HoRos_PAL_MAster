@@ -1,0 +1,8 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:365:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class moveit::core::RobotState[m[K’ {aka ‘[01m[Kclass moveit::core::RobotState[m[K’} has no member named ‘[01m[KcopyJointGroupValues[m[K’; did you mean ‘[01m[KcopyJointGroupVelocities[m[K’?
+  365 |       arm_torso_group->getCurrentState()->[01;31m[KcopyJointGroupValues[m[K(arm_torso_group->getName(), joint_values);
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                           [32m[KcopyJointGroupVelocities[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

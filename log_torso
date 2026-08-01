@@ -1,0 +1,64 @@
+[move_group-3] [WARN] [1785609361.767580539] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_bookshelf', but it does not exist in this scene.
+[move_group-3] [WARN] [1785609361.767607090] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_cocacola', but it does not exist in this scene.
+[move_group-3] [WARN] [1785609361.767610242] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_table', but it does not exist in this scene.
+[move_group-3] [WARN] [1785609361.817895241] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_bookshelf', but it does not exist in this scene.
+[move_group-3] [WARN] [1785609361.817924029] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_cocacola', but it does not exist in this scene.
+[move_group-3] [WARN] [1785609361.817929156] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_table', but it does not exist in this scene.
+[move_group-3] [INFO] [1785609370.210377645] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-3] [INFO] [1785609370.210463347] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-3] [INFO] [1785609370.224970906] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-3] [INFO] [1785609370.226340991] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1785609370.686163335] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-3] [INFO] [1785609370.687320827] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-3] [INFO] [1785609370.687392563] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-3] [INFO] [1785609370.688103754] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1785609370.688221298] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1785609370.688637968] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /arm_left_controller
+[gzserver-1] [INFO] [1785609370.688952956] [arm_left_controller]: Received new action goal
+[gzserver-1] [INFO] [1785609370.688993465] [arm_left_controller]: Accepted new action goal
+[move_group-3] [INFO] [1785609370.689086294] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /arm_left_controller started execution
+[move_group-3] [INFO] [1785609370.689100659] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1785609370.689265352] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /torso_controller
+[gzserver-1] [INFO] [1785609370.689481895] [torso_controller]: Received new action goal
+[gzserver-1] [INFO] [1785609370.689512019] [torso_controller]: Accepted new action goal
+[move_group-3] [INFO] [1785609370.689571690] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /torso_controller started execution
+[move_group-3] [INFO] [1785609370.689586049] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gzserver-1] [INFO] [1785609390.666171193] [arm_left_controller]: Goal reached, success!
+[gzserver-1] [INFO] [1785609390.667176490] [torso_controller]: Goal reached, success!
+[move_group-3] [INFO] [1785609390.689106699] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/arm_left_controller' successfully finished
+[move_group-3] [INFO] [1785609390.689508663] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/torso_controller' successfully finished
+[move_group-3] [INFO] [1785609390.699328798] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1785609390.699415808] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1785609392.839074956] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-3] [INFO] [1785609392.839174035] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-3] [INFO] [1785609392.845362902] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-3] [INFO] [1785609392.846661233] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1785609393.070872595] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-3] [INFO] [1785609393.071511612] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-3] [INFO] [1785609393.071563437] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-3] [INFO] [1785609393.072059122] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1785609393.087501320] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1785609393.087885630] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /arm_left_controller
+[gzserver-1] [INFO] [1785609393.088094824] [arm_left_controller]: Received new action goal
+[gzserver-1] [INFO] [1785609393.088129411] [arm_left_controller]: Accepted new action goal
+[move_group-3] [INFO] [1785609393.088222970] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /arm_left_controller started execution
+[move_group-3] [INFO] [1785609393.088241727] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1785609393.088655159] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /torso_controller
+[gzserver-1] [INFO] [1785609393.088799440] [torso_controller]: Received new action goal
+[gzserver-1] [INFO] [1785609393.088824194] [torso_controller]: Accepted new action goal
+[move_group-3] [INFO] [1785609393.089024839] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /torso_controller started execution
+[move_group-3] [INFO] [1785609393.089041858] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gzserver-1] [INFO] [1785609393.654509584] [arm_left_controller]: Goal reached, success!
+[gzserver-1] [INFO] [1785609393.655523015] [torso_controller]: Goal reached, success!
+[move_group-3] [INFO] [1785609393.688489954] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/arm_left_controller' successfully finished
+[move_group-3] [INFO] [1785609393.689312092] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/torso_controller' successfully finished
+[move_group-3] [INFO] [1785609393.707699756] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1785609393.707770833] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1785609393.799989298] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-3] [INFO] [1785609393.800081510] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-3] [INFO] [1785609393.808472908] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-3] [INFO] [1785609393.809656746] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [ERROR] [1785609398.810253738] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm_left_torso/arm_left_torso: Unable to sample any valid states for goal tree
+[move_group-3] [WARN] [1785609398.810302725] [moveit.ompl_planning.model_based_planning_context]: Invalid goal state
+[move_group-3] [INFO] [1785609398.831901559] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
+[move_group-3] [INFO] [1785609398.831940970] [moveit_move_group_default_capabilities.move_action_capability]: Unknown event

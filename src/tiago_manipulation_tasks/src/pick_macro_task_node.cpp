@@ -35,7 +35,7 @@ public:
 
     arm_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_left_torso");
     gripper_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "gripper_left");
-
+    arm_group_->setPoseReferenceFrame("base_footprint");
 
 
     // 1. Publisher per inviare velocità alla base mobile di TIAGo Pro
@@ -126,9 +126,9 @@ bool moveToSafeHome() {
 
     // Valori dei giunti per la posa sicura
     std::vector<double> safe_ready_joints = {
-         0.35,
+         0.10,
          //0.36, -1.83, -0.47, -2.35, 0.00, -1.20, 0.00
-        0.36, -1.83, -0.47, -2.35, 0.00, 0.0, 0.00
+        0.36, -1.83, -0.47, -2.35, 0.00, -1.0, 0.00
     };
     arm_group_->setJointValueTarget(safe_ready_joints);
 
@@ -333,79 +333,78 @@ private:
       }
     }
 
-    // 3. MOVIMENTO SU POSIZIONE DI PRE-GRASP (12 cm davanti alla lattina)
-    if (success) {
-      RCLCPP_INFO(node_->get_logger(), "[3/6] Movimento verso il Pre-Grasp...");
+    // 3. MOVIMENTO SU POSIZIONE DI PRE-GRASP
+  if (success) {
+      RCLCPP_INFO(node_->get_logger(), "[3/6] Movimento verso il Pre-Grasp (solo posizione)...");
+
+      geometry_msgs::msg::PoseStamped current_eef_pose = arm_group_->getCurrentPose("arm_left_tool_link");
+      RCLCPP_INFO(node_->get_logger(), 
+                  "[DEBUG_POSE] Current 'arm_left_tool_link' (Frame: %s) -> Pos: [%.3f, %.3f, %.3f] | Orient: [%.3f, %.3f, %.3f, %.3f]",
+                  current_eef_pose.header.frame_id.c_str(),
+                  current_eef_pose.pose.position.x,
+                  current_eef_pose.pose.position.y,
+                  current_eef_pose.pose.position.z,
+                  current_eef_pose.pose.orientation.x,
+                  current_eef_pose.pose.orientation.y,
+                  current_eef_pose.pose.orientation.z,
+                  current_eef_pose.pose.orientation.w);
+
+
+
+      //rimuovo la libreria dalla scena di pianificazione per evitare collisioni durante il pre-grasp
+     moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+      planning_scene_interface.removeCollisionObjects({"s3_bookshelf"});
+      rclcpp::sleep_for(std::chrono::milliseconds(50));
+// Utilizziamo il gruppo combinato 8DOF (Torso + Braccio Sinistro)
+      auto arm_torso_group = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_left_torso");
+
       geometry_msgs::msg::TransformStamped transform_stamped;
       try {
-          // Legge la distanza esatta tra il centro del robot e la lattina
           transform_stamped = tf_buffer_->lookupTransform(
-              "base_footprint", // Target frame (il robot)
-              "s3_cocacola",    // Source frame (la lattina)
+              "base_footprint",
+              "s3_cocacola",
               tf2::TimePointZero,
               std::chrono::seconds(2)
           );
 
-        // Coordinate estratte da TF
         double can_x = transform_stamped.transform.translation.x;
         double can_y = transform_stamped.transform.translation.y;
         double can_z = transform_stamped.transform.translation.z;
 
-        // 1. LOG DELLE COORDINATE TF
-        RCLCPP_INFO(node_->get_logger(), "[DEBUG] Posizione lattina da TF -> X: %.3f, Y: %.3f, Z: %.3f", can_x, can_y, can_z);
-        //geometry_msgs::msg::Pose current_pose = arm_group_->getCurrentPose().pose;
         geometry_msgs::msg::Pose pre_grasp_pose;
-
-        // Calcolo posizione con gli OFFSET CORRETTI
         pre_grasp_pose.position.x = can_x - 0.20; 
         pre_grasp_pose.position.y = can_y; 
-        pre_grasp_pose.position.z = can_z + 0.08; // ALZATI DI 8 cm PER EVITARE LO SCAFFALE!
+        pre_grasp_pose.position.z = can_z + 0.08; 
         
-        bool position_target_set = arm_group_->setPositionTarget(pre_grasp_pose.position.x , pre_grasp_pose.position.y , pre_grasp_pose.position.z, "arm_left_tool_link");
-         
-        if (!position_target_set) {
-            RCLCPP_ERROR(node_->get_logger(), "Impossibile impostare il target di posizione!");
-            
-        }
-
-        moveit::planning_interface::MoveGroupInterface::Plan pre_grasp_plan;
-        bool success = (arm_group_->plan(pre_grasp_plan) == moveit::core::MoveItErrorCode::SUCCESS);
-
-        if (success) {
-            RCLCPP_INFO(node_->get_logger(), "Pianificazione Pre-Grasp (orientamento libero) RIUSCITA!");
-            arm_group_->execute(pre_grasp_plan);
-        } else {
-            RCLCPP_ERROR(node_->get_logger(), "Pianificazione Pre-Grasp fallita anche con orientamento libero.");
-        }
-        /*
-        // Configura l'orientamento (es. Pitch a 90 gradi per posizionare la pinza orizzontalmente)
         tf2::Quaternion q;
-        q.setRPY(0.0, 0.0, 0.0);
+        q.setRPY(0.0, 1.57, 0.0); 
         pre_grasp_pose.orientation.x = q.x();
         pre_grasp_pose.orientation.y = q.y();
         pre_grasp_pose.orientation.z = q.z();
         pre_grasp_pose.orientation.w = q.w();
-        
-        arm_group_->setPoseTarget(pre_grasp_pose, "arm_right_tool_link");
-        
-        // 2. LOG DELLA POSA INVIATA A MOVEIT
-        RCLCPP_INFO(node_->get_logger(), "[DEBUG] Pre-Grasp Position inviata -> X: %.3f, Y: %.3f, Z: %.3f", 
-                    pre_grasp_pose.position.x, pre_grasp_pose.position.y, pre_grasp_pose.position.z);
-        RCLCPP_INFO(node_->get_logger(), "[DEBUG] Pre-Grasp Orientation inviata -> X: %.3f, Y: %.3f, Z: %.3f, W: %.3f", 
-                    pre_grasp_pose.orientation.x, pre_grasp_pose.orientation.y, pre_grasp_pose.orientation.z, pre_grasp_pose.orientation.w);
 
-        arm_group_->setPoseTarget(pre_grasp_pose, "arm_right_tool_link");
-        */
-        } catch (const tf2::TransformException & ex) {
-            RCLCPP_ERROR(node_->get_logger(), "TF Fallita: %s", ex.what());
-            // Gestisci il fallimento del task
+        arm_torso_group->setStartStateToCurrentState();
+        arm_torso_group->setGoalPositionTolerance(0.01);
+        arm_torso_group->setGoalOrientationTolerance(0.05);
+        arm_torso_group->setPoseTarget(pre_grasp_pose, "arm_left_tool_link");
+
+        moveit::planning_interface::MoveGroupInterface::Plan pre_grasp_plan;
+        bool plan_success = (arm_torso_group->plan(pre_grasp_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+
+        if (plan_success) {
+            RCLCPP_INFO(node_->get_logger(), "Pianificazione Pre-Grasp con arm_left_torso RIUSCITA!");
+            success = (arm_torso_group->execute(pre_grasp_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+            if (!success) {
+                RCLCPP_ERROR(node_->get_logger(), "Esecuzione Pre-Grasp fallita!");
+            }
+        } else {
+            RCLCPP_ERROR(node_->get_logger(), "Pianificazione Pre-Grasp fallita.");
+            success = false;
         }
-      moveit::planning_interface::MoveGroupInterface::Plan plan;
-      success = (arm_group_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
-      if (success) {
-        arm_group_->execute(plan);
-      } else {
-        RCLCPP_ERROR(node_->get_logger(), "Fallita pianificazione verso il Pre-Grasp!");
+
+      } catch (const tf2::TransformException & ex) {
+          RCLCPP_ERROR(node_->get_logger(), "TF Fallita: %s", ex.what());
+          success = false;
       }
     }
 
