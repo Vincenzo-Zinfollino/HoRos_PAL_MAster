@@ -1,0 +1,208 @@
+[0.000000] (-) TimerEvent: {}
+[0.000379] (-) JobUnselected: {'identifier': 'pal_gazebo_worlds'}
+[0.000475] (-) JobUnselected: {'identifier': 'pal_pro_gripper'}
+[0.000510] (-) JobUnselected: {'identifier': 'pal_pro_gripper_bringup'}
+[0.000534] (-) JobUnselected: {'identifier': 'pal_pro_gripper_controller_configuration'}
+[0.000558] (-) JobUnselected: {'identifier': 'pal_pro_gripper_description'}
+[0.000580] (-) JobUnselected: {'identifier': 'pal_pro_gripper_simulation'}
+[0.000602] (-) JobUnselected: {'identifier': 'pal_pro_gripper_wrapper'}
+[0.000624] (-) JobUnselected: {'identifier': 'pal_sea_arm'}
+[0.000646] (-) JobUnselected: {'identifier': 'pal_sea_arm_bringup'}
+[0.000683] (-) JobUnselected: {'identifier': 'pal_sea_arm_controller_configuration'}
+[0.000708] (-) JobUnselected: {'identifier': 'pal_sea_arm_description'}
+[0.000729] (-) JobUnselected: {'identifier': 'pal_sea_arm_moveit_config'}
+[0.000785] (-) JobUnselected: {'identifier': 'tiago_pro_2dnav'}
+[0.000857] (-) JobUnselected: {'identifier': 'tiago_pro_bringup'}
+[0.000880] (-) JobUnselected: {'identifier': 'tiago_pro_controller_configuration'}
+[0.000890] (-) JobUnselected: {'identifier': 'tiago_pro_description'}
+[0.000901] (-) JobUnselected: {'identifier': 'tiago_pro_gazebo'}
+[0.000909] (-) JobUnselected: {'identifier': 'tiago_pro_laser_sensors'}
+[0.000930] (-) JobUnselected: {'identifier': 'tiago_pro_moveit_config'}
+[0.000942] (-) JobUnselected: {'identifier': 'tiago_pro_mujoco'}
+[0.000950] (-) JobUnselected: {'identifier': 'tiago_pro_navigation'}
+[0.000958] (-) JobUnselected: {'identifier': 'tiago_pro_rgbd_sensors'}
+[0.000971] (-) JobUnselected: {'identifier': 'tiago_pro_robot'}
+[0.000980] (-) JobUnselected: {'identifier': 'tiago_pro_simulation'}
+[0.000990] (pick_task) JobQueued: {'identifier': 'pick_task', 'dependencies': OrderedDict([('pal_gazebo_worlds', '/home/user/exchange/workspace/install/pal_gazebo_worlds'), ('pal_pro_gripper_description', '/home/user/exchange/workspace/install/pal_pro_gripper_description'), ('pal_pro_gripper_wrapper', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper'), ('tiago_pro_2dnav', '/home/user/exchange/workspace/install/tiago_pro_2dnav'), ('tiago_pro_laser_sensors', '/home/user/exchange/workspace/install/tiago_pro_laser_sensors'), ('tiago_pro_rgbd_sensors', '/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors'), ('pal_pro_gripper_controller_configuration', '/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration'), ('pal_pro_gripper', '/home/user/exchange/workspace/install/pal_pro_gripper'), ('pal_sea_arm_controller_configuration', '/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration'), ('pal_sea_arm_description', '/home/user/exchange/workspace/install/pal_sea_arm_description'), ('tiago_pro_controller_configuration', '/home/user/exchange/workspace/install/tiago_pro_controller_configuration'), ('pal_sea_arm_bringup', '/home/user/exchange/workspace/install/pal_sea_arm_bringup'), ('pal_sea_arm_moveit_config', '/home/user/exchange/workspace/install/pal_sea_arm_moveit_config'), ('tiago_pro_bringup', '/home/user/exchange/workspace/install/tiago_pro_bringup'), ('tiago_pro_description', '/home/user/exchange/workspace/install/tiago_pro_description'), ('pal_sea_arm', '/home/user/exchange/workspace/install/pal_sea_arm'), ('tiago_pro_moveit_config', '/home/user/exchange/workspace/install/tiago_pro_moveit_config'), ('tiago_pro_robot', '/home/user/exchange/workspace/install/tiago_pro_robot'), ('tiago_pro_gazebo', '/home/user/exchange/workspace/install/tiago_pro_gazebo'), ('tiago_pro_mujoco', '/home/user/exchange/workspace/install/tiago_pro_mujoco'), ('tiago_pro_simulation', '/home/user/exchange/workspace/install/tiago_pro_simulation')])}
+[0.001092] (tiago_manipulation_tasks) JobQueued: {'identifier': 'tiago_manipulation_tasks', 'dependencies': OrderedDict([('pal_gazebo_worlds', '/home/user/exchange/workspace/install/pal_gazebo_worlds'), ('pal_pro_gripper_description', '/home/user/exchange/workspace/install/pal_pro_gripper_description'), ('pal_pro_gripper_wrapper', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper'), ('tiago_pro_2dnav', '/home/user/exchange/workspace/install/tiago_pro_2dnav'), ('tiago_pro_laser_sensors', '/home/user/exchange/workspace/install/tiago_pro_laser_sensors'), ('tiago_pro_rgbd_sensors', '/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors'), ('pal_pro_gripper_controller_configuration', '/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration'), ('pal_pro_gripper', '/home/user/exchange/workspace/install/pal_pro_gripper'), ('pal_sea_arm_controller_configuration', '/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration'), ('pal_sea_arm_description', '/home/user/exchange/workspace/install/pal_sea_arm_description'), ('tiago_pro_controller_configuration', '/home/user/exchange/workspace/install/tiago_pro_controller_configuration'), ('pal_sea_arm_bringup', '/home/user/exchange/workspace/install/pal_sea_arm_bringup'), ('pal_sea_arm_moveit_config', '/home/user/exchange/workspace/install/pal_sea_arm_moveit_config'), ('tiago_pro_bringup', '/home/user/exchange/workspace/install/tiago_pro_bringup'), ('tiago_pro_description', '/home/user/exchange/workspace/install/tiago_pro_description'), ('pal_sea_arm', '/home/user/exchange/workspace/install/pal_sea_arm'), ('tiago_pro_moveit_config', '/home/user/exchange/workspace/install/tiago_pro_moveit_config'), ('tiago_pro_robot', '/home/user/exchange/workspace/install/tiago_pro_robot'), ('tiago_pro_gazebo', '/home/user/exchange/workspace/install/tiago_pro_gazebo'), ('tiago_pro_mujoco', '/home/user/exchange/workspace/install/tiago_pro_mujoco'), ('tiago_pro_simulation', '/home/user/exchange/workspace/install/tiago_pro_simulation')])}
+[0.001124] (pick_task) JobStarted: {'identifier': 'pick_task'}
+[0.011585] (tiago_manipulation_tasks) JobStarted: {'identifier': 'tiago_manipulation_tasks'}
+[0.099600] (-) TimerEvent: {}
+[0.184525] (tiago_manipulation_tasks) JobProgress: {'identifier': 'tiago_manipulation_tasks', 'progress': 'cmake'}
+[0.185429] (tiago_manipulation_tasks) JobProgress: {'identifier': 'tiago_manipulation_tasks', 'progress': 'build'}
+[0.186112] (tiago_manipulation_tasks) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/exchange/workspace/build/tiago_manipulation_tasks', '--', '-j12', '-l12'], 'cwd': '/home/user/exchange/workspace/build/tiago_manipulation_tasks', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('GZ_SIM_RESOURCE_PATH', '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models'), ('HOSTNAME', '34fbfbc0a43e'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/exchange/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/user/exchange/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/opt/ros/humble'), ('TERMINATOR_UUID', 'urn:uuid:359a9845-ca46-4fcf-bf65-9063d2e29ba4'), ('PWD', '/home/user/exchange/workspace/build/tiago_manipulation_tasks'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble')]), 'shell': False}
+[0.199670] (-) TimerEvent: {}
+[0.232613] (tiago_manipulation_tasks) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o\x1b[0m\n'}
+[0.232822] (tiago_manipulation_tasks) StdoutLine: {'line': b'[ 75%] Built target place_macro_task_node\n'}
+[0.299748] (-) TimerEvent: {}
+[0.400227] (-) TimerEvent: {}
+[0.426688] (pick_task) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pick_task', 'build', '--build-base', '/home/user/exchange/workspace/build/pick_task/build', 'install', '--record', '/home/user/exchange/workspace/build/pick_task/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/user/exchange/workspace/src/pick_task', 'env': {'NVIDIA_CTK_LIBCUDA_DIR': '/usr/lib/x86_64-linux-gnu', 'GZ_SIM_RESOURCE_PATH': '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models', 'HOSTNAME': '34fbfbc0a43e', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/user', 'OLDPWD': '/home/user/exchange/workspace/src', 'ROS_PYTHON_VERSION': '3', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/user/exchange/workspace/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/opt/ros/humble', 'TERMINATOR_UUID': 'urn:uuid:359a9845-ca46-4fcf-bf65-9063d2e29ba4', 'PWD': '/home/user/exchange/workspace/build/pick_task', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/user/exchange/workspace/build/pick_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'void', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup'}, 'shell': False}
+[0.500308] (-) TimerEvent: {}
+[0.566456] (pick_task) StdoutLine: {'line': b'running egg_info\n'}
+[0.566976] (pick_task) StdoutLine: {'line': b'writing ../../build/pick_task/pick_task.egg-info/PKG-INFO\n'}
+[0.567126] (pick_task) StdoutLine: {'line': b'writing dependency_links to ../../build/pick_task/pick_task.egg-info/dependency_links.txt\n'}
+[0.567228] (pick_task) StdoutLine: {'line': b'writing entry points to ../../build/pick_task/pick_task.egg-info/entry_points.txt\n'}
+[0.567314] (pick_task) StdoutLine: {'line': b'writing requirements to ../../build/pick_task/pick_task.egg-info/requires.txt\n'}
+[0.567383] (pick_task) StdoutLine: {'line': b'writing top-level names to ../../build/pick_task/pick_task.egg-info/top_level.txt\n'}
+[0.568616] (pick_task) StdoutLine: {'line': b"reading manifest file '../../build/pick_task/pick_task.egg-info/SOURCES.txt'\n"}
+[0.569118] (pick_task) StdoutLine: {'line': b"writing manifest file '../../build/pick_task/pick_task.egg-info/SOURCES.txt'\n"}
+[0.569186] (pick_task) StdoutLine: {'line': b'running build\n'}
+[0.569244] (pick_task) StdoutLine: {'line': b'running build_py\n'}
+[0.569489] (pick_task) StdoutLine: {'line': b'running install\n'}
+[0.569724] (pick_task) StdoutLine: {'line': b'running install_lib\n'}
+[0.570916] (pick_task) StdoutLine: {'line': b'running install_data\n'}
+[0.571060] (pick_task) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.572435] (pick_task) StdoutLine: {'line': b"removing '/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.572613] (pick_task) StdoutLine: {'line': b'Copying ../../build/pick_task/pick_task.egg-info to /home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task-0.0.0-py3.10.egg-info\n'}
+[0.572993] (pick_task) StdoutLine: {'line': b'running install_scripts\n'}
+[0.588727] (pick_task) StdoutLine: {'line': b'Installing main_task_node script to /home/user/exchange/workspace/install/pick_task/lib/pick_task\n'}
+[0.588893] (pick_task) StdoutLine: {'line': b'Installing scene_spawner script to /home/user/exchange/workspace/install/pick_task/lib/pick_task\n'}
+[0.589083] (pick_task) StdoutLine: {'line': b"writing list of installed files to '/home/user/exchange/workspace/build/pick_task/install.log'\n"}
+[0.600541] (-) TimerEvent: {}
+[0.607679] (pick_task) CommandEnded: {'returncode': 0}
+[0.614863] (pick_task) JobEnded: {'identifier': 'pick_task', 'rc': 0}
+[0.700642] (-) TimerEvent: {}
+[0.800990] (-) TimerEvent: {}
+[0.901250] (-) TimerEvent: {}
+[1.001500] (-) TimerEvent: {}
+[1.101727] (-) TimerEvent: {}
+[1.201971] (-) TimerEvent: {}
+[1.302196] (-) TimerEvent: {}
+[1.402433] (-) TimerEvent: {}
+[1.502709] (-) TimerEvent: {}
+[1.602957] (-) TimerEvent: {}
+[1.703308] (-) TimerEvent: {}
+[1.803567] (-) TimerEvent: {}
+[1.903809] (-) TimerEvent: {}
+[2.004051] (-) TimerEvent: {}
+[2.104341] (-) TimerEvent: {}
+[2.204576] (-) TimerEvent: {}
+[2.304807] (-) TimerEvent: {}
+[2.405034] (-) TimerEvent: {}
+[2.505254] (-) TimerEvent: {}
+[2.605488] (-) TimerEvent: {}
+[2.705722] (-) TimerEvent: {}
+[2.805969] (-) TimerEvent: {}
+[2.906187] (-) TimerEvent: {}
+[3.006402] (-) TimerEvent: {}
+[3.106610] (-) TimerEvent: {}
+[3.206853] (-) TimerEvent: {}
+[3.307069] (-) TimerEvent: {}
+[3.407288] (-) TimerEvent: {}
+[3.507505] (-) TimerEvent: {}
+[3.607716] (-) TimerEvent: {}
+[3.707956] (-) TimerEvent: {}
+[3.808259] (-) TimerEvent: {}
+[3.908555] (-) TimerEvent: {}
+[4.008740] (-) TimerEvent: {}
+[4.108973] (-) TimerEvent: {}
+[4.209193] (-) TimerEvent: {}
+[4.309444] (-) TimerEvent: {}
+[4.409690] (-) TimerEvent: {}
+[4.509908] (-) TimerEvent: {}
+[4.610115] (-) TimerEvent: {}
+[4.710334] (-) TimerEvent: {}
+[4.810555] (-) TimerEvent: {}
+[4.910739] (-) TimerEvent: {}
+[5.010952] (-) TimerEvent: {}
+[5.111168] (-) TimerEvent: {}
+[5.211379] (-) TimerEvent: {}
+[5.311591] (-) TimerEvent: {}
+[5.411845] (-) TimerEvent: {}
+[5.512087] (-) TimerEvent: {}
+[5.612310] (-) TimerEvent: {}
+[5.712525] (-) TimerEvent: {}
+[5.812779] (-) TimerEvent: {}
+[5.913078] (-) TimerEvent: {}
+[6.013285] (-) TimerEvent: {}
+[6.113543] (-) TimerEvent: {}
+[6.213745] (-) TimerEvent: {}
+[6.313977] (-) TimerEvent: {}
+[6.414274] (-) TimerEvent: {}
+[6.514536] (-) TimerEvent: {}
+[6.614737] (-) TimerEvent: {}
+[6.715012] (-) TimerEvent: {}
+[6.815253] (-) TimerEvent: {}
+[6.915479] (-) TimerEvent: {}
+[7.015711] (-) TimerEvent: {}
+[7.115916] (-) TimerEvent: {}
+[7.216223] (-) TimerEvent: {}
+[7.316459] (-) TimerEvent: {}
+[7.416687] (-) TimerEvent: {}
+[7.516915] (-) TimerEvent: {}
+[7.617133] (-) TimerEvent: {}
+[7.717350] (-) TimerEvent: {}
+[7.817579] (-) TimerEvent: {}
+[7.917822] (-) TimerEvent: {}
+[8.018046] (-) TimerEvent: {}
+[8.118319] (-) TimerEvent: {}
+[8.218541] (-) TimerEvent: {}
+[8.318744] (-) TimerEvent: {}
+[8.418966] (-) TimerEvent: {}
+[8.519191] (-) TimerEvent: {}
+[8.619432] (-) TimerEvent: {}
+[8.719671] (-) TimerEvent: {}
+[8.819897] (-) TimerEvent: {}
+[8.920117] (-) TimerEvent: {}
+[9.020333] (-) TimerEvent: {}
+[9.120600] (-) TimerEvent: {}
+[9.220884] (-) TimerEvent: {}
+[9.321111] (-) TimerEvent: {}
+[9.421331] (-) TimerEvent: {}
+[9.521545] (-) TimerEvent: {}
+[9.621739] (-) TimerEvent: {}
+[9.721943] (-) TimerEvent: {}
+[9.822167] (-) TimerEvent: {}
+[9.922382] (-) TimerEvent: {}
+[10.022627] (-) TimerEvent: {}
+[10.122813] (-) TimerEvent: {}
+[10.223093] (-) TimerEvent: {}
+[10.323326] (-) TimerEvent: {}
+[10.423578] (-) TimerEvent: {}
+[10.524248] (-) TimerEvent: {}
+[10.624493] (-) TimerEvent: {}
+[10.724733] (-) TimerEvent: {}
+[10.825028] (-) TimerEvent: {}
+[10.925313] (-) TimerEvent: {}
+[11.025556] (-) TimerEvent: {}
+[11.125848] (-) TimerEvent: {}
+[11.226059] (-) TimerEvent: {}
+[11.326289] (-) TimerEvent: {}
+[11.426513] (-) TimerEvent: {}
+[11.526760] (-) TimerEvent: {}
+[11.627006] (-) TimerEvent: {}
+[11.727240] (-) TimerEvent: {}
+[11.746339] (tiago_manipulation_tasks) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pick_macro_task_node\x1b[0m\n'}
+[11.827323] (-) TimerEvent: {}
+[11.927557] (-) TimerEvent: {}
+[12.027828] (-) TimerEvent: {}
+[12.128046] (-) TimerEvent: {}
+[12.228271] (-) TimerEvent: {}
+[12.328498] (-) TimerEvent: {}
+[12.428715] (-) TimerEvent: {}
+[12.462290] (tiago_manipulation_tasks) StdoutLine: {'line': b'[100%] Built target pick_macro_task_node\n'}
+[12.475338] (tiago_manipulation_tasks) CommandEnded: {'returncode': 0}
+[12.475596] (tiago_manipulation_tasks) JobProgress: {'identifier': 'tiago_manipulation_tasks', 'progress': 'install'}
+[12.480294] (tiago_manipulation_tasks) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/exchange/workspace/build/tiago_manipulation_tasks'], 'cwd': '/home/user/exchange/workspace/build/tiago_manipulation_tasks', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('GZ_SIM_RESOURCE_PATH', '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models'), ('HOSTNAME', '34fbfbc0a43e'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/exchange/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/user/exchange/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/opt/ros/humble'), ('TERMINATOR_UUID', 'urn:uuid:359a9845-ca46-4fcf-bf65-9063d2e29ba4'), ('PWD', '/home/user/exchange/workspace/build/tiago_manipulation_tasks'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble')]), 'shell': False}
+[12.485662] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.485822] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/pick_macro_task_node\n'}
+[12.489047] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/pick_macro_task_node" to ""\n'}
+[12.489154] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/place_macro_task_node\n'}
+[12.489216] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/package_run_dependencies/tiago_manipulation_tasks\n'}
+[12.489270] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/parent_prefix_path/tiago_manipulation_tasks\n'}
+[12.489331] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.sh\n'}
+[12.489390] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.dsv\n'}
+[12.489432] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.sh\n'}
+[12.489463] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.dsv\n'}
+[12.489513] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.bash\n'}
+[12.489564] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.sh\n'}
+[12.489597] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.zsh\n'}
+[12.489628] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.dsv\n'}
+[12.489657] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.dsv\n'}
+[12.489693] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/packages/tiago_manipulation_tasks\n'}
+[12.489738] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig.cmake\n'}
+[12.489788] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig-version.cmake\n'}
+[12.489836] (tiago_manipulation_tasks) StdoutLine: {'line': b'-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.xml\n'}
+[12.490997] (tiago_manipulation_tasks) CommandEnded: {'returncode': 0}
+[12.498664] (tiago_manipulation_tasks) JobEnded: {'identifier': 'tiago_manipulation_tasks', 'rc': 0}
+[12.499174] (-) EventReactorShutdown: {}

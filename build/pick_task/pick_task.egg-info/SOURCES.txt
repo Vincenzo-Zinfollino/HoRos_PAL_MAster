@@ -10,6 +10,7 @@ setup.py
 ../../build/pick_task/pick_task.egg-info/zip-safe
 launch/manipulation_pipeline.launch.py
 pick_task/__init__.py
+pick_task/gazebo_tf_bridge.py
 pick_task/kinematics_metrics.py
 pick_task/main_task_node.py
 pick_task/pick_task_node.py

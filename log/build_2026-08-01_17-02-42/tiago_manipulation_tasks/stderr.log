@@ -1,0 +1,19 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:363:66:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_x[m[K’ was not declared in this scope
+  363 |        bool position_target_set = arm_group_->setPositionTarget([01;31m[Ktarget_x[m[K, target_y, target_z, "arm_right_tool_link");
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:363:76:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_y[m[K’ was not declared in this scope
+  363 | l position_target_set = arm_group_->setPositionTarget(target_x, [01;31m[Ktarget_y[m[K, target_z, "arm_right_tool_link");
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:363:86:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_z[m[K’ was not declared in this scope
+  363 | _target_set = arm_group_->setPositionTarget(target_x, target_y, [01;31m[Ktarget_z[m[K, "arm_right_tool_link");
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:367:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  367 |             return [01;31m[Kfalse[m[K;
+      |                    [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

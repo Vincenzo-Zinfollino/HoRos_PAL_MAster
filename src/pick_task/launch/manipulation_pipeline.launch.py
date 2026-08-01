@@ -16,7 +16,8 @@ def generate_launch_description():
         description='Usa il clock di simulazione di Gazebo'
     )
     
-    use_sim_time = LaunchConfiguration('use_sim_time')
+    #use_sim_time = LaunchConfiguration('use_sim_time')
+    use_sim_time=True
 
     # Parametri comuni da passare a tutti i nodi
     common_parameters = [{'use_sim_time': use_sim_time}]
@@ -50,6 +51,16 @@ def generate_launch_description():
         parameters=common_parameters
     )
 
+    # Nodo Python 2: Gazebo Bridge
+    gazebo_bridge_node = Node(
+        package='pick_task',
+        executable='gazebo_tf_bridge',
+        name='gazebo_tf_bridge',
+        output='screen',
+        parameters=common_parameters
+    )
+
+
     # Nodo Python 2: Orchestratore FSM (Avviato con 3 secondi di ritardo)
     orchestrator_node = Node(
         package='pick_task',
@@ -70,5 +81,6 @@ def generate_launch_description():
         pick_macro_node,
         place_macro_node,
         scene_spawner_node,
+        gazebo_bridge_node,
         delayed_orchestrator
     ])

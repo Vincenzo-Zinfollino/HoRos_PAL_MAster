@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:50 (file):
+  file INSTALL cannot find
+  "/home/user/exchange/workspace/src/tiago_pro_simulation/tiago_pro_gazebo/scripts/gazebo_tf_bridge.py":
+  No such file or directory.
+
+[0m

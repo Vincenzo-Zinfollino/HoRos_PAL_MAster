@@ -12,6 +12,7 @@
   <!-- Dipendenze Core C++ e Trasformazioni -->
   <depend>rclcpp</depend>
   <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
 
   <!-- Dipendenze Messaggi -->
   <depend>geometry_msgs</depend>

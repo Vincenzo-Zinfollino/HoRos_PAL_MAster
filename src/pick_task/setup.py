@@ -38,7 +38,7 @@ setup(
         'console_scripts': [
             'scene_spawner = pick_task.scene_spawner:main',
             'main_task_node = pick_task.main_task_node:main',
-            
+            'gazebo_tf_bridge=pick_task.gazebo_tf_bridge:main'
 
         ],
     },

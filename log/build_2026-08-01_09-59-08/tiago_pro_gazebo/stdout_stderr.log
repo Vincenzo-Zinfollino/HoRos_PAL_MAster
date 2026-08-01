@@ -1,0 +1,8 @@
+-- Install configuration: ""
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_gazebo/lib/tiago_pro_gazebo/tuck_arm.py
+[31mCMake Error at cmake_install.cmake:50 (file):
+  file INSTALL cannot find
+  "/home/user/exchange/workspace/src/tiago_pro_simulation/tiago_pro_gazebo/scripts/gazebo_tf_bridge.py":
+  No such file or directory.
+
+[0m

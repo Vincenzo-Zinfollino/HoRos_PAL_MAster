@@ -24,7 +24,7 @@ find_package(tf2 REQUIRED)
 # --- MACRO TASK 1: PICK AND NAVIGATE ---
 add_executable(pick_macro_task_node src/pick_macro_task_node.cpp)
 ament_target_dependencies(pick_macro_task_node
-  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2
+  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_ros tf2_geometry_msgs
 )
 
 # --- MACRO TASK 2: PLACE ON SHELF ---
@@ -39,6 +39,8 @@ install(TARGETS
   place_macro_task_node
   DESTINATION lib/${PROJECT_NAME}
 )
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

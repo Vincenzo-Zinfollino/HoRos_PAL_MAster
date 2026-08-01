@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[ 50%] Built target place_macro_task_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o[0m
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::moveToSafeHome()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:121:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_scene_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kplanning_scene_msg[m[K’?
+  121 |     [01;31m[Kplanning_scene_publisher_[m[K->publish(planning_scene_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kplanning_scene_msg[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

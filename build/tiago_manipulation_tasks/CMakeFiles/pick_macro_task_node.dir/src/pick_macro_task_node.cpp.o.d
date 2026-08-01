@@ -1288,6 +1288,22 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/planning_scene.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__builder.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__type_support.hpp \
+ /opt/ros/humble/include/moveit/planning_scene_interface/planning_scene_interface.h \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__builder.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__type_support.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/collision_object.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__builder.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/attached_collision_object.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__builder.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__type_support.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/allowed_collision_matrix.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__builder.hpp \
+ /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__type_support.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
@@ -1300,4 +1316,12 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp

@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[ 50%] Built target place_macro_task_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o[0m
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:208:17:[m[K [01;31m[Kerror: [m[K‘[01m[KexecuteCartesianPath[m[K’ was not declared in this scope
+  208 |       success = [01;31m[KexecuteCartesianPath[m[K(waypoints);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:232:17:[m[K [01;31m[Kerror: [m[K‘[01m[KexecuteCartesianPath[m[K’ was not declared in this scope
+  232 |       success = [01;31m[KexecuteCartesianPath[m[K(waypoints);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
