@@ -32,7 +32,8 @@ class GazeboToMoveItSpawner(Node):
     self.robot_reset_done = False
 
     # COORDINATE INIZIALI DESIDERATE PER IL ROBOT IN GAZEBO (x, y, z, yaw in radianti)
-    self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
+    #self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
+    self.target_robot_pose = {'x': 5.25, 'y': 3.88, 'z': 0.08, 'yaw': 0.0}
     self.robot_model_name = 'tiago-pro'
 
     # Client MoveIt per pulire la Planning Scene

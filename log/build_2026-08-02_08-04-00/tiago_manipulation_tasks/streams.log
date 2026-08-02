@@ -1,0 +1,135 @@
+[0.183s] Invoking command in '/home/user/exchange/workspace/build/tiago_manipulation_tasks': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/opt/ros/humble CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_manipulation_tasks -- -j12 -l12
+[0.240s] [ 25%] [32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o[0m
+[0.242s] [ 75%] Built target place_macro_task_node
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:35:103:[m[K [01;31m[Kerror: [m[K‘[01m[Kcite[m[K’ was not declared in this scope
+[3.593s]    35 | d::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_left");[[01;31m[Kcite[m[K: 5]
+[3.593s]       |                                                                                    [01;31m[K^~~~[m[K
+[3.593s] 
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:35:107:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.593s]    35 | d::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_left");[cite[01;31m[K:[m[K 5]
+[3.593s]       |                                                                                        [01;31m[K^[m[K
+[3.593s] 
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:35:107:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.593s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Ktorso_group_[m[K’
+[3.593s]    36 |     [01;31m[Ktorso_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "torso");[cite: 5]
+[3.593s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktorso_group_[m[K’
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.594s]    36 |  std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "torso");[cite[01;31m[K:[m[K 5]
+[3.594s]       |                                                                                        [01;31m[K^[m[K
+[3.594s] 
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:106:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:37:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kgripper_group_[m[K’
+[3.594s]    37 |     [01;31m[Kgripper_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "gripper_left");
+[3.594s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[3.594s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:37:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kgripper_group_[m[K’
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:63:137:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.601s]    63 | TASK 1: PICK] Pronto su /task/pick_macro_request (Modalità: arm_left 7-DOF) ===");[cite[01;31m[K:[m[K 5]
+[3.601s]       |                                                                                        [01;31m[K^[m[K
+[3.601s] 
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:63:137:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:64:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K}[m[K’ token
+[3.601s]    64 |   [01;31m[K}[m[K
+[3.601s]       |   [01;31m[K^[m[K
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[3.601s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:64:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::prepareSafePosture()[m[K’:
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:103:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kcite[m[K’ was not declared in this scope
+[3.609s]   103 |  RCLCPP_INFO(node_->get_logger(), "Posizionamento torso_lift_joint a 0.175 m...");[[01;31m[Kcite[m[K: 7]
+[3.609s]       |                                                                                    [01;31m[K^~~~[m[K
+[3.609s] 
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:103:91:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.609s]   103 |  RCLCPP_INFO(node_->get_logger(), "Posizionamento torso_lift_joint a 0.175 m...");[cite[01;31m[K:[m[K 7]
+[3.609s]       |                                                                                        [01;31m[K^[m[K
+[3.609s] 
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:103:91:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.609s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:104:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Ktorso_group_[m[K’
+[3.610s]   104 |     [01;31m[Ktorso_group_[m[K->setStartStateToCurrentState();
+[3.610s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::prepareSafePosture()[m[K’:
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:104:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktorso_group_[m[K’
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:105:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.610s]   105 |     torso_group_->setJointValueTarget("torso_lift_joint", 0.175);[cite[01;31m[K:[m[K 7]
+[3.610s]       |                                                                       [01;31m[K^[m[K
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:105:71:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:106:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kif[m[K’
+[3.610s]   106 |     [01;31m[Kif[m[K (torso_group_->move() != moveit::core::MoveItErrorCode::SUCCESS) {
+[3.610s]       |     [01;31m[K^~[m[K
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::prepareSafePosture()[m[K’:
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:106:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:113:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.610s]   113 | de_->get_logger(), "Posizionamento arm_left in configurazione sicura (7 DOF)...");[cite[01;31m[K:[m[K 5]
+[3.610s]       |                                                                                        [01;31m[K^[m[K
+[3.610s] 
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:113:106:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:114:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Karm_group_[m[K’
+[3.610s]   114 |     [01;31m[Karm_group_[m[K->setStartStateToCurrentState();
+[3.610s]       |     [01;31m[K^~~~~~~~~~[m[K
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::prepareSafePosture()[m[K’:
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:114:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Karm_group_[m[K’
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:129:105:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.610s]   129 | FO(node_->get_logger(), "Braccio sinistro spostato con successo in posa sicura!");[cite[01;31m[K:[m[K 5]
+[3.610s]       |                                                                                        [01;31m[K^[m[K
+[3.610s] 
+[3.610s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:129:105:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.611s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.611s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:130:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K}[m[K’ token
+[3.611s]   130 |       [01;31m[K}[m[K else {
+[3.611s]       |       [01;31m[K^[m[K
+[3.611s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::prepareSafePosture()[m[K’:
+[3.611s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:130:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[3.634s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:291:101:[m[K [01;31m[Kerror: [m[K‘[01m[Kcite[m[K’ was not declared in this scope
+[3.635s]   291 | (node_->get_logger(), "[4/8] Movimento verso il Pre-Grasp (arm_left - 7 DOF)...");[[01;31m[Kcite[m[K: 5]
+[3.635s]       |                                                                                    [01;31m[K^~~~[m[K
+[3.635s] 
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:291:105:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.635s]   291 | (node_->get_logger(), "[4/8] Movimento verso il Pre-Grasp (arm_left - 7 DOF)...");[cite[01;31m[K:[m[K 5]
+[3.635s]       |                                                                                        [01;31m[K^[m[K
+[3.635s] 
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:291:105:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:293:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kgeometry_msgs[m[K’
+[3.635s]   293 |       [01;31m[Kgeometry_msgs[m[K::msg::PoseStamped current_eef_pose = arm_group_->getCurrentPose("arm_left_tool_link");
+[3.635s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[3.635s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:293:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kgeometry_msgs[m[K’
+[3.646s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.647s]                  from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[3.647s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:296:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_eef_pose[m[K’ was not declared in this scope
+[3.647s]   296 |                   [01;31m[Kcurrent_eef_pose[m[K.header.frame_id.c_str(),
+[3.647s]       |                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:340:108:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K:[m[K’ token
+[3.648s]   340 | O(node_->get_logger(), "Pianificazione Pre-Grasp con arm_left (7 DOF) RIUSCITA!");[cite[01;31m[K:[m[K 5]
+[3.648s]       |                                                                                        [01;31m[K^[m[K
+[3.648s] 
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:340:108:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K:[m[K’ token
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In lambda function:
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:341:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Ksuccess[m[K’
+[3.648s]   341 |           [01;31m[Ksuccess[m[K = (arm_group_->execute(pre_grasp_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+[3.648s]       |           [01;31m[K^~~~~~~[m[K
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[3.648s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:341:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ksuccess[m[K’
+[7.402s] gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+[7.402s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+[7.402s] gmake: *** [Makefile:146: all] Error 2
+[7.404s] Invoked command in '/home/user/exchange/workspace/build/tiago_manipulation_tasks' returned '2': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/opt/ros/humble CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/tiago_manipulation_tasks:/home/user/exchange/workspace/install/tiago_pro_navigation:/home/user/exchange/workspace/install/pal_pro_gripper_simulation:/home/user/exchange/workspace/install/pal_pro_gripper_bringup:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble PYTHONPATH=/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages:/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_manipulation_tasks -- -j12 -l12
