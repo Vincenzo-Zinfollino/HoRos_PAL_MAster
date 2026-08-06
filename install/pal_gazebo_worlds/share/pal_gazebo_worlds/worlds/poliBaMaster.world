@@ -456,5 +456,7 @@
       <update_rate>10.0</update_rate>
     </plugin>
 
+    <plugin name="gazebo_link_attacher" filename="libgazebo_link_attacher.so"/>
+
   </world>
 </sdf>

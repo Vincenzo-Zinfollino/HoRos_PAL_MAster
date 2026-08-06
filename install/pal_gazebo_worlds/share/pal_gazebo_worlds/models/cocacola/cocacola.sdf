@@ -2,7 +2,8 @@
   <model name="cocacola">
   <allow_auto_disable>false</allow_auto_disable>
     <static>0</static>
-    <link name="link">
+    <link name="link_cocacola">
+      
      <inertial>
         <mass>0.1</mass>
         <inertia>
@@ -25,16 +26,16 @@
         <surface>
           <friction>
             <ode>
-              <mu>2</mu>       <!-- FONDAMENTALE: Frizione statica -->
-              <mu2>2</mu2>     <!-- FONDAMENTALE: Frizione dinamica -->
+              <mu>100.0</mu>       <!-- FONDAMENTALE: Frizione statica -->
+              <mu2>100.0</mu2>     <!-- FONDAMENTALE: Frizione dinamica -->
             </ode>
           </friction>
           <contact>
             <ode>
-              <kp>1e+07</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth> <!-- Permette alle dita di compenetrare la lattina di 1 mm per generare presa -->
+              <kp>100000.0</kp>
+              <kd>100.0</kd>
+              <max_vel>0.00</max_vel>
+              <min_depth>0.003</min_depth> <!-- Permette alle dita di compenetrare la lattina di 1 mm per generare presa -->
             </ode>
           </contact>
         </surface>

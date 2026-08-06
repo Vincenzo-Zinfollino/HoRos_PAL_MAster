@@ -12,6 +12,7 @@
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
+#include <std_srvs/srv/empty.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <thread>
 #include <chrono>
@@ -60,6 +61,10 @@ public:
     gripper_pub_ = node_->create_publisher<trajectory_msgs::msg::JointTrajectory>(
     "/gripper_left_controller/joint_trajectory", 10);
 
+
+    //6 servizio per il grasping
+    grasp_client_ = node_->create_client<std_srvs::srv::Empty>("/gripper_left_grasper_srv/grasp");
+
     // Configurazione parametri di sicurezza e pianificazione MoveIt
     arm_group_->setMaxVelocityScalingFactor(0.4);
     arm_group_->setMaxAccelerationScalingFactor(0.4);
@@ -94,46 +99,6 @@ private:
     // =========================================================================
     RCLCPP_INFO(node_->get_logger(), "[PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...");
     /*
-    // Impostiamo la posa predefinita dal file SRDF
-    gripper_group_->setNamedTarget("close");
-    
-    // Tolleranza alta globale per permettere lo stallo fisico sulla lattina
-    gripper_group_->setGoalTolerance(0.1); 
-
-    // Eseguiamo il movimento
-    bool move_success = (gripper_group_->move() == moveit::core::MoveItErrorCode::SUCCESS);
-
-    if (!move_success) {
-        RCLCPP_WARN(node_->get_logger(), 
-                    "[PINZA] MoveIt ha restituito FAILED durante la chiusura (Stallo atteso sulla lattina). "
-                    "Presa fisica completata!");
-    } else {
-        RCLCPP_INFO(node_->get_logger(), "[PINZA] Chiusura completata a vuoto (nessun ostacolo incontrato).");
-    }
-    */
-    /*
-    double target_apertura = 0.02; 
-
-    // 2. Mappa il valore al nome esatto del giunto del tuo controller
-    std::map<std::string, double> gripper_target;
-    //gripper_target["gripper_finger_joint"] = target_apertura;
-    gripper_target["gripper_left_finger_joint"] = target_apertura; 
-
-    // 3. Invia il target al gruppo MoveIt
-    gripper_group_->setJointValueTarget(gripper_target);
-    
-
-    // 4. Pianifica ed esegui il movimento
-    moveit::core::MoveItErrorCode success = gripper_group_->move();
-    rclcpp::sleep_for(std::chrono::seconds(1));
-    // 5. Gestisci il feedback
-    if (success == moveit::core::MoveItErrorCode::SUCCESS) {
-        RCLCPP_INFO(node_->get_logger(), "Chiusura completata: Lattina afferrata saldamente.");
-    } else {
-        RCLCPP_ERROR(node_->get_logger(), "Errore: Il controller del gripper è andato in timeout o ha fallito.");
-    }
-
-   */
     trajectory_msgs::msg::JointTrajectory trajectory_msg;
 
     // 2. Imposta il nome del giunto (ATTENZIONE: qui uso "left")
@@ -154,6 +119,43 @@ private:
     // 5. Pubblica il messaggio
     RCLCPP_INFO(node_->get_logger(), "Invio comando di chiusura al gripper sinistro...");
     gripper_pub_->publish(trajectory_msg);
+    */
+
+    if (!grasp_client_->wait_for_service(std::chrono::seconds(1))) {
+    RCLCPP_ERROR(node_->get_logger(), "Servizio di grasp non disponibile! Impossibile chiudere la pinza.");
+     // o gestisci il fallimento del task
+  
+    }else {
+        RCLCPP_INFO(node_->get_logger(), " ERRORE Servizio di grasp disponibile. ");
+    }
+
+auto grasp_request = std::make_shared<std_srvs::srv::Empty::Request>();
+
+RCLCPP_INFO(node_->get_logger(), "Inviando richiesta di chiusura al controller del gripper...");
+
+// Chiamata asincrona al servizio Python
+auto future_result = grasp_client_->async_send_request(
+    grasp_request,
+    [this](rclcpp::Client<std_srvs::srv::Empty>::SharedFuture future) {
+        // Questo blocco viene eseguito quando il servizio Python ha finito 
+        // (ovvero quando l'errore di posizione rileva il contatto con la lattina)
+        try {
+            auto response = future.get();
+            RCLCPP_INFO(node_->get_logger(), "Presa fisica completata con successo tramite servizio!");
+            
+            // ==========================================
+            // 2. INIZIO PARTE ATTACH (NON MODIFICATA)
+            // ==========================================
+            // (INSERISCI QUI O RICHIAMA QUI LA TUA LOGICA DI ATTACH MOVEIT/GAZEBO)
+            // Es: applyAttachedCollisionObject(...)
+            // ==========================================
+            
+        } catch (const std::exception &e) {
+            RCLCPP_ERROR(node_->get_logger(), "Chiamata al servizio di grasp fallita: %s", e.what());
+        }
+    }
+);
+
 
     // 6. Attendi un istante per dare tempo alla fisica di simulazione di reagire
     rclcpp::sleep_for(std::chrono::seconds(1));
@@ -469,7 +471,7 @@ private:
         pre_grasp_pose.position.x = can_x - 0.05; 
         pre_grasp_pose.position.y = can_y+0.01; 
         //pre_grasp_pose.position.y = can_y+0.01; 
-        pre_grasp_pose.position.z = can_z + 0.10; 
+        pre_grasp_pose.position.z = can_z + 0.11; 
         
         tf2::Quaternion q_target;
         q_target.setRPY(M_PI, 0.0, 0.0); 
@@ -533,7 +535,7 @@ private:
 
       std::vector<geometry_msgs::msg::Pose> waypoints;
       geometry_msgs::msg::Pose target_pose = arm_group_->getCurrentPose("gripper_left_grasping_link").pose;
-      target_pose.position.x += 0.07; 
+      target_pose.position.x += 0.06; 
       waypoints.push_back(target_pose);
 
       // FONDAMENTALE: Passiamo "false" per disabilitare l'evitamento collisioni in questa fase
@@ -609,6 +611,7 @@ private:
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr gripper_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr request_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+  rclcpp::Client<std_srvs::srv::Empty>::SharedPtr grasp_client_;
 
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;

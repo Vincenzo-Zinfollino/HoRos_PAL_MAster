@@ -1405,8 +1405,24 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp
+  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/empty.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp
 
+
+/opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
 
@@ -1719,6 +1735,8 @@ CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o: /home/user/e
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/multi_dof_joint_state__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__struct.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/empty.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/robot_state.hpp:
 

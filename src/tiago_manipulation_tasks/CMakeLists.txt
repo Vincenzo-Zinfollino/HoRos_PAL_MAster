@@ -20,11 +20,12 @@ find_package(moveit_core REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(std_srvs REQUIRED) 
 
 # --- MACRO TASK 1: PICK AND NAVIGATE ---
 add_executable(pick_macro_task_node src/pick_macro_task_node.cpp)
 ament_target_dependencies(pick_macro_task_node
-  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_ros tf2_geometry_msgs  trajectory_msgs
+  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_ros tf2_geometry_msgs   std_srvs trajectory_msgs
 )
 
 # --- MACRO TASK 2: PLACE ON SHELF ---
