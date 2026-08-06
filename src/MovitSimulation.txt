@@ -39,7 +39,7 @@ ricordati di fare le operazioni nerlla cartella di workspace
 
 cd home/user/exchange/workspace
 
-source install/setup
+source install/setup.bash
 
 colcon build 
 

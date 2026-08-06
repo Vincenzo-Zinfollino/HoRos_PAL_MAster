@@ -5,6 +5,7 @@
 #include <moveit_msgs/msg/planning_scene.hpp>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <moveit_msgs/msg/allowed_collision_matrix.hpp>
+#include <trajectory_msgs/msg/joint_trajectory.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <tf2/LinearMath/Quaternion.h>
@@ -53,10 +54,16 @@ public:
       std::bind(&PickMacroTaskNode::odomCallback, this, std::placeholders::_1)
     );
 
+    // 5. Publisher topic gripper left_joint_trajectory_controller/command (per debug avanzato)
+    
+
+    gripper_pub_ = node_->create_publisher<trajectory_msgs::msg::JointTrajectory>(
+    "/gripper_left_controller/joint_trajectory", 10);
+
     // Configurazione parametri di sicurezza e pianificazione MoveIt
-    arm_group_->setMaxVelocityScalingFactor(0.3);
-    arm_group_->setMaxAccelerationScalingFactor(0.3);
-    arm_group_->setPlanningTime(5.0);                    // Concede fino a 10s per convergere
+    arm_group_->setMaxVelocityScalingFactor(0.4);
+    arm_group_->setMaxAccelerationScalingFactor(0.4);
+    arm_group_->setPlanningTime(5.0);                    // Concede fino a 5s per convergere
     arm_group_->setNumPlanningAttempts(15);               // Tenta più soluzioni in ambienti con ostacoli
     arm_group_->setPlannerId("RRTConnectkConfigDefault"); // Algoritmo robusto per evitare collisioni
 
@@ -79,13 +86,84 @@ private:
     return (gripper_group_->move() == moveit::core::MoveItErrorCode::SUCCESS);
   }
 
-  bool closeGrasp(double target_opening_per_finger = 0.020, const std::string& object_id = "s3_cocacola") {
+  bool closeGrasp(const std::string& object_id = "s3_cocacola") {
     RCLCPP_INFO(node_->get_logger(), "[PINZA] Avvio procedura di presa per '%s'...", object_id.c_str());
 
     // =========================================================================
-    // 1. ESECUZIONE LOGICA (Autorizziamo le collisioni PRIMA di muovere le dita)
+    // 1. ESECUZIONE FISICA (Chiusura dita)
     // =========================================================================
-    RCLCPP_INFO(node_->get_logger(), "[PINZA] 1/2: Aggiornamento Allowed Collision Matrix (Attach)...");
+    RCLCPP_INFO(node_->get_logger(), "[PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...");
+    /*
+    // Impostiamo la posa predefinita dal file SRDF
+    gripper_group_->setNamedTarget("close");
+    
+    // Tolleranza alta globale per permettere lo stallo fisico sulla lattina
+    gripper_group_->setGoalTolerance(0.1); 
+
+    // Eseguiamo il movimento
+    bool move_success = (gripper_group_->move() == moveit::core::MoveItErrorCode::SUCCESS);
+
+    if (!move_success) {
+        RCLCPP_WARN(node_->get_logger(), 
+                    "[PINZA] MoveIt ha restituito FAILED durante la chiusura (Stallo atteso sulla lattina). "
+                    "Presa fisica completata!");
+    } else {
+        RCLCPP_INFO(node_->get_logger(), "[PINZA] Chiusura completata a vuoto (nessun ostacolo incontrato).");
+    }
+    */
+    /*
+    double target_apertura = 0.02; 
+
+    // 2. Mappa il valore al nome esatto del giunto del tuo controller
+    std::map<std::string, double> gripper_target;
+    //gripper_target["gripper_finger_joint"] = target_apertura;
+    gripper_target["gripper_left_finger_joint"] = target_apertura; 
+
+    // 3. Invia il target al gruppo MoveIt
+    gripper_group_->setJointValueTarget(gripper_target);
+    
+
+    // 4. Pianifica ed esegui il movimento
+    moveit::core::MoveItErrorCode success = gripper_group_->move();
+    rclcpp::sleep_for(std::chrono::seconds(1));
+    // 5. Gestisci il feedback
+    if (success == moveit::core::MoveItErrorCode::SUCCESS) {
+        RCLCPP_INFO(node_->get_logger(), "Chiusura completata: Lattina afferrata saldamente.");
+    } else {
+        RCLCPP_ERROR(node_->get_logger(), "Errore: Il controller del gripper è andato in timeout o ha fallito.");
+    }
+
+   */
+    trajectory_msgs::msg::JointTrajectory trajectory_msg;
+
+    // 2. Imposta il nome del giunto (ATTENZIONE: qui uso "left")
+    trajectory_msg.joint_names.push_back("gripper_left_finger_joint");
+
+    // 3. Crea il punto della traiettoria
+    trajectory_msgs::msg::JointTrajectoryPoint point;
+    //point.positions.push_back(0.02); // Target: 2 cm
+    point.positions = {0.04};
+    
+    // Imposta il tempo (1 secondo, 0.1 nanosecondi come nel tuo test)
+    point.time_from_start.sec = 1;
+    point.time_from_start.nanosec = 100000000; // 0.1 secondi in nanosecondi
+
+    // 4. Aggiungi il punto al messaggio
+    trajectory_msg.points.push_back(point);
+
+    // 5. Pubblica il messaggio
+    RCLCPP_INFO(node_->get_logger(), "Invio comando di chiusura al gripper sinistro...");
+    gripper_pub_->publish(trajectory_msg);
+
+    // 6. Attendi un istante per dare tempo alla fisica di simulazione di reagire
+    rclcpp::sleep_for(std::chrono::seconds(1));
+    // Respiro per l'assestamento della fisica in Gazebo
+    rclcpp::sleep_for(std::chrono::milliseconds(500));
+
+    // =========================================================================
+    // 2. ESECUZIONE LOGICA (Attach)
+    // =========================================================================
+    RCLCPP_INFO(node_->get_logger(), "[PINZA] 2/3: Incollo logicamente '%s' al manipolatore (Attach)...", object_id.c_str());
     
     moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
     moveit_msgs::msg::AttachedCollisionObject attached_object;
@@ -94,50 +172,46 @@ private:
     attached_object.object.id = object_id; 
     attached_object.object.operation = attached_object.object.ADD;
 
-    // FONDAMENTALE: Abbiamo aggiunto i "fingertip" identificati dai log di errore!
-    attached_object.touch_links = std::vector<std::string>{
-        "gripper_left_grasping_link",
-        "gripper_left_left_finger_link", 
-        "gripper_left_right_finger_link",
-        "gripper_left_fingertip_left_link",   // <-- AGGIUNTO
-        "gripper_left_fingertip_right_link"   // <-- AGGIUNTO
-    };
+    // Raccogliamo TUTTI i link della pinza per ignorare le auto-collisioni
+    std::vector<std::string> all_touch_links = gripper_group_->getLinkNames();
+    all_touch_links.push_back("gripper_left_fingertip_left_link");
+    all_touch_links.push_back("gripper_left_fingertip_right_link");
+    all_touch_links.push_back("arm_left_7_link");
+    all_touch_links.push_back("arm_left_tool_link");
+    
+    attached_object.touch_links = all_touch_links;
 
+    // Inviamo l'aggiornamento alla scena
     planning_scene_interface.applyAttachedCollisionObject(attached_object);
 
-    std::vector<std::string> gripper_links = gripper_group_->getLinkNames();
-    
-    // Per sicurezza assoluta, aggiungiamo anche gli ultimi link del braccio
-    gripper_links.push_back("arm_left_7_link");
-    gripper_links.push_back("arm_left_tool_link");
-
-    // Assegnamo l'intera lista ai link autorizzati a toccare la lattina
-    attached_object.touch_links = gripper_links;
-
-    // Diamo tempo a MoveIt di propagare la nuova matrice delle collisioni (ACM)
-    rclcpp::sleep_for(std::chrono::milliseconds(500));
-
+    // Tempo cruciale per propagare il topic /planning_scene (DDS Discovery)
+    rclcpp::sleep_for(std::chrono::milliseconds(800));
 
     // =========================================================================
-    // 2. ESECUZIONE FISICA (Chiusura dita)
+    // 3. PREPARAZIONE SOLLEVAMENTO (Rimozione ostacoli)
     // =========================================================================
-    RCLCPP_INFO(node_->get_logger(), "[PINZA] 2/2: Chiusura dinamica delle dita (target: %.3f m)...", target_opening_per_finger);
+    RCLCPP_INFO(node_->get_logger(), "[PINZA] 3/3: Rimuovo 's3_table' per evitare falsi positivi di collisione al sollevamento...");
     
-    std::vector<double> current_joints = gripper_group_->getCurrentJointValues();
-    std::vector<double> grasp_positions(current_joints.size(), target_opening_per_finger);
-    gripper_group_->setJointValueTarget(grasp_positions);
-
-    // Ora MoveIt ignorerà la compenetrazione tra i fingertip e la lattina
-    bool move_success = (gripper_group_->move() == moveit::core::MoveItErrorCode::SUCCESS);
-
-    if (!move_success) {
-      RCLCPP_WARN(node_->get_logger(), 
-                  "[PINZA] MoveIt ha restituito FAILED durante la chiusura (Stallo atteso in Gazebo). "
-                  "Grasp completato con successo, procedo allo Step 7!");
-    }
+    //moveit_msgs::msg::CollisionObject table_object;
+    //table_object.id = "s3_table"; 
+    //table_object.operation = table_object.REMOVE;
     
+    //planning_scene_interface.applyCollisionObject(table_object);
+    
+    // Altro respiro per permettere a MoveIt di registrare la scomparsa del tavolo
+    rclcpp::sleep_for(std::chrono::milliseconds(800));
+
+    // CRUCIALE: Obblighiamo il MoveGroup ad aggiornare la sua visione del mondo attuale
+    gripper_group_->setStartStateToCurrentState();
+    
+    // NOTA: Se hai accesso al puntatore del braccio in questo scope, 
+    // de-commenta la riga seguente. Altrimenti ricordati di farlo nel metodo del sollevamento!
+    // arm_left_group_->setStartStateToCurrentState();
+
+    RCLCPP_INFO(node_->get_logger(), "[PINZA] Procedura terminata. Pronto per il sollevamento!");
     return true; 
-  }
+}
+
 
   // FASE DI MESSA IN SICUREZZA: Alza il torso a metà corsa (0.175 m) e porta il braccio sinistro (7-DOF) in Home
   bool prepareSafePosture() {
@@ -151,9 +225,9 @@ private:
     rclcpp::sleep_for(std::chrono::milliseconds(100));
 
     // 2. SOLLEVAMENTO TORSO A METÀ CORSA (0.175 m su range [0.0, 0.35])
-    RCLCPP_INFO(node_->get_logger(), "Posizionamento torso_lift_joint a 0.175 m...");
+    RCLCPP_INFO(node_->get_logger(), "Posizionamento torso_lift_joint a 0.185 m...");
     torso_group_->setStartStateToCurrentState();
-    torso_group_->setJointValueTarget("torso_lift_joint", 0.175);
+    torso_group_->setJointValueTarget("torso_lift_joint", 0.185);
     if (torso_group_->move() != moveit::core::MoveItErrorCode::SUCCESS) {
       RCLCPP_ERROR(node_->get_logger(), "Fallito posizionamento del torso a metà corsa!");
       return false;
@@ -167,7 +241,8 @@ private:
 
     // ESATTAMENTE 7 GIUNTI PER Il GRUPPO arm_left (arm_left_1_joint ... arm_left_7_joint)
     std::vector<double> safe_ready_joints = {
-      0.36, -1.83, -0.47, -2.35, 0.00, -1.0, 0.00
+      //0.36, -1.83, -0.47, -2.35, 0.00, -1.0, 0.00
+      1.5359,-2.2166, -0.4363, -2.3038 ,-1.7104, -0.2967, 0.00
     };
     arm_group_->setJointValueTarget(safe_ready_joints);
 
@@ -391,9 +466,10 @@ private:
 
         // Calcolo pose target
         geometry_msgs::msg::Pose pre_grasp_pose;
-        pre_grasp_pose.position.x = can_x - 0.18; 
-        pre_grasp_pose.position.y = can_y; 
-        pre_grasp_pose.position.z = can_z + 0.12; 
+        pre_grasp_pose.position.x = can_x - 0.05; 
+        pre_grasp_pose.position.y = can_y+0.01; 
+        //pre_grasp_pose.position.y = can_y+0.01; 
+        pre_grasp_pose.position.z = can_z + 0.10; 
         
         tf2::Quaternion q_target;
         q_target.setRPY(M_PI, 0.0, 0.0); 
@@ -457,7 +533,7 @@ private:
 
       std::vector<geometry_msgs::msg::Pose> waypoints;
       geometry_msgs::msg::Pose target_pose = arm_group_->getCurrentPose("gripper_left_grasping_link").pose;
-      target_pose.position.x += 0.18; 
+      target_pose.position.x += 0.07; 
       waypoints.push_back(target_pose);
 
       // FONDAMENTALE: Passiamo "false" per disabilitare l'evitamento collisioni in questa fase
@@ -471,7 +547,7 @@ private:
     // STEP 6: CHIUSURA PINZA (PRESA)
     if (success) {
       RCLCPP_INFO(node_->get_logger(), "[6/8] Chiusura pinza per afferrare la lattina...");
-      success = closeGrasp(0.030, "s3_cocacola");
+      success = closeGrasp( "s3_cocacola");
       if (!success) {
         RCLCPP_ERROR(node_->get_logger(), "Errore durante la chiusura della pinza sulla lattina!");
         finishMacroTask(false);
@@ -479,18 +555,27 @@ private:
       }
     }
 
-    // STEP 7: SOLLEVAMENTO VERTICALE
     if (success) {
+    RCLCPP_INFO(node_->get_logger(), "Fisica in assestamento...");
+    rclcpp::sleep_for(std::chrono::milliseconds(500)); 
+  
+    }
+
+    // STEP 7: SOLLEVAMENTO VERTICALE
+   if (success) {
       RCLCPP_INFO(node_->get_logger(), "[7/8] Sollevamento lattina (+15 cm in Z)...");
+      
+      // 1. FORZIAMO MOVEIT A LEGGERE LA POSIZIONE REALE POST-IMPATTO
+      arm_group_->setStartStateToCurrentState();
       
       std::vector<geometry_msgs::msg::Pose> waypoints;
       geometry_msgs::msg::Pose target_pose = arm_group_->getCurrentPose("gripper_left_grasping_link").pose;
       
       // Alziamo di 15 cm
-      target_pose.position.z += 0.15; 
+      target_pose.position.z += 0.11; 
       waypoints.push_back(target_pose);
 
-      // FONDAMENTALE: Passiamo 'false' per ignorare la finta collisione tra lattina e tavolo!
+      // Ricorda di passare 'false' per ignorare la collisione col tavolo
       success = executeCartesianPath(waypoints, false); 
       
       if (!success) {
@@ -521,6 +606,7 @@ private:
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> gripper_group_;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr completed_pub_;
+  rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr gripper_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr request_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
 

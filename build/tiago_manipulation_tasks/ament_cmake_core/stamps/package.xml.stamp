@@ -14,6 +14,8 @@
   <depend>tf2_ros</depend>
   <depend>tf2_geometry_msgs</depend>
 
+  <depend>trajectory_msgs</depend>
+
   <!-- Dipendenze Messaggi -->
   <depend>geometry_msgs</depend>
   <depend>shape_msgs</depend>

@@ -1,0 +1,54 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:60:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kcreate_publisher[m[K’
+   60 |     gripper_pub_ = this->[01;31m[Kcreate_publisher[m[K<trajectory_msgs::msg::JointTrajectory>(
+      |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:60:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   60 |     gripper_pub_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory[01;31m[K>[m[K(
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:61:5:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   61 |     [01;35m[K"/gripper_left_controller/joint_trajectory"[m[K, 10);
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::closeGrasp(const string&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+  154 |     RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Invio comando di chiusura al gripper sinistro...");
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:154:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  154 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Invio comando di chiusura al gripper sinistro...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+  154 |     RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Invio comando di chiusura al gripper sinistro...");
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PickMacroTaskNode[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+  154 |     RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Invio comando di chiusura al gripper sinistro...");
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:155:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgripper_group_[m[K’?
+  155 |     [01;31m[Kgripper_pub_[m[K->publish(trajectory_msg);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Kgripper_group_[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

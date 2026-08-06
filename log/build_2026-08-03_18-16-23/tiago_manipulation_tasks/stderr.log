@@ -1,0 +1,11 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:496:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPickMacroTaskNode::closeGrasp(double, const char [12])[m[K’
+  496 |       success = [01;31m[KcloseGrasp(-0.020, "s3_cocacola")[m[K;
+      |                 [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:82:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool PickMacroTaskNode::closeGrasp(const string&)[m[K’
+   82 |   bool [01;36m[KcloseGrasp[m[K(const std::string& object_id = "s3_cocacola") {
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:82:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

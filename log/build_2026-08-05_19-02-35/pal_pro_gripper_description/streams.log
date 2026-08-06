@@ -1,0 +1,65 @@
+[0.148s] Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_description -- -j12 -l12
+[0.178s] Built target ament_cmake_python_copy_pal_pro_gripper_description
+[0.305s] running egg_info
+[0.305s] writing pal_pro_gripper_description.egg-info/PKG-INFO
+[0.305s] writing dependency_links to pal_pro_gripper_description.egg-info/dependency_links.txt
+[0.305s] writing top-level names to pal_pro_gripper_description.egg-info/top_level.txt
+[0.307s] reading manifest file 'pal_pro_gripper_description.egg-info/SOURCES.txt'
+[0.307s] writing manifest file 'pal_pro_gripper_description.egg-info/SOURCES.txt'
+[0.323s] Built target ament_cmake_python_build_pal_pro_gripper_description_egg
+[0.329s] Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_description -- -j12 -l12
+[0.330s] Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_description
+[0.334s] -- Install configuration: ""
+[0.334s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/pythonpath.sh
+[0.334s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/pythonpath.dsv
+[0.334s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info
+[0.334s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/SOURCES.txt
+[0.334s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/dependency_links.txt
+[0.334s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/top_level.txt
+[0.334s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/PKG-INFO
+[0.334s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description
+[0.334s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/launch_arguments.py
+[0.335s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/__init__.py
+[0.355s] Listing '/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description'...
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config/pal_pro_gripper_configuration.yaml
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config/show.rviz
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/robots
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/robots/pal_pro_gripper.urdf.xacro
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch/robot_state_publisher.launch.py
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch/show.launch.py
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/mujoco
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/mujoco/mj_tags.xacro
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/fingertip.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/base_link_tc.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/screw.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/inner_finger.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/base_link_ntc.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/outer_finger.stl
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.urdf.xacro
+[0.358s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.properties.xacro
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.ros2_control.xacro
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.transmission.xacro
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control/ros2_control.urdf.xacro
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_description
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_description
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/ament_prefix_path.sh
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/ament_prefix_path.dsv
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/path.sh
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/path.dsv
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.bash
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.sh
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.zsh
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.dsv
+[0.359s] -- Installing: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.dsv
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/ament_index/resource_index/packages/pal_pro_gripper_description
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/pal_pro_gripper_descriptionConfig.cmake
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/pal_pro_gripper_descriptionConfig-version.cmake
+[0.359s] -- Up-to-date: /home/user/exchange/workspace/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.xml
+[0.360s] Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_description

@@ -1,0 +1,20 @@
+[0.152s] Invoking command in '/home/user/exchange/workspace/build/tiago_pro_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_pro_laser_sensors -- -j12 -l12
+[0.180s] Invoked command in '/home/user/exchange/workspace/build/tiago_pro_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_pro_laser_sensors -- -j12 -l12
+[0.181s] Invoking command in '/home/user/exchange/workspace/build/tiago_pro_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/tiago_pro_laser_sensors
+[0.192s] -- Install configuration: ""
+[0.192s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_pro_laser_sensors
+[0.194s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_pro_laser_sensors
+[0.194s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/ament_prefix_path.sh
+[0.194s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/ament_prefix_path.dsv
+[0.194s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/path.sh
+[0.195s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/environment/path.dsv
+[0.195s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.bash
+[0.195s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.sh
+[0.195s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.zsh
+[0.195s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/local_setup.dsv
+[0.195s] -- Installing: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/package.dsv
+[0.196s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/ament_index/resource_index/packages/tiago_pro_laser_sensors
+[0.196s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/cmake/tiago_pro_laser_sensorsConfig.cmake
+[0.196s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/cmake/tiago_pro_laser_sensorsConfig-version.cmake
+[0.196s] -- Up-to-date: /home/user/exchange/workspace/install/tiago_pro_laser_sensors/share/tiago_pro_laser_sensors/package.xml
+[0.204s] Invoked command in '/home/user/exchange/workspace/build/tiago_pro_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/exchange/workspace/install/pick_task:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/tiago_pro_laser_sensors

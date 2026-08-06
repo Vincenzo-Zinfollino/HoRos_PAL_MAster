@@ -30,6 +30,8 @@ class GazeboToMoveItSpawner(Node):
     self.first_sync_done = False
     self.scene_cleaned = False
     self.robot_reset_done = False
+    self.is_cocacola_attached = False
+
 
     # COORDINATE INIZIALI DESIDERATE PER IL ROBOT IN GAZEBO (x, y, z, yaw in radianti)
     #self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
@@ -44,6 +46,15 @@ class GazeboToMoveItSpawner(Node):
     # Client Gazebo per reimpostare la posizione del robot
     self.set_entity_client = self.create_client(
         SetEntityState, '/gazebo/set_entity_state'
+    )
+
+
+  #  monitoriamo  alla scena di MoveIt per verificare  gli Attach
+    self.scene_sub = self.create_subscription(
+        PlanningScene, 
+        '/monitored_planning_scene', 
+        self.monitored_scene_callback, 
+        10
     )
 
     # 1. Ricerca dinamica del file SDF della bookshelf (bookshelf.sdf)
@@ -178,6 +189,29 @@ class GazeboToMoveItSpawner(Node):
         '=== [4/5] Ambiente azzerato e robot riposizionato. ==='
     )
 
+  def monitored_scene_callback(self, msg: PlanningScene):
+      # MoveIt ci invia lo stato del robot. Controlliamo gli oggetti attaccati.
+      attached_objects = msg.robot_state.attached_collision_objects
+      
+      # Verifichiamo se "s3_cocacola" è nella lista
+      is_attached = False
+      for obj in attached_objects:
+          if obj.object.id == "s3_cocacola":
+              is_attached = True
+              break
+              
+      # Se lo stato è cambiato, lo stampiamo per il debug
+      if is_attached != self.is_cocacola_attached:
+          if is_attached:
+              self.get_logger().info("MoveIt ha preso la lattina! Sospendo l'aggiornamento da Gazebo.")
+          else:
+              self.get_logger().info("Lattina rilasciata. Riprendo il tracciamento da Gazebo.")
+              
+      self.is_cocacola_attached = is_attached
+
+
+
+
   def find_bookshelf_sdf(self) -> str:
     """Cerca il file bookshelf.sdf nei percorsi standard di ROS 2 / pal_gazebo_worlds."""
     try:
@@ -251,6 +285,8 @@ class GazeboToMoveItSpawner(Node):
 
       world_pose = msg.pose[idx]
 
+    
+
       # 1. TAVOLO DI LAVORO
       if model_name == 's3_table':
         if verbose:
@@ -261,27 +297,33 @@ class GazeboToMoveItSpawner(Node):
             robot_pose,
             'BOX',
             [1.0, 0.8, 0.03],
-            z_offset=0.80,
+            z_offset=0.80-0.08,
         )
         scene_msg.world.collision_objects.append(obj)
         new_active_ids.add(model_name)
 
       # 2. LATTINA
+
+
       elif model_name == 's3_cocacola':
-        if verbose:
-          self.get_logger().info(
-              f"[SYNC -> LATTINA] Elaborazione '{model_name}'"
-          )
-        obj = self.create_single_primitive_object(
-            model_name,
-            world_pose,
-            robot_pose,
-            'CYLINDER',
-            [0.15, 0.04],
-            z_offset=0.06,
-        )
-        scene_msg.world.collision_objects.append(obj)
+
         new_active_ids.add(model_name)
+        
+        if not self.is_cocacola_attached:
+          if verbose:
+            self.get_logger().info(
+                f"[SYNC -> LATTINA] Elaborazione '{model_name}'"
+            )
+          obj = self.create_single_primitive_object(
+              model_name,
+              world_pose,
+              robot_pose,
+              'CYLINDER',
+              [0.15, 0.02],
+              z_offset=0.00,
+          )
+          scene_msg.world.collision_objects.append(obj)
+          #new_active_ids.add(model_name)
 
       # 3. SCAFFALE
       elif model_name == 's3_bookshelf':

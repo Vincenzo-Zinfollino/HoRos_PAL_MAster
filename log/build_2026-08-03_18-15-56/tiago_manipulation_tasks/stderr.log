@@ -1,0 +1,720 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:161:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  161 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In constructor ‘[01m[KPickMacroTaskNode::PickMacroTaskNode(const SharedPtr&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Knode_[m[K’
+   26 |   : [01;31m[Knode_[m[K(node), is_running_(false), current_x_(0.0), current_y_(0.0), current_yaw_(0.0), odom_received_(false)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:18:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kis_running_[m[K’
+   26 |   : node_(node), [01;31m[Kis_running_[m[K(false), current_x_(0.0), current_y_(0.0), current_yaw_(0.0), odom_received_(false)
+      |                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:38:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kcurrent_x_[m[K’
+   26 |   : node_(node), is_running_(false), [01;31m[Kcurrent_x_[m[K(0.0), current_y_(0.0), current_yaw_(0.0), odom_received_(false)
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:55:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kcurrent_y_[m[K’
+   26 |   : node_(node), is_running_(false), current_x_(0.0), [01;31m[Kcurrent_y_[m[K(0.0), current_yaw_(0.0), odom_received_(false)
+      |                                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:72:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kcurrent_yaw_[m[K’
+   26 |   : node_(node), is_running_(false), current_x_(0.0), current_y_(0.0), [01;31m[Kcurrent_yaw_[m[K(0.0), odom_received_(false)
+      |                                                                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:26:91:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPickMacroTaskNode[m[K’ does not have any field named ‘[01m[Kodom_received_[m[K’
+   26 | _running_(false), current_x_(0.0), current_y_(0.0), current_yaw_(0.0), [01;31m[Kodom_received_[m[K(false)
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   31 |     [01;31m[Ktf_buffer_[m[K = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:31:52:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Knode[m[K’?
+   31 |     tf_buffer_ = std::make_shared<tf2_ros::Buffer>([01;31m[Knode_[m[K->get_clock());
+      |                                                    [01;31m[K^~~~~[m[K
+      |                                                    [32m[Knode[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+   32 |     [01;31m[Ktf_listener_[m[K = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+   35 |     [01;31m[Karm_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "arm_left");
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorso_group_[m[K’ was not declared in this scope
+   36 |     [01;31m[Ktorso_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "torso");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_group_[m[K’ was not declared in this scope
+   37 |     [01;31m[Kgripper_group_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "gripper_left");
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   41 |     [01;31m[Kcmd_vel_pub_[m[K = node_->create_publisher<geometry_msgs::msg::Twist>("/mobile_base_controller/cmd_vel_unstamped", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:41:69:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   41 |     cmd_vel_pub_ = node_->create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("/mobile_base_controller/cmd_vel_unstamped", 10);
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:41:71:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   41 |     cmd_vel_pub_ = node_->create_publisher<geometry_msgs::msg::Twist>([01;35m[K"/mobile_base_controller/cmd_vel_unstamped"[m[K, 10);
+      |                                                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompleted_pub_[m[K’ was not declared in this scope
+   44 |     [01;31m[Kcompleted_pub_[m[K = node_->create_publisher<std_msgs::msg::Bool>("/task/pick_macro_completed", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:44:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   44 |     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool[01;31m[K>[m[K("/task/pick_macro_completed", 10);
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:44:67:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   44 |     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool>([01;35m[K"/task/pick_macro_completed"[m[K, 10);
+      |                                                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_sub_[m[K’ was not declared in this scope
+   45 |     [01;31m[Krequest_sub_[m[K = node_->create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:45:66:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   45 |     request_sub_ = node_->create_subscription<std_msgs::msg::Bool[01;31m[K>[m[K(
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:46:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   46 |       [01;35m[K"/task/pick_macro_request"[m[K, 10,
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:47:37:[m[K [01;31m[Kerror: [m[K‘[01m[KonRequestReceived[m[K’ is not a member of ‘[01m[KPickMacroTaskNode[m[K’
+   47 |       std::bind(&PickMacroTaskNode::[01;31m[KonRequestReceived[m[K, this, std::placeholders::_1)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+   51 |     [01;31m[Kodom_sub_[m[K = node_->create_subscription<nav_msgs::msg::Odometry>(
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:51:67:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   51 |     odom_sub_ = node_->create_subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K(
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:52:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   52 |       [01;35m[K"/mobile_base_controller/odom"[m[K, rclcpp::SensorDataQoS(),
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:53:37:[m[K [01;31m[Kerror: [m[K‘[01m[KodomCallback[m[K’ is not a member of ‘[01m[KPickMacroTaskNode[m[K’
+   53 |       std::bind(&PickMacroTaskNode::[01;31m[KodomCallback[m[K, this, std::placeholders::_1)
+      |                                     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:63:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   63 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=== [MACRO TASK 1: PICK] Pronto su /task/pick_macro_request (Modalità: arm_left 7-DOF) ===");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::openGripper()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:68:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_group_[m[K’ was not declared in this scope
+   68 |     std::vector<double> current_joints = [01;31m[Kgripper_group_[m[K->getCurrentJointValues();
+      |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   71 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] La pinza è GIÀ APERTA (valore: %.3f m). Nessun movimento necessario.", current_joints[0]);
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:71:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] La pinza è GIÀ APERTA (valore: %.3f m). Nessun movimento necessario.", current_joints[0]);
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:75:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   75 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] Apertura in corso a quota 0.044 m...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   75 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] Apertura in corso a quota 0.044 m...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::closeGrasp(const string&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:83:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   83 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] Avvio procedura di presa per '%s'...", object_id.c_str());
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:83:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   83 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] Avvio procedura di presa per '%s'...", object_id.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:88:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   88 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:88:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   88 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_group_[m[K’ was not declared in this scope
+   91 |     [01;31m[Kgripper_group_[m[K->setNamedTarget("close");
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:100:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  100 |         RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(),
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:100:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  100 |         [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(),
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:104:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  104 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] Chiusura completata a vuoto (nessun ostacolo incontrato).");
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:104:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  104 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] Chiusura completata a vuoto (nessun ostacolo incontrato).");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:113:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  113 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] 2/3: Incollo logicamente '%s' al manipolatore (Attach)...", object_id.c_str());
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:113:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  113 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] 2/3: Incollo logicamente '%s' al manipolatore (Attach)...", object_id.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:140:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  140 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] 3/3: Rimuovo 's3_table' per evitare falsi positivi di collisione al sollevamento...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:140:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  140 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] 3/3: Rimuovo 's3_table' per evitare falsi positivi di collisione al sollevamento...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:158:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  158 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[PINZA] Procedura terminata. Pronto per il sollevamento!");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:158:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  158 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[PINZA] Procedura terminata. Pronto per il sollevamento!");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kbool prepareSafePosture()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:165:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  165 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Preparazione configurazione sicura: Torso a metà corsa + Braccio in Home...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:165:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  165 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Preparazione configurazione sicura: Torso a metà corsa + Braccio in Home...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:171:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  171 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Temporaneamente rimosso 's3_bookshelf' dalla scena di collisione.");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:171:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  171 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Temporaneamente rimosso 's3_bookshelf' dalla scena di collisione.");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:175:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  175 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Posizionamento torso_lift_joint a 0.175 m...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:175:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  175 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Posizionamento torso_lift_joint a 0.175 m...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:176:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorso_group_[m[K’ was not declared in this scope
+  176 |     [01;31m[Ktorso_group_[m[K->setStartStateToCurrentState();
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:179:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  179 |       RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Fallito posizionamento del torso a metà corsa!");
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:179:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  179 |       [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Fallito posizionamento del torso a metà corsa!");
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:182:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  182 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Torso posizionato con successo.");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:182:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  182 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Torso posizionato con successo.");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:185:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  185 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Posizionamento arm_left in configurazione sicura (7 DOF)...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:185:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  185 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Posizionamento arm_left in configurazione sicura (7 DOF)...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:186:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+  186 |     [01;31m[Karm_group_[m[K->setStartStateToCurrentState();
+      |     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:202:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  202 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Braccio sinistro spostato con successo in posa sicura!");
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:202:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  202 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Braccio sinistro spostato con successo in posa sicura!");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:204:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  204 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Esecuzione del movimento verso la posa sicura fallita!");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:204:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  204 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Esecuzione del movimento verso la posa sicura fallita!");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:207:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  207 |       RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Fallita pianificazione verso la posizione di sicurezza!");
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:207:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  207 |       [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Fallita pianificazione verso la posizione di sicurezza!");
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kvoid odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:224:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+  224 |     [01;31m[Kcurrent_x_[m[K.store(msg->pose.pose.position.x);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:225:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+  225 |     [01;31m[Kcurrent_y_[m[K.store(msg->pose.pose.position.y);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:226:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+  226 |     [01;31m[Kcurrent_yaw_[m[K.store(yaw);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:227:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_received_[m[K’ was not declared in this scope
+  227 |     [01;31m[Kodom_received_[m[K.store(true);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kvoid onRequestReceived(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:231:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_running_[m[K’ was not declared in this scope
+  231 |     if (!msg->data || [01;31m[Kis_running_[m[K) return;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:232:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_running_[m[K’ was not declared in this scope
+  232 |     [01;31m[Kis_running_[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:233:37:[m[K [01;31m[Kerror: [m[K‘[01m[KexecuteMacroTask[m[K’ is not a member of ‘[01m[KPickMacroTaskNode[m[K’
+  233 |     std::thread(&PickMacroTaskNode::[01;31m[KexecuteMacroTask[m[K, this).detach();
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:233:55:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  233 |     std::thread(&PickMacroTaskNode::executeMacroTask, [01;31m[Kthis[m[K).detach();
+      |                                                       [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kbool rotateBasePI(double)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:237:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  237 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "=== Avvio rotazione base PI di %.2f rad ===", angle_offset_rad);
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:237:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  237 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=== Avvio rotazione base PI di %.2f rad ===", angle_offset_rad);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:239:31:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  239 |     rclcpp::Time start_wait = [01;31m[Knode_[m[K->now();
+      |                               [01;31m[K^~~~~[m[K
+      |                               [32m[Kmode_t[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:240:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_received_[m[K’ was not declared in this scope
+  240 |     while (![01;31m[Kodom_received_[m[K.load() && (node_->now() - start_wait).seconds() < 3.0) {
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:243:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_received_[m[K’ was not declared in this scope
+  243 |     if (![01;31m[Kodom_received_[m[K.load()) {
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:244:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  244 |       [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "[ROTATE PI] Nessuna odometria ricevuta da /odom! Rotazione annullata.");
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:248:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+  248 |     double initial_yaw = [01;31m[Kcurrent_yaw_[m[K.load();
+      |                          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:249:25:[m[K [01;31m[Kerror: [m[K‘[01m[KnormalizeAngle[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2NormalizeAngle[m[K’?
+  249 |     double target_yaw = [01;31m[KnormalizeAngle[m[K(initial_yaw + angle_offset_rad);
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                         [32m[Ktf2NormalizeAngle[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:268:9:[m[K [01;31m[Kerror: [m[K‘[01m[KstopRobot[m[K’ was not declared in this scope
+  268 |         [01;31m[KstopRobot[m[K();
+      |         [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:269:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  269 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=== Rotazione completata con precisione! ===");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:283:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+  283 |       [01;31m[Kcmd_vel_pub_[m[K->publish(twist_msg);
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:288:5:[m[K [01;31m[Kerror: [m[K‘[01m[KstopRobot[m[K’ was not declared in this scope
+  288 |     [01;31m[KstopRobot[m[K();
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kvoid stopRobot()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:295:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+  295 |     [01;31m[Kcmd_vel_pub_[m[K->publish(twist_msg);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kbool executeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, bool)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:308:23:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+  308 |     double fraction = [01;31m[Karm_group_[m[K->computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory, avoid_collisions);
+      |                       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:310:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  310 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Percorso cartesiano completato al %.2f%%", fraction * 100.0);
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:310:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  310 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Percorso cartesiano completato al %.2f%%", fraction * 100.0);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kvoid executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:323:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  323 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[1/8] Messa in sicurezza: sollevamento Torso a metà corsa e posa braccio...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:323:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  323 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[1/8] Messa in sicurezza: sollevamento Torso a metà corsa e posa braccio...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:326:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  326 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Impossibile raggiungere la posa sicura di partenza. Annullamento.");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:326:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  326 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Impossibile raggiungere la posa sicura di partenza. Annullamento.");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:327:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfinishMacroTask[m[K’ was not declared in this scope
+  327 |         [01;31m[KfinishMacroTask[m[K(false);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:334:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  334 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[2/8] Orientamento base verso il tavolo...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:334:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  334 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[2/8] Orientamento base verso il tavolo...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:337:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  337 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Errore durante la prima rotazione PI.");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:337:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  337 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Errore durante la prima rotazione PI.");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:338:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfinishMacroTask[m[K’ was not declared in this scope
+  338 |         [01;31m[KfinishMacroTask[m[K(false);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:345:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  345 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[3/8] Verifica e apertura pinza...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:345:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  345 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[3/8] Verifica e apertura pinza...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:346:17:[m[K [01;31m[Kerror: [m[K‘[01m[KopenGripper[m[K’ was not declared in this scope
+  346 |       success = [01;31m[KopenGripper[m[K();
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:348:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  348 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Errore durante l'apertura della pinza!");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:348:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  348 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Errore durante l'apertura della pinza!");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:349:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfinishMacroTask[m[K’ was not declared in this scope
+  349 |         [01;31m[KfinishMacroTask[m[K(false);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:357:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  357 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "=========================================================");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:357:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  357 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=========================================================");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:358:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  358 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[4/8] AVVIO STEP 4: DIAGNOSTICA E PIANIFICAZIONE PRE-GRASP");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:358:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  358 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[4/8] AVVIO STEP 4: DIAGNOSTICA E PIANIFICAZIONE PRE-GRASP");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:359:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  359 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "=========================================================");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:359:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  359 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=========================================================");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:362:44:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+  362 |       std::vector<double> current_joints = [01;31m[Karm_group_[m[K->getCurrentJointValues();
+      |                                            [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:367:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  367 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[DEBUG 1 - GIUNTI PARTENZA] %s", joints_str.c_str());
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:367:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  367 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[DEBUG 1 - GIUNTI PARTENZA] %s", joints_str.c_str());
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:382:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  382 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(),
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:382:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  382 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(),
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:398:29:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+  398 |         transform_stamped = [01;31m[Ktf_buffer_[m[K->lookupTransform(
+      |                             [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:409:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  409 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(),
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:409:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  409 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(),
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:433:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  433 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(),
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:433:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  433 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(),
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:450:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  450 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[4/8] Avvio calcolo traiettoria verso il target...");
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:450:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  450 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[4/8] Avvio calcolo traiettoria verso il target...");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:455:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  455 |           RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[4/8] Pianificazione Pre-Grasp RIUSCITA! Esecuzione in corso...");
+      |                       [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:455:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  455 |           [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[4/8] Pianificazione Pre-Grasp RIUSCITA! Esecuzione in corso...");
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:458:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  458 |             RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "[4/8] Esecuzione Pre-Grasp fallita!");
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:458:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  458 |             [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "[4/8] Esecuzione Pre-Grasp fallita!");
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:461:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  461 |           RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(),
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:461:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  461 |           [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(),
+      |           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:469:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  469 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "[4/8] TF Fallita: %s", ex.what());
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:469:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  469 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "[4/8] TF Fallita: %s", ex.what());
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:476:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  476 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[5/8] Avvicinamento cartesiano verso la lattina (+12 cm in X)...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:476:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  476 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[5/8] Avvicinamento cartesiano verso la lattina (+12 cm in X)...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:478:7:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+  478 |       [01;31m[Karm_group_[m[K->setEndEffectorLink("gripper_left_grasping_link");
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:489:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  489 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Fallito avvicinamento cartesiano alla lattina!");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:489:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  489 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Fallito avvicinamento cartesiano alla lattina!");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:495:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  495 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[6/8] Chiusura pinza per afferrare la lattina...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:495:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  495 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[6/8] Chiusura pinza per afferrare la lattina...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:496:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcloseGrasp[m[K’ was not declared in this scope
+  496 |       success = [01;31m[KcloseGrasp[m[K(-0.020, "s3_cocacola");
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:498:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  498 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Errore durante la chiusura della pinza sulla lattina!");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:498:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  498 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Errore durante la chiusura della pinza sulla lattina!");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:499:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfinishMacroTask[m[K’ was not declared in this scope
+  499 |         [01;31m[KfinishMacroTask[m[K(false);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:505:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  505 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Fisica in assestamento...");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:505:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  505 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Fisica in assestamento...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:512:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  512 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[7/8] Sollevamento lattina (+15 cm in Z)...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:512:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  512 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[7/8] Sollevamento lattina (+15 cm in Z)...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:515:7:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_group_[m[K’ was not declared in this scope
+  515 |       [01;31m[Karm_group_[m[K->setStartStateToCurrentState();
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:528:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  528 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Fallito sollevamento!");
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:528:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  528 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Fallito sollevamento!");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:534:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  534 |       RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "[8/8] Rotazione base verso la libreria...");
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:534:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  534 |       [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "[8/8] Rotazione base verso la libreria...");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:538:5:[m[K [01;31m[Kerror: [m[K‘[01m[KfinishMacroTask[m[K’ was not declared in this scope
+  538 |     [01;31m[KfinishMacroTask[m[K(success);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In function ‘[01m[Kvoid finishMacroTask(bool)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:544:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompleted_pub_[m[K’ was not declared in this scope
+  544 |     [01;31m[Kcompleted_pub_[m[K->publish(res);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:545:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_running_[m[K’ was not declared in this scope
+  545 |     [01;31m[Kis_running_[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:546:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  546 |     RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "=== [MACRO TASK 1] Esito: %s ===", esito ? "SUCCESSO" : "FALLITO");
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:546:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  546 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=== [MACRO TASK 1] Esito: %s ===", esito ? "SUCCESSO" : "FALLITO");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K At global scope:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:566:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  566 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

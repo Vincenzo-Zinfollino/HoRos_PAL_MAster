@@ -239,7 +239,7 @@
     <include>
       <uri>model://cocacola</uri>
       <name>s3_cocacola</name>
-      <pose>5.08 4.85 0.815  0 0 0</pose>
+      <pose>5.08 4.85 0.86  0 0 0</pose>
     </include>
 
     <include>
