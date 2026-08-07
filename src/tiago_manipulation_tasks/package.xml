@@ -33,6 +33,10 @@
 
   <depend>std_srvs</depend>
 
+  <depend>linkattacher_msgs</depend>
+
+  <depend>controller_manager_msgs</depend>
+
   <!-- Dipendenze Runtime PAL Robotics e TIAGo Pro -->
   <exec_depend>tiago_pro_moveit_config</exec_depend>
   <exec_depend>tiago_pro_simulation</exec_depend>

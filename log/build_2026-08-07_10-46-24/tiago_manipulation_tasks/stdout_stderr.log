@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[ 50%] Built target place_macro_task_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o[0m
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:17:10:[m[K [01;31m[Kfatal error: [m[Kcontroller_manager_msgs/srv/switch_controller.hpp: No such file or directory
+   17 | #include [01;31m[K<controller_manager_msgs/srv/switch_controller.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

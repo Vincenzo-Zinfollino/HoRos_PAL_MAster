@@ -26,16 +26,14 @@
         <surface>
           <friction>
             <ode>
-              <mu>100.0</mu>       <!-- FONDAMENTALE: Frizione statica -->
-              <mu2>100.0</mu2>     <!-- FONDAMENTALE: Frizione dinamica -->
+              <mu>20.0</mu>       <!-- FONDAMENTALE: Frizione statica -->
+              <mu2>20.0</mu2>     <!-- FONDAMENTALE: Frizione dinamica -->
             </ode>
           </friction>
           <contact>
             <ode>
-              <kp>100000.0</kp>
-              <kd>100.0</kd>
-              <max_vel>0.00</max_vel>
-              <min_depth>0.003</min_depth> <!-- Permette alle dita di compenetrare la lattina di 1 mm per generare presa -->
+              
+              <min_depth>0.01</min_depth> <!-- Permette alle dita di compenetrare la lattina di 1 mm per generare presa -->
             </ode>
           </contact>
         </surface>

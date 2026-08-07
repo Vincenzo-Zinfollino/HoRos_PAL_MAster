@@ -1,0 +1,10 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kbool PickMacroTaskNode::closeGrasp(const string&)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:165:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrasp_client_[m[K’ was not declared in this scope
+  165 |           [01;31m[Kgrasp_client_[m[K->async_send_request(
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:166:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrasp_request[m[K’ was not declared in this scope
+  166 |           [01;31m[Kgrasp_request[m[K,
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

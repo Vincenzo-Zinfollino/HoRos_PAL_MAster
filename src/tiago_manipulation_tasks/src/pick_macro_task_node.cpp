@@ -14,6 +14,8 @@
 #include <tf2_ros/transform_listener.h>
 #include <std_srvs/srv/empty.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
+#include <controller_manager_msgs/srv/switch_controller.hpp>
+#include <linkattacher_msgs/srv/attach_link.hpp>
 #include <thread>
 #include <chrono>
 #include <atomic>
@@ -61,9 +63,11 @@ public:
     gripper_pub_ = node_->create_publisher<trajectory_msgs::msg::JointTrajectory>(
     "/gripper_left_controller/joint_trajectory", 10);
 
-
+    //Grasp service 
+      attach_client_ = node_->create_client<linkattacher_msgs::srv::AttachLink>("/ATTACHLINK");
+      switch_controller_client_ = node_->create_client<controller_manager_msgs::srv::SwitchController>("/controller_manager/switch_controller");
     //6 servizio per il grasping
-    grasp_client_ = node_->create_client<std_srvs::srv::Empty>("/gripper_left_grasper_srv/grasp");
+    //grasp_client_ = node_->create_client<std_srvs::srv::Empty>("/gripper_left_grasper_srv/grasp");
 
     // Configurazione parametri di sicurezza e pianificazione MoveIt
     arm_group_->setMaxVelocityScalingFactor(0.4);
@@ -98,7 +102,7 @@ private:
     // 1. ESECUZIONE FISICA (Chiusura dita)
     // =========================================================================
     RCLCPP_INFO(node_->get_logger(), "[PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...");
-    /*
+    
     trajectory_msgs::msg::JointTrajectory trajectory_msg;
 
     // 2. Imposta il nome del giunto (ATTENZIONE: qui uso "left")
@@ -107,20 +111,54 @@ private:
     // 3. Crea il punto della traiettoria
     trajectory_msgs::msg::JointTrajectoryPoint point;
     //point.positions.push_back(0.02); // Target: 2 cm
-    point.positions = {0.04};
+    point.positions = {0.050};
     
     // Imposta il tempo (1 secondo, 0.1 nanosecondi come nel tuo test)
     point.time_from_start.sec = 1;
     point.time_from_start.nanosec = 100000000; // 0.1 secondi in nanosecondi
 
     // 4. Aggiungi il punto al messaggio
-    trajectory_msg.points.push_back(point);
+    // trajectory_msg.points.push_back(point);
+    trajectory_msg.points = {point};
 
     // 5. Pubblica il messaggio
     RCLCPP_INFO(node_->get_logger(), "Invio comando di chiusura al gripper sinistro...");
     gripper_pub_->publish(trajectory_msg);
-    */
 
+      rclcpp::sleep_for(std::chrono::milliseconds(1500));
+
+      // TERZA CHIAMATA: Spegnimento motori
+      /*
+      auto switch_request = std::make_shared<controller_manager_msgs::srv::SwitchController::Request>();
+      // Spegniamo il controller sinistro
+      switch_request->deactivate_controllers.push_back("gripper_left_controller");
+      // Strictness 1 (STRICT) fa fallire la chiamata se il controller non esiste
+      switch_request->strictness = 1;
+      switch_controller_client_->async_send_request(
+            switch_request,
+            [this](rclcpp::Client<controller_manager_msgs::srv::SwitchController>::SharedFuture switch_future) {
+                try {
+                    auto switch_res = switch_future.get();
+                    if(switch_res->ok) {
+                        RCLCPP_INFO(node_->get_logger(), "[SUCCESSO] Controller disattivato. Forze fisiche azzerate!");
+                        
+                        // ==========================================
+                        // TUTTO PRONTO! ORA PUOI MUOVERE IL BRACCIO
+                        // ==========================================
+                        // Inserisci qui l'aggiornamento della 
+                        // PlanningScene di MoveIt e il sollevamento!
+                        // ==========================================
+                    } else {
+                        RCLCPP_ERROR(node_->get_logger(), "Impossibile disattivare il controller!");
+                    }
+                } catch (const std::exception &e) {
+                    RCLCPP_ERROR(node_->get_logger(), "Eccezione SwitchController: %s", e.what());
+                }
+            }
+        );
+        */
+    
+/*
     if (!grasp_client_->wait_for_service(std::chrono::seconds(1))) {
     RCLCPP_ERROR(node_->get_logger(), "Servizio di grasp non disponibile! Impossibile chiudere la pinza.");
      // o gestisci il fallimento del task
@@ -155,6 +193,40 @@ auto future_result = grasp_client_->async_send_request(
         }
     }
 );
+*/
+        // Grasper Plugin: Attende che il gripper rilevi il contatto con l'oggetto e completi la presa
+          
+          auto attach_request = std::make_shared<linkattacher_msgs::srv::AttachLink::Request>();
+          attach_request->model1_name = "tiago-pro";
+          //attach_request->link1_name = "gripper_left_inner_finger_left_link";
+          attach_request->link1_name = "arm_left_7_link";
+          attach_request->model2_name = "s3_cocacola";
+          attach_request->link2_name = "link_cocacola";
+          
+
+          // SECONDA CHIAMATA: Creazione del Fixed Joint in Gazebo
+          attach_client_->async_send_request(
+              attach_request,
+              [this](rclcpp::Client<linkattacher_msgs::srv::AttachLink>::SharedFuture attach_future) {
+                  try {
+                      attach_future.get();
+                      RCLCPP_INFO(node_->get_logger(), "Lattina incollata con successo al gripper in Gazebo!");
+
+                      // ==========================================
+                      // 2. INIZIO PARTE ATTACH MOVEIT (NON MODIFICATA)
+                      // ==========================================
+                      // Inserisci qui la tua logica MoveIt per applicare 
+                      // l'AttachedCollisionObject alla PlanningScene.
+                      // ==========================================
+
+                  } catch (const std::exception &e) {
+                      RCLCPP_ERROR(node_->get_logger(), "Fallita la chiamata ad /ATTACHLINK: %s", e.what());
+                  }
+              }
+          );
+
+
+
 
 
     // 6. Attendi un istante per dare tempo alla fisica di simulazione di reagire
@@ -469,8 +541,8 @@ auto future_result = grasp_client_->async_send_request(
         // Calcolo pose target
         geometry_msgs::msg::Pose pre_grasp_pose;
         pre_grasp_pose.position.x = can_x - 0.05; 
+        //pre_grasp_pose.position.y = can_y; 
         pre_grasp_pose.position.y = can_y+0.01; 
-        //pre_grasp_pose.position.y = can_y+0.01; 
         pre_grasp_pose.position.z = can_z + 0.11; 
         
         tf2::Quaternion q_target;
@@ -499,7 +571,7 @@ auto future_result = grasp_client_->async_send_request(
 
         // Configurazione IK e avvio pianificazione
         arm_group_->setStartStateToCurrentState();
-        arm_group_->setGoalPositionTolerance(0.01);
+        arm_group_->setGoalPositionTolerance(0.005);
         arm_group_->setGoalOrientationTolerance(0.15);
         arm_group_->setPoseTarget(pre_grasp_pose, "gripper_left_grasping_link");
 
@@ -611,8 +683,9 @@ auto future_result = grasp_client_->async_send_request(
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr gripper_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr request_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
-  rclcpp::Client<std_srvs::srv::Empty>::SharedPtr grasp_client_;
-
+  //rclcpp::Client<std_srvs::srv::Empty>::SharedPtr grasp_client_;
+  rclcpp::Client<linkattacher_msgs::srv::AttachLink>::SharedPtr attach_client_;
+  rclcpp::Client<controller_manager_msgs::srv::SwitchController>::SharedPtr switch_controller_client_;
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
 
