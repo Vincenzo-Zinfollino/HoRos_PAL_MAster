@@ -95,7 +95,8 @@ class ManipulationOrchestrator(Node):
       target_pose = self.generate_variable_place_pose(
           x=0.65, y=0.10, z=1.15
       )
-
+      self.place_req_pub.publish(Bool(data=True))
+      
       self.get_logger().info(
           '-> Invio target di Place:'
           f' [x={target_pose.pose.position.x:.2f},'

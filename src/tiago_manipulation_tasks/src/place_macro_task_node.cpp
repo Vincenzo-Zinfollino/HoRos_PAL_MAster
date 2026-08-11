@@ -26,6 +26,7 @@ public:
 
 private:
   void onRequestReceived(const std_msgs::msg::Bool::SharedPtr msg) {
+    RCLCPP_INFO(node_->get_logger(), " OnRequestReceived: msg->data = %s, is_running_ = %s", msg->data ? "true" : "false", is_running_ ? "true" : "false");
     if (!msg->data || is_running_) return;
     is_running_ = true;
     std::thread(&PlaceMacroTaskNode::executeMacroTask, this).detach();

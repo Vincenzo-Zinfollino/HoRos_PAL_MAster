@@ -1,64 +1,221 @@
-[move_group-3] [WARN] [1785609361.767580539] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_bookshelf', but it does not exist in this scene.
-[move_group-3] [WARN] [1785609361.767607090] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_cocacola', but it does not exist in this scene.
-[move_group-3] [WARN] [1785609361.767610242] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_table', but it does not exist in this scene.
-[move_group-3] [WARN] [1785609361.817895241] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_bookshelf', but it does not exist in this scene.
-[move_group-3] [WARN] [1785609361.817924029] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_cocacola', but it does not exist in this scene.
-[move_group-3] [WARN] [1785609361.817929156] [moveit_planning_scene.planning_scene]: Tried to remove world object 's3_table', but it does not exist in this scene.
-[move_group-3] [INFO] [1785609370.210377645] [moveit_move_group_default_capabilities.move_action_capability]: Received request
-[move_group-3] [INFO] [1785609370.210463347] [moveit_move_group_default_capabilities.move_action_capability]: executing..
-[move_group-3] [INFO] [1785609370.224970906] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
-[move_group-3] [INFO] [1785609370.226340991] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
-[move_group-3] [INFO] [1785609370.686163335] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
-[move_group-3] [INFO] [1785609370.687320827] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
-[move_group-3] [INFO] [1785609370.687392563] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
-[move_group-3] [INFO] [1785609370.688103754] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
-[move_group-3] [INFO] [1785609370.688221298] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
-[move_group-3] [INFO] [1785609370.688637968] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /arm_left_controller
-[gzserver-1] [INFO] [1785609370.688952956] [arm_left_controller]: Received new action goal
-[gzserver-1] [INFO] [1785609370.688993465] [arm_left_controller]: Accepted new action goal
-[move_group-3] [INFO] [1785609370.689086294] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /arm_left_controller started execution
-[move_group-3] [INFO] [1785609370.689100659] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
-[move_group-3] [INFO] [1785609370.689265352] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /torso_controller
-[gzserver-1] [INFO] [1785609370.689481895] [torso_controller]: Received new action goal
-[gzserver-1] [INFO] [1785609370.689512019] [torso_controller]: Accepted new action goal
-[move_group-3] [INFO] [1785609370.689571690] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /torso_controller started execution
-[move_group-3] [INFO] [1785609370.689586049] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
-[gzserver-1] [INFO] [1785609390.666171193] [arm_left_controller]: Goal reached, success!
-[gzserver-1] [INFO] [1785609390.667176490] [torso_controller]: Goal reached, success!
-[move_group-3] [INFO] [1785609390.689106699] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/arm_left_controller' successfully finished
-[move_group-3] [INFO] [1785609390.689508663] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/torso_controller' successfully finished
-[move_group-3] [INFO] [1785609390.699328798] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
-[move_group-3] [INFO] [1785609390.699415808] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
-[move_group-3] [INFO] [1785609392.839074956] [moveit_move_group_default_capabilities.move_action_capability]: Received request
-[move_group-3] [INFO] [1785609392.839174035] [moveit_move_group_default_capabilities.move_action_capability]: executing..
-[move_group-3] [INFO] [1785609392.845362902] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
-[move_group-3] [INFO] [1785609392.846661233] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
-[move_group-3] [INFO] [1785609393.070872595] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
-[move_group-3] [INFO] [1785609393.071511612] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
-[move_group-3] [INFO] [1785609393.071563437] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
-[move_group-3] [INFO] [1785609393.072059122] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
-[move_group-3] [INFO] [1785609393.087501320] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
-[move_group-3] [INFO] [1785609393.087885630] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /arm_left_controller
-[gzserver-1] [INFO] [1785609393.088094824] [arm_left_controller]: Received new action goal
-[gzserver-1] [INFO] [1785609393.088129411] [arm_left_controller]: Accepted new action goal
-[move_group-3] [INFO] [1785609393.088222970] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /arm_left_controller started execution
-[move_group-3] [INFO] [1785609393.088241727] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
-[move_group-3] [INFO] [1785609393.088655159] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to /torso_controller
-[gzserver-1] [INFO] [1785609393.088799440] [torso_controller]: Received new action goal
-[gzserver-1] [INFO] [1785609393.088824194] [torso_controller]: Accepted new action goal
-[move_group-3] [INFO] [1785609393.089024839] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: /torso_controller started execution
-[move_group-3] [INFO] [1785609393.089041858] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
-[gzserver-1] [INFO] [1785609393.654509584] [arm_left_controller]: Goal reached, success!
-[gzserver-1] [INFO] [1785609393.655523015] [torso_controller]: Goal reached, success!
-[move_group-3] [INFO] [1785609393.688489954] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/arm_left_controller' successfully finished
-[move_group-3] [INFO] [1785609393.689312092] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller '/torso_controller' successfully finished
-[move_group-3] [INFO] [1785609393.707699756] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
-[move_group-3] [INFO] [1785609393.707770833] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
-[move_group-3] [INFO] [1785609393.799989298] [moveit_move_group_default_capabilities.move_action_capability]: Received request
-[move_group-3] [INFO] [1785609393.800081510] [moveit_move_group_default_capabilities.move_action_capability]: executing..
-[move_group-3] [INFO] [1785609393.808472908] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
-[move_group-3] [INFO] [1785609393.809656746] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm_left_torso' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
-[move_group-3] [ERROR] [1785609398.810253738] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm_left_torso/arm_left_torso: Unable to sample any valid states for goal tree
-[move_group-3] [WARN] [1785609398.810302725] [moveit.ompl_planning.model_based_planning_context]: Invalid goal state
-[move_group-3] [INFO] [1785609398.831901559] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
-[move_group-3] [INFO] [1785609398.831940970] [moveit_move_group_default_capabilities.move_action_capability]: Unknown event
+ros2 launch pick_task manipulation_pipeline.launch.py 
+[INFO] [launch]: All log files can be found below /home/user/.ros/log/2026-08-07-16-32-39-003634-d349f250acfd-37474
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [pick_macro_task_node-1]: process started with pid [37477]
+[INFO] [place_macro_task_node-2]: process started with pid [37479]
+[INFO] [scene_spawner-3]: process started with pid [37481]
+[INFO] [gazebo_tf_bridge-4]: process started with pid [37483]
+[place_macro_task_node-2] [WARN] [1786120359.077020129] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[pick_macro_task_node-1] [WARN] [1786120359.083099605] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_1_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_2_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_3_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_4_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_5_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_6_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_left_7_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Group 'arm_teleop_left' is empty.
+[pick_macro_task_node-1]          at line 262 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_1_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_2_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_3_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_4_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_5_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_6_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Error:   Joint 'arm_teleop_right_7_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[pick_macro_task_node-1]          at line 185 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Group 'arm_teleop_right' is empty.
+[pick_macro_task_node-1]          at line 262 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_1_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_2_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_3_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_4_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_5_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_6_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_left_7_joint' declared as part of group 'arm_teleop_left' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Group 'arm_teleop_left' is empty.
+[place_macro_task_node-2]          at line 262 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_1_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_2_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_3_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_4_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_5_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_6_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Error:   Joint 'arm_teleop_right_7_joint' declared as part of group 'arm_teleop_right' is not known to the URDF
+[place_macro_task_node-2]          at line 185 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Group 'arm_teleop_right' is empty.
+[place_macro_task_node-2]          at line 262 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_left_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[pick_macro_task_node-1]          at line 594 in ./src/model.cpp
+[pick_macro_task_node-1] [INFO] [1786120359.592335597] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 32.335 seconds
+[pick_macro_task_node-1] [INFO] [1786120359.592359188] [moveit_robot_model.robot_model]: Loading robot model 'tiago_pro'...
+[pick_macro_task_node-1] [INFO] [1786120359.592364719] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[place_macro_task_node-2] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] Warning: Link 'gripper_right_camera_link' is not known to URDF. Cannot disable/enable collisons.
+[place_macro_task_node-2]          at line 594 in ./src/model.cpp
+[place_macro_task_node-2] [INFO] [1786120359.592719028] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 32.335 seconds
+[place_macro_task_node-2] [INFO] [1786120359.592735866] [moveit_robot_model.robot_model]: Loading robot model 'tiago_pro'...
+[place_macro_task_node-2] [INFO] [1786120359.592741191] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[pick_macro_task_node-1] [WARN] [1786120359.615055017] [moveit_robot_model.robot_model]: Link torso_fixed_column_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[place_macro_task_node-2] [WARN] [1786120359.617490847] [moveit_robot_model.robot_model]: Link torso_fixed_column_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[pick_macro_task_node-1] [WARN] [1786120359.742884248] [moveit_robot_model.robot_model]: Link head_screen_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[pick_macro_task_node-1] [WARN] [1786120359.743354683] [moveit_robot_model.robot_model]: Group 'arm_teleop_left' must have at least one valid joint
+[pick_macro_task_node-1] [WARN] [1786120359.743363686] [moveit_robot_model.robot_model]: Failed to add group 'arm_teleop_left'
+[pick_macro_task_node-1] [WARN] [1786120359.743395152] [moveit_robot_model.robot_model]: Group 'arm_teleop_right' must have at least one valid joint
+[pick_macro_task_node-1] [WARN] [1786120359.743397645] [moveit_robot_model.robot_model]: Failed to add group 'arm_teleop_right'
+[place_macro_task_node-2] [WARN] [1786120359.746536671] [moveit_robot_model.robot_model]: Link head_screen_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[place_macro_task_node-2] [WARN] [1786120359.747101444] [moveit_robot_model.robot_model]: Group 'arm_teleop_left' must have at least one valid joint
+[place_macro_task_node-2] [WARN] [1786120359.747113014] [moveit_robot_model.robot_model]: Failed to add group 'arm_teleop_left'
+[place_macro_task_node-2] [WARN] [1786120359.747151011] [moveit_robot_model.robot_model]: Group 'arm_teleop_right' must have at least one valid joint
+[place_macro_task_node-2] [WARN] [1786120359.747154118] [moveit_robot_model.robot_model]: Failed to add group 'arm_teleop_right'
+[pick_macro_task_node-1] [WARN] [1786120359.762544567] [moveit_ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
+[place_macro_task_node-2] [WARN] [1786120359.768595065] [moveit_ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
+[pick_macro_task_node-1] [INFO] [1786120359.790017053] [move_group_interface]: Ready to take commands for planning group arm_left.
+[place_macro_task_node-2] [INFO] [1786120359.792155088] [move_group_interface]: Ready to take commands for planning group arm_right.
+[pick_macro_task_node-1] [INFO] [1786120359.808502669] [move_group_interface]: Ready to take commands for planning group torso.
+[place_macro_task_node-2] [INFO] [1786120359.812255366] [move_group_interface]: Ready to take commands for planning group gripper_right.
+[place_macro_task_node-2] [INFO] [1786120359.813884130] [place_macro_task_node]: === [MACRO TASK 2: PLACE] Pronto su /task/place_macro_request ===
+[pick_macro_task_node-1] [INFO] [1786120359.828603895] [move_group_interface]: Ready to take commands for planning group gripper_left.
+[pick_macro_task_node-1] [INFO] [1786120359.835645350] [pick_macro_task_node]: === [MACRO TASK 1: PICK] Pronto su /task/pick_macro_request (Modalità: arm_left 7-DOF) ===
+[scene_spawner-3] [INFO] [1786120359.911987410] [scene_spawner_node]: === [1/5] Inizializzazione nodo GazeboToMoveItSpawner ===
+[scene_spawner-3] [INFO] [1786120359.984493892] [scene_spawner_node]: [SDF TROVATO] /home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models/reemc_bookshelf/bookshelf.sdf
+[scene_spawner-3] [INFO] [1786120359.984692706] [scene_spawner_node]: === [2/5] In attesa dei servizi di reset (MoveIt & Gazebo)... ===
+[scene_spawner-3] [INFO] [1786120359.985720196] [scene_spawner_node]: === [3/5] In attesa dei dati da /gazebo/model_states... ===
+[INFO] [main_task_node-5]: process started with pid [37613]
+[scene_spawner-3] [INFO] [1786120362.345483529] [scene_spawner_node]: [ATTESA] Servizi di reset non ancora pronti, riprovo...
+[main_task_node-5] [INFO] [1786120362.357815807] [main_manipulation_orchestrator]: === [ORCHESTRATOR FSM] Inizializzazione nodo orchestratore ===
+[scene_spawner-3] [INFO] [1786120363.309160827] [scene_spawner_node]: [RESET ROBOT] Posizione robot in Gazebo re-impostata a: (x=5.25, y=3.88, yaw=0.0)
+[scene_spawner-3] [INFO] [1786120363.309670216] [scene_spawner_node]: [PULIZIA TOTALE] Rimozione forzata di 3 oggetti trovati in memoria: ['s3_table', 's3_cocacola', 's3_bookshelf']
+[main_task_node-5] [INFO] [1786120363.310571842] [main_manipulation_orchestrator]: === [FSM -> SETUP_SCENE] Invio comando di reset su /scene/reset ===
+[main_task_node-5] [INFO] [1786120363.310809854] [main_manipulation_orchestrator]: -> Attesa 4 secondi per sincronizzazione Gazebo e MoveIt 2...
+[scene_spawner-3] [INFO] [1786120363.461191794] [scene_spawner_node]: === [4/5] Ambiente azzerato e robot riposizionato. ===
+[scene_spawner-3] [INFO] [1786120363.463017205] [scene_spawner_node]: === [5/5] Prima sincronizzazione scena in corso ===
+[scene_spawner-3] [INFO] [1786120363.463209671] [scene_spawner_node]: [SYNC] Robot di riferimento individuato: 'tiago-pro'
+[scene_spawner-3] [INFO] [1786120363.463558923] [scene_spawner_node]: [SYNC -> TAVOLO] Elaborazione 's3_table'
+[scene_spawner-3] [INFO] [1786120363.464003621] [scene_spawner_node]: [SYNC -> LATTINA] Elaborazione 's3_cocacola'
+[scene_spawner-3] [INFO] [1786120363.464375152] [scene_spawner_node]: [SYNC -> BOOKSHELF] Elaborazione 's3_bookshelf' tramite parser SDF...
+[scene_spawner-3] [INFO] [1786120363.465857962] [scene_spawner_node]: [SUCCESSO] Scena pubblicata su /planning_scene con 3 modelli attivi!
+[main_task_node-5] [INFO] [1786120367.312938634] [main_manipulation_orchestrator]: === [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)... ===
+[pick_macro_task_node-1] [INFO] [1786120367.313147738] [pick_macro_task_node]: [1/8] Messa in sicurezza: sollevamento Torso a metà corsa e posa braccio...
+[pick_macro_task_node-1] [INFO] [1786120367.313163681] [pick_macro_task_node]: Preparazione configurazione sicura: Torso a metà corsa + Braccio in Home...
+[pick_macro_task_node-1] [INFO] [1786120367.323293330] [pick_macro_task_node]: Temporaneamente rimosso 's3_bookshelf' dalla scena di collisione.
+[pick_macro_task_node-1] [INFO] [1786120367.423373197] [pick_macro_task_node]: Posizionamento torso_lift_joint a 0.185 m...
+[pick_macro_task_node-1] [INFO] [1786120367.424020458] [move_group_interface]: Plan and Execute request accepted
+[pick_macro_task_node-1] [INFO] [1786120391.961139385] [move_group_interface]: Plan and Execute request complete!
+[pick_macro_task_node-1] [INFO] [1786120391.961952661] [pick_macro_task_node]: Torso posizionato con successo.
+[pick_macro_task_node-1] [INFO] [1786120391.961964480] [pick_macro_task_node]: Posizionamento arm_left in configurazione sicura (7 DOF)...
+[pick_macro_task_node-1] [INFO] [1786120391.962217775] [move_group_interface]: MoveGroup action client/server ready
+[pick_macro_task_node-1] [INFO] [1786120391.962398431] [move_group_interface]: Planning request accepted
+[pick_macro_task_node-1] [INFO] [1786120392.063458479] [move_group_interface]: Planning request complete!
+[pick_macro_task_node-1] [INFO] [1786120392.063884616] [move_group_interface]: time taken to generate plan: 0.0773818 seconds
+[pick_macro_task_node-1] [INFO] [1786120392.064439217] [move_group_interface]: Execute request accepted
+[pick_macro_task_node-1] [INFO] [1786120398.081030575] [move_group_interface]: Execute request success!
+[pick_macro_task_node-1] [INFO] [1786120398.082071631] [pick_macro_task_node]: Braccio sinistro spostato con successo in posa sicura!
+[pick_macro_task_node-1] [INFO] [1786120398.088779921] [pick_macro_task_node]: [2/8] Orientamento base verso il tavolo...
+[pick_macro_task_node-1] [INFO] [1786120398.088797667] [pick_macro_task_node]: === Avvio rotazione base PI di 1.57 rad ===
+[pick_macro_task_node-1] [INFO] [1786120400.068894802] [pick_macro_task_node]: === Rotazione completata con precisione! ===
+[pick_macro_task_node-1] [INFO] [1786120400.068928063] [pick_macro_task_node]: [3/8] Verifica e apertura pinza...
+[pick_macro_task_node-1] [INFO] [1786120400.069593127] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[pick_macro_task_node-1] [INFO] [1786120400.082087074] [pick_macro_task_node]: [PINZA] La pinza è GIÀ APERTA (valore: 0.070 m). Nessun movimento necessario.
+[pick_macro_task_node-1] [INFO] [1786120400.082115118] [pick_macro_task_node]: =========================================================
+[pick_macro_task_node-1] [INFO] [1786120400.082119227] [pick_macro_task_node]: [4/8] AVVIO STEP 4: DIAGNOSTICA E PIANIFICAZIONE PRE-GRASP
+[pick_macro_task_node-1] [INFO] [1786120400.082121981] [pick_macro_task_node]: =========================================================
+[pick_macro_task_node-1] [INFO] [1786120400.082141089] [pick_macro_task_node]: [DEBUG 1 - GIUNTI PARTENZA] J1: 1.560661 | J2: -2.205449 | J3: -0.409309 | J4: -2.323129 | J5: -1.701045 | J6: -0.279806 | J7: -0.022807 | 
+[pick_macro_task_node-1] [INFO] [1786120400.082179812] [pick_macro_task_node]: [DEBUG 2 - GRIPPER ATTUALE (Frame: base_footprint)]
+[pick_macro_task_node-1]   -> Posizione   [X, Y, Z] : [0.513, 0.572, 0.963] m
+[pick_macro_task_node-1]   -> Quaternione [x,y,z,w] : [0.995, 0.089, 0.040, -0.026]
+[pick_macro_task_node-1]   -> Angoli RPY  [R, P, Y] : [-3.10, -0.09, 0.18] rad
+[pick_macro_task_node-1] [INFO] [1786120400.143291942] [pick_macro_task_node]: [DEBUG 3 - TF LATTINA GREZZA in 'base_footprint']
+[pick_macro_task_node-1]   -> s3_cocacola [X, Y, Z] : [0.947, 0.162, 0.814] m
+[pick_macro_task_node-1] [INFO] [1786120400.143310454] [pick_macro_task_node]: [DEBUG 4 - TARGET PRE-GRASP DA RAGGIUNGERE]
+[pick_macro_task_node-1]   -> Target Pos  [X, Y, Z] : [0.897, 0.172, 0.924] m
+[pick_macro_task_node-1]   -> Target Quat [x,y,z,w] : [1.000, 0.000, 0.000, 0.000]
+[pick_macro_task_node-1]   -> Target RPY  [R, P, Y] : [3.14, 0.00, 0.00] rad
+[pick_macro_task_node-1]   -> Spostamento [dX,dY,dZ]: [0.385, -0.400, -0.040] m (Dist totale: 0.556 m)
+[pick_macro_task_node-1] [INFO] [1786120400.143323912] [pick_macro_task_node]: [4/8] Avvio calcolo traiettoria verso il target...
+[pick_macro_task_node-1] [INFO] [1786120400.143504851] [move_group_interface]: MoveGroup action client/server ready
+[pick_macro_task_node-1] [INFO] [1786120400.143810960] [move_group_interface]: Planning request accepted
+[pick_macro_task_node-1] [INFO] [1786120400.218588474] [move_group_interface]: Planning request complete!
+[pick_macro_task_node-1] [INFO] [1786120400.219172757] [move_group_interface]: time taken to generate plan: 0.063991 seconds
+[pick_macro_task_node-1] [INFO] [1786120400.219196504] [pick_macro_task_node]: [4/8] Pianificazione Pre-Grasp RIUSCITA! Esecuzione in corso...
+[pick_macro_task_node-1] [INFO] [1786120400.219660088] [move_group_interface]: Execute request accepted
+[pick_macro_task_node-1] [INFO] [1786120406.276940522] [move_group_interface]: Execute request success!
+[pick_macro_task_node-1] [INFO] [1786120406.285550154] [pick_macro_task_node]: [5/8] Avvicinamento cartesiano verso la lattina (+12 cm in X)...
+[pick_macro_task_node-1] [INFO] [1786120406.300671369] [pick_macro_task_node]: Percorso cartesiano completato al 100.00%
+[pick_macro_task_node-1] [INFO] [1786120406.301841500] [move_group_interface]: Execute request accepted
+[pick_macro_task_node-1] [INFO] [1786120407.378023023] [move_group_interface]: Execute request success!
+[pick_macro_task_node-1] [INFO] [1786120407.378311493] [pick_macro_task_node]: [6/8] Chiusura pinza per afferrare la lattina...
+[pick_macro_task_node-1] [INFO] [1786120407.378326238] [pick_macro_task_node]: [PINZA] Avvio procedura di presa per 's3_cocacola'...
+[pick_macro_task_node-1] [INFO] [1786120407.378330490] [pick_macro_task_node]: [PINZA] 1/3: Chiusura dinamica delle dita (Posa: 'close')...
+[pick_macro_task_node-1] [INFO] [1786120407.378342385] [pick_macro_task_node]: Invio comando di chiusura al gripper sinistro...
+[pick_macro_task_node-1] [INFO] [1786120408.881802008] [pick_macro_task_node]: Lattina incollata con successo al gripper in Gazebo!
+[pick_macro_task_node-1] [INFO] [1786120410.378727092] [pick_macro_task_node]: [PINZA] 2/3: Incollo logicamente 's3_cocacola' al manipolatore (Attach)...
+[scene_spawner-3] [INFO] [1786120410.553518916] [scene_spawner_node]: MoveIt ha preso la lattina! Sospendo l'aggiornamento da Gazebo.
+[pick_macro_task_node-1] [INFO] [1786120411.190728496] [pick_macro_task_node]: [PINZA] 3/3: Rimuovo 's3_table' per evitare falsi positivi di collisione al sollevamento...
+[pick_macro_task_node-1] [INFO] [1786120411.990829464] [pick_macro_task_node]: [PINZA] Procedura terminata. Pronto per il sollevamento!
+[pick_macro_task_node-1] [INFO] [1786120411.998125508] [pick_macro_task_node]: Fisica in assestamento...
+[pick_macro_task_node-1] [INFO] [1786120412.498208022] [pick_macro_task_node]: [7/8] Sollevamento lattina (+15 cm in Z)...
+[pick_macro_task_node-1] [INFO] [1786120412.515148705] [pick_macro_task_node]: Percorso cartesiano completato al 100.00%
+[pick_macro_task_node-1] [INFO] [1786120412.515544746] [move_group_interface]: Execute request accepted
+[pick_macro_task_node-1] [INFO] [1786120413.589984867] [move_group_interface]: Execute request success!
+[pick_macro_task_node-1] [INFO] [1786120413.590723957] [pick_macro_task_node]: [8/8] Rotazione base verso la libreria...
+[pick_macro_task_node-1] [INFO] [1786120413.590735876] [pick_macro_task_node]: === Avvio rotazione base PI di -1.57 rad ===
+[pick_macro_task_node-1] [INFO] [1786120415.631031516] [pick_macro_task_node]: === Rotazione completata con precisione! ===
+[pick_macro_task_node-1] [INFO] [1786120415.631613482] [pick_macro_task_node]: === [MACRO TASK 1] Esito: SUCCESSO ===
+[main_task_node-5] [INFO] [1786120415.632041632] [main_manipulation_orchestrator]: <<< [FSM -> PLACING] Pick completato con SUCCESSO! >>>
+[main_task_node-5] [INFO] [1786120415.632361375] [main_manipulation_orchestrator]: -> Invio target di Place: [x=0.65, y=0.10, z=1.15]
+
+
