@@ -34,7 +34,7 @@ class ManipulationOrchestrator(Node):
         Bool, '/task/pick_macro_request', 10
     )
     self.place_req_pub = self.create_publisher(
-        PoseStamped, '/task/place_macro_request', 10
+        Bool, '/task/place_macro_request', 10
     )
 
     # --- SUBSCRIBERS ---
@@ -71,13 +71,28 @@ class ManipulationOrchestrator(Node):
     """Fase 2: Scena pronta, avvio del Macro Task 1 (Pick & Navigate)."""
     if self.setup_timer:
       self.setup_timer.cancel()
+      
+    ##commentato per test del place decommetare alla fine
+    #self.state = MissionState.PICKING
+    #self.get_logger().info(
+    #   '=== [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)...'
+    #    ' ==='
+    #)
+    #self.pick_req_pub.publish(Bool(data=True))
+    ##### fine del commento per test 
 
-    self.state = MissionState.PICKING
+    #Faccio partire direttamente la parte di place --Rimuovere dopo i test
+    self.state = MissionState.PLACING
     self.get_logger().info(
-        '=== [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)...'
-        ' ==='
+        '=== [FSM -> PLACING] [TEST MODE] Scena pronta! Salto il Pick e avvio test Reachability... ==='
     )
-    self.pick_req_pub.publish(Bool(data=True))
+    # Invia il trigger booleano per avviare l'analisi nel nodo C++
+    self.place_req_pub.publish(Bool(data=True))
+
+    #--- Fine rimozione 
+
+
+
 
   def on_pick_completed(self, msg: Bool):
     """Callback di completamento del Macro Task 1."""
@@ -86,24 +101,12 @@ class ManipulationOrchestrator(Node):
 
     if msg.data:
       self.get_logger().info(
-          '<<< [FSM -> PLACING] Pick completato con SUCCESSO! >>>'
+          '<<< [FSM -> PLACING] Pick completato con SUCCESSO! Avvio calcolo Reachability Map... >>>'
       )
       self.state = MissionState.PLACING
 
-      # --- CALCOLO POSIZIONE DI PLACE VARIABILE ---
-      # Qui definiamo dinamicamente le coordinate di deposito sulla libreria
-      target_pose = self.generate_variable_place_pose(
-          x=0.65, y=0.10, z=1.15
-      )
+      # Invio il trigger booleano per avviare l'analisi nel nodo C++
       self.place_req_pub.publish(Bool(data=True))
-      
-      self.get_logger().info(
-          '-> Invio target di Place:'
-          f' [x={target_pose.pose.position.x:.2f},'
-          f' y={target_pose.pose.position.y:.2f},'
-          f' z={target_pose.pose.position.z:.2f}]'
-      )
-      self.place_req_pub.publish(target_pose)
     else:
       self.get_logger().error(
           '<<< [ERRORE] Macro Task 1 fallito! Missione interrotta. >>>'

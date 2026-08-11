@@ -1364,14 +1364,60 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/moveit_move_group_interface_export.h \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/orientation_constraint.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/orientation_constraint__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/orientation_constraint__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/moveit/planning_scene_interface/planning_scene_interface.h \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__type_support.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/collision_object.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/attached_collision_object.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__type_support.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/planning_scene.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__type_support.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc
 
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/c++/11/fstream:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__type_support.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/planning_scene.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__type_support.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/attached_collision_object.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/collision_object.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__type_support.hpp:
+
+/opt/ros/humble/include/moveit/planning_scene_interface/planning_scene_interface.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/orientation_constraint.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1557,6 +1603,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__builder.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__struct.hpp:
@@ -1644,6 +1692,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory_point__struct.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory__struct.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/orientation_constraint__builder.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_trajectory__struct.hpp:
 
@@ -1897,6 +1947,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
@@ -1922,6 +1974,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/c++/11/bits/stl_vector.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/orientation_constraint__type_support.hpp:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
 
@@ -1964,6 +2018,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/rcl/rcl/node.h:
 
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp:
 
 /opt/ros/humble/include/rcl/rcl/context.h:
 
@@ -3327,6 +3383,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
 /usr/include/c++/11/bits/refwrap.h:
@@ -3540,6 +3598,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/move_it_error_codes__builder.hpp:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
 

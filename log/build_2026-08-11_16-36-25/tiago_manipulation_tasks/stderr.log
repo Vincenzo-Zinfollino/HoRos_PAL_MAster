@@ -1,0 +1,10 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PlaceMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:117:16:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble distance[m[K’
+  117 |         double [01;31m[Kdistance[m[K = std::sqrt(
+      |                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:100:16:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble distance[m[K’ previously declared here
+  100 |         double [01;36m[Kdistance[m[K = std::sqrt(
+      |                [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
