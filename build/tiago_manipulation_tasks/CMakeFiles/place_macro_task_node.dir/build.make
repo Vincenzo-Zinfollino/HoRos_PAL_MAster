@@ -259,8 +259,6 @@ place_macro_task_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0
 place_macro_task_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 place_macro_task_node: /opt/ros/humble/lib/libwarehouse_ros.so
 place_macro_task_node: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
-place_macro_task_node: /opt/ros/humble/lib/libclass_loader.so
-place_macro_task_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 place_macro_task_node: /opt/ros/humble/lib/libtf2_ros.so
 place_macro_task_node: /opt/ros/humble/lib/libmessage_filters.so
 place_macro_task_node: /opt/ros/humble/lib/librclcpp_action.so
@@ -296,7 +294,6 @@ place_macro_task_node: /opt/ros/humble/lib/librcl_yaml_param_parser.so
 place_macro_task_node: /opt/ros/humble/lib/libyaml.so
 place_macro_task_node: /opt/ros/humble/lib/libtracetools.so
 place_macro_task_node: /opt/ros/humble/lib/librmw_implementation.so
-place_macro_task_node: /opt/ros/humble/lib/libament_index_cpp.so
 place_macro_task_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
 place_macro_task_node: /opt/ros/humble/lib/librcl_logging_interface.so
 place_macro_task_node: /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1
@@ -325,8 +322,11 @@ place_macro_task_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_gen
 place_macro_task_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 place_macro_task_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 place_macro_task_node: /opt/ros/humble/lib/libtf2.so
-place_macro_task_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 place_macro_task_node: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+place_macro_task_node: /opt/ros/humble/lib/libament_index_cpp.so
+place_macro_task_node: /opt/ros/humble/lib/libclass_loader.so
+place_macro_task_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+place_macro_task_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 place_macro_task_node: /usr/lib/x86_64-linux-gnu/libcrypto.so
 place_macro_task_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 place_macro_task_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so

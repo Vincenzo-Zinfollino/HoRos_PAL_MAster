@@ -1,0 +1,97 @@
+[0.148s] Invoking command in '/home/user/exchange/workspace/build/tiago_manipulation_tasks': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/linkattacher_msgs:/opt/ros/humble GAZEBO_MODEL_PATH=/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models GZ_SIM_RESOURCE_PATH=/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models LD_LIBRARY_PATH=/home/user/exchange/workspace/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_manipulation_tasks -- -j12 -l12
+[0.168s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.258s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.283s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.285s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.291s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.338s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.340s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.428s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.469s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.563s] -- Found shape_msgs: 4.9.1 (/opt/ros/humble/share/shape_msgs/cmake)
+[0.575s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.589s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.619s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[0.669s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.679s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.690s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.712s] -- Found parameter_traits: 0.6.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.718s] -- Found rclcpp_lifecycle: 16.0.18 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.737s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[0.765s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.788s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.839s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[0.867s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[0.883s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[0.907s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.920s] -- Found controller_manager_msgs: 2.53.1 (/opt/ros/humble/share/controller_manager_msgs/cmake)
+[0.936s] -- Found linkattacher_msgs: 0.0.0 (/home/user/exchange/workspace/install/linkattacher_msgs/share/linkattacher_msgs/cmake)
+[0.963s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.025s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.026s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.026s] -- Configured cppcheck include dirs: 
+[1.026s] -- Configured cppcheck exclude dirs and/or files: 
+[1.026s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.027s] -- Configured cpplint exclude dirs and/or files: 
+[1.027s] -- Added test 'lint_cmake' to check CMake code style
+[1.028s] -- Added test 'uncrustify' to check C / C++ code style
+[1.028s] -- Configured uncrustify additional arguments: 
+[1.028s] -- Added test 'xmllint' to check XML markup files
+[1.030s] -- Configuring done
+[1.069s] -- Generating done
+[1.081s] -- Build files have been written to: /home/user/exchange/workspace/build/tiago_manipulation_tasks
+[1.101s] [35m[1mConsolidate compiler generated dependencies of target place_macro_task_node[0m
+[1.102s] [35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[1.116s] [ 25%] [32mBuilding CXX object CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o[0m
+[1.117s] [ 75%] Built target pick_macro_task_node
+[3.865s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PlaceMacroTaskNode::executeMacroTask()[m[K’:
+[3.865s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:100:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::lookupTransform(const char [4], const char [15], const TimePoint&, rclcpp::Duration)[m[K’
+[3.865s]   100 |         geometry_msgs::msg::TransformStamped transformStamped = [01;31m[Ktf_buffer_->lookupTransform([m[K
+[3.866s]       |                                                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.866s]   101 | [01;31m[K            "map", "base_footprint", tf2::TimePointZero, rclcpp::Duration::from_seconds(2.0))[m[K;
+[3.866s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.866s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+[3.866s]                  from [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[3.866s]                  from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:2[m[K:
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:92:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const string&, const TimePoint&, tf2::Duration) const[m[K’
+[3.866s]    92 |   [01;36m[KlookupTransform[m[K(
+[3.866s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:94:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Ktf2::Duration[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’}
+[3.866s]    94 |     const tf2::TimePoint & time, [01;36m[Kconst tf2::Duration timeout[m[K) const override;
+[3.866s]       |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:102:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const string&, const rclcpp::Time&, rclcpp::Duration) const[m[K’
+[3.866s]   102 |   [01;36m[KlookupTransform[m[K(
+[3.866s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:104:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst TimePoint[m[K’ {aka ‘[01m[Kconst std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’} to ‘[01m[Kconst rclcpp::Time&[m[K’
+[3.866s]   104 |     [01;36m[Kconst rclcpp::Time & time[m[K,
+[3.866s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:124:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const TimePoint&, const string&, const TimePoint&, const string&, tf2::Duration) const[m[K’
+[3.866s]   124 |   [01;36m[KlookupTransform[m[K(
+[3.866s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:124:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:136:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const rclcpp::Time&, const string&, const rclcpp::Time&, const string&, rclcpp::Duration) const[m[K’
+[3.866s]   136 |   [01;36m[KlookupTransform[m[K(
+[3.866s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:136:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[3.866s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:39[m[K,
+[3.866s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:43[m[K,
+[3.866s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+[3.866s]                  from [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[3.867s]                  from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:2[m[K:
+[3.867s] [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:158:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2::BufferCore::lookupTransform(const string&, const TimePoint&, const string&, const TimePoint&, const string&) const[m[K’
+[3.867s]   158 |   [01;36m[KlookupTransform[m[K(
+[3.867s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.867s] [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:158:3:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[3.867s] [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:140:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2::BufferCore::lookupTransform(const string&, const string&, const TimePoint&) const[m[K’
+[3.867s]   140 |   [01;36m[KlookupTransform[m[K(
+[3.867s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.867s] [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:140:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[3.869s] [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:170:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcell_id[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.869s]   170 |         int [01;35m[Kcell_id[m[K = std::stoi(cell_id_str);
+[3.869s]       |             [01;35m[K^~~~~~~[m[K
+[6.255s] gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+[6.256s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+[6.256s] gmake: *** [Makefile:146: all] Error 2
+[6.257s] Invoked command in '/home/user/exchange/workspace/build/tiago_manipulation_tasks' returned '2': AMENT_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exchange/workspace/install/tiago_pro_simulation:/home/user/exchange/workspace/install/tiago_pro_mujoco:/home/user/exchange/workspace/install/tiago_pro_gazebo:/home/user/exchange/workspace/install/tiago_pro_robot:/home/user/exchange/workspace/install/tiago_pro_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm:/home/user/exchange/workspace/install/tiago_pro_description:/home/user/exchange/workspace/install/tiago_pro_bringup:/home/user/exchange/workspace/install/pal_sea_arm_moveit_config:/home/user/exchange/workspace/install/pal_sea_arm_bringup:/home/user/exchange/workspace/install/tiago_pro_controller_configuration:/home/user/exchange/workspace/install/pal_sea_arm_description:/home/user/exchange/workspace/install/pal_sea_arm_controller_configuration:/home/user/exchange/workspace/install/pal_pro_gripper:/home/user/exchange/workspace/install/pal_pro_gripper_controller_configuration:/home/user/exchange/workspace/install/tiago_pro_rgbd_sensors:/home/user/exchange/workspace/install/tiago_pro_laser_sensors:/home/user/exchange/workspace/install/tiago_pro_2dnav:/home/user/exchange/workspace/install/pal_pro_gripper_description:/home/user/exchange/workspace/install/pal_gazebo_worlds:/home/user/exchange/workspace/install/linkattacher_msgs:/opt/ros/humble GAZEBO_MODEL_PATH=/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models GZ_SIM_RESOURCE_PATH=/home/user/exchange/workspace/install/pal_gazebo_worlds/share/pal_gazebo_worlds/models LD_LIBRARY_PATH=/home/user/exchange/workspace/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exchange/workspace/install/tiago_pro_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/home/user/exchange/workspace/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/home/user/exchange/workspace/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exchange/workspace/build/tiago_manipulation_tasks -- -j12 -l12

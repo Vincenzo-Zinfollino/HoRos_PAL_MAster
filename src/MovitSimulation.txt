@@ -70,3 +70,8 @@ pip install --force-reinstall --no-cache-dir "trimesh[easy]"
 
 
 ros2 service call /ATTACHLINK linkattacher_msgs/srv/AttachLink "{model1_name: 'tiago-pro', link1_name: 'gripper_left_inner_finger_left_link', model2_name: 's3_cocacola', link2_name: 'link_cocacola'}"
+
+
+for data visual 
+
+pip install pandas matplotlib seaborn

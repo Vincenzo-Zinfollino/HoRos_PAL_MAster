@@ -5,6 +5,9 @@
 #include <std_msgs/msg/bool.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
+#include <tf2_ros/buffer.h>
+#include <tf2_ros/transform_listener.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <chrono>
 #include <thread>
 #include <fstream>
@@ -25,7 +28,11 @@ public:
     arm_group_->setMaxAccelerationScalingFactor(0.3);
     arm_group_->setPoseReferenceFrame("base_footprint");
     // Riduciamo il tempo di planning per scartare velocemente le celle irraggiungibili
-    arm_group_->setPlanningTime(0.5); 
+    arm_group_->setPlanningTime(0.25);  // Ridotto da 0.5
+
+
+    tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool>("/task/place_macro_completed", 10);
     request_sub_ = node_->create_subscription<std_msgs::msg::Bool>(
@@ -84,6 +91,30 @@ private:
         RCLCPP_ERROR(node_->get_logger(), "Impossibile raggiungere la Safe Posture. Abortisco task.");
         is_running_ = false;
         return;
+    }
+
+    double robot_x = 0.0, robot_y = 0.0, robot_z = 0.0;
+    try {
+        // Chiediamo la trasformazione dal frame globale ("map") al robot ("base_footprint")
+        // Se nel tuo sistema Nav2 il frame globale si chiama in un altro modo (es. "world" o "odom"), cambialo qui!
+       geometry_msgs::msg::TransformStamped transformStamped = tf_buffer_->lookupTransform(
+            "map", 
+            "base_footprint", 
+            tf2::TimePointZero,            // Lasciamo tf2::TimePointZero
+            tf2::durationFromSec(2.0)      // USIAMO tf2::duration INVECE DI rclcpp::Duration
+        );
+        
+        robot_x = transformStamped.transform.translation.x;
+        robot_y = transformStamped.transform.translation.y;
+        robot_z = transformStamped.transform.translation.z;
+
+        RCLCPP_INFO(node_->get_logger(), "Posizione dinamica Robot (TF): X=%.3f, Y=%.3f, Z=%.3f", robot_x, robot_y, robot_z);
+    } catch (const tf2::TransformException & ex) {
+        RCLCPP_ERROR(node_->get_logger(), "Impossibile leggere la TF del robot: %s. Uso l'ultima posizione nota.", ex.what());
+        // Fallback di sicurezza in caso la TF fallisca
+        robot_x = 5.75; 
+        robot_y = 4.00;
+        robot_z = 0.0;
     }
 
     // 1. Apriamo i file CSV (Input e Output)
@@ -154,11 +185,8 @@ private:
         double target_z = std::stod(z_str);
 
         // --- TRASFORMAZIONE DA WORLD A BASE_FOOTPRINT ---
-        double robot_x = 5.25;
-        double robot_y = 3.88;
-        double robot_z = 0.0;
-
-        // Coordinate relative al robot
+        
+        // Coordinate relative al robot lette dalla tf
         double local_target_x = target_x - robot_x;
         double local_target_y = target_y - robot_y;
         double local_target_z = (target_z - robot_z)+0.12;
@@ -217,6 +245,8 @@ private:
 
   rclcpp::Node::SharedPtr node_;
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> arm_group_;
+  std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
+  std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr completed_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr request_sub_;
   bool is_running_;

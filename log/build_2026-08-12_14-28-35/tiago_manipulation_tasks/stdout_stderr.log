@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target place_macro_task_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o[0m
+[ 75%] Built target pick_macro_task_node
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PlaceMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:100:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::lookupTransform(const char [4], const char [15], const TimePoint&, rclcpp::Duration)[m[K’
+  100 |         geometry_msgs::msg::TransformStamped transformStamped = [01;31m[Ktf_buffer_->lookupTransform([m[K
+      |                                                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  101 | [01;31m[K            "map", "base_footprint", tf2::TimePointZero, rclcpp::Duration::from_seconds(2.0))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:92:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const string&, const TimePoint&, tf2::Duration) const[m[K’
+   92 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:94:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Ktf2::Duration[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’}
+   94 |     const tf2::TimePoint & time, [01;36m[Kconst tf2::Duration timeout[m[K) const override;
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:102:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const string&, const rclcpp::Time&, rclcpp::Duration) const[m[K’
+  102 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:104:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst TimePoint[m[K’ {aka ‘[01m[Kconst std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’} to ‘[01m[Kconst rclcpp::Time&[m[K’
+  104 |     [01;36m[Kconst rclcpp::Time & time[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:124:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const TimePoint&, const string&, const TimePoint&, const string&, tf2::Duration) const[m[K’
+  124 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:124:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:136:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const rclcpp::Time&, const string&, const rclcpp::Time&, const string&, rclcpp::Duration) const[m[K’
+  136 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:136:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:39[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:158:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2::BufferCore::lookupTransform(const string&, const TimePoint&, const string&, const TimePoint&, const string&) const[m[K’
+  158 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:158:3:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:140:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual geometry_msgs::msg::TransformStamped tf2::BufferCore::lookupTransform(const string&, const string&, const TimePoint&) const[m[K’
+  140 |   [01;36m[KlookupTransform[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:140:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:170:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcell_id[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  170 |         int [01;35m[Kcell_id[m[K = std::stoi(cell_id_str);
+      |             [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
