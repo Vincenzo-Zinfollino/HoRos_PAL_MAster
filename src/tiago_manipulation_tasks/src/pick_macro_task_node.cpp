@@ -212,12 +212,7 @@ auto future_result = grasp_client_->async_send_request(
                       attach_future.get();
                       RCLCPP_INFO(node_->get_logger(), "Lattina incollata con successo al gripper in Gazebo!");
 
-                      // ==========================================
-                      // 2. INIZIO PARTE ATTACH MOVEIT (NON MODIFICATA)
-                      // ==========================================
-                      // Inserisci qui la tua logica MoveIt per applicare 
-                      // l'AttachedCollisionObject alla PlanningScene.
-                      // ==========================================
+           
 
                   } catch (const std::exception &e) {
                       RCLCPP_ERROR(node_->get_logger(), "Fallita la chiamata ad /ATTACHLINK: %s", e.what());

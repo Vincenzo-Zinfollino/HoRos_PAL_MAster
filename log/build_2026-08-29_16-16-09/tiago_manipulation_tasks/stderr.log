@@ -1,0 +1,8 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PlaceMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:279:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Pose = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kw[m[K’
+  279 |     final_pose.[01;31m[Kw[m[K = q_target.w();
+      |                [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

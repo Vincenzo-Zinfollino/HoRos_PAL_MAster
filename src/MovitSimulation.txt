@@ -64,6 +64,8 @@ ros2 run pick_task main_task_node.py
 
 colcon build --packages-select tiago_manipulation_tasks pick_task
 
+ros2 launch pick_task manipulation_pipeline.launch.py 
+
 
 
 pip install --force-reinstall --no-cache-dir "trimesh[easy]"
