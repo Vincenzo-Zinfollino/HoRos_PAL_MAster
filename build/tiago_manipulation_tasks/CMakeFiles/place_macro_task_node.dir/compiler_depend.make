@@ -885,189 +885,215 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
   /usr/include/boost/random/detail/int_float_pair.hpp \
   /usr/include/boost/random/uniform_01.hpp \
   /usr/include/boost/random/exponential_distribution.hpp \
-  /usr/include/eigen3/Eigen/Geometry \
-  /usr/include/eigen3/Eigen/Core \
-  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Geometry \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Core \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Version \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Macros.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ConfigureVectorization.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   /usr/include/c++/11/complex \
-  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
-  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
-  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
-  /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
-  /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
-  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
-  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
-  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
-  /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
-  /usr/include/eigen3/Eigen/src/Core/IO.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
-  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
-  /usr/include/eigen3/Eigen/src/Core/Product.h \
-  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
-  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
-  /usr/include/eigen3/Eigen/src/Core/Assign.h \
-  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
-  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
-  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
-  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
-  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
-  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
-  /usr/include/eigen3/Eigen/src/Core/Array.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
-  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/Dot.h \
-  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
-  /usr/include/eigen3/Eigen/src/Core/Stride.h \
-  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
-  /usr/include/eigen3/Eigen/src/Core/Map.h \
-  /usr/include/eigen3/Eigen/src/Core/Ref.h \
-  /usr/include/eigen3/Eigen/src/Core/Block.h \
-  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
-  /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
-  /usr/include/eigen3/Eigen/src/Core/Reshaped.h \
-  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
-  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
-  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/Redux.h \
-  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
-  /usr/include/eigen3/Eigen/src/Core/Swap.h \
-  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
-  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/Solve.h \
-  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
-  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
-  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
-  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
-  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
-  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
-  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
-  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
-  /usr/include/eigen3/Eigen/src/Core/Select.h \
-  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
-  /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
-  /usr/include/eigen3/Eigen/src/Core/Random.h \
-  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
-  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
-  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
-  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
-  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
-  /usr/include/eigen3/Eigen/SVD \
-  /usr/include/eigen3/Eigen/QR \
-  /usr/include/eigen3/Eigen/Cholesky \
-  /usr/include/eigen3/Eigen/Jacobi \
-  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
-  /usr/include/eigen3/Eigen/Householder \
-  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
-  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
-  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
-  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
-  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
-  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
-  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
-  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
-  /usr/include/eigen3/Eigen/LU \
-  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
-  /usr/include/eigen3/Eigen/src/misc/Image.h \
-  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
-  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
-  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
-  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
-  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
-  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
-  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
-  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/MKL_support.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Constants.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Meta.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Assert.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ForwardDeclarations.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/StaticAssert.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/XprHelper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Memory.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/IntegralConstant.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Serializer.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/SymbolicIndex.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/EmulateArray.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/MoreMeta.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NumTraits.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MathFunctions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/RandomImpl.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GenericPacketMath.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MathFunctionsImpl.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/Half.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/BFloat16.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/PacketMath.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/Reductions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/TypeCasting.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/Complex.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/Settings.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/TernaryFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/BinaryFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/UnaryFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/NullaryFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/StlFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/IndexedViewHelper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ReshapedHelper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArithmeticSequence.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/IO.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseCoeffsBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/BlockMethods.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/IndexedViewMethods.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ReshapedMethods.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ReshapedMethods.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MatrixBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/EigenBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Product.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CoreEvaluators.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/AssignEvaluator.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/RealView.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Assign.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArrayBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/BlasUtil.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseStorage.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NestByValue.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ReturnByValue.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NoAlias.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PlainObjectBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Matrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Array.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Fill.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseTernaryOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseBinaryOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseUnaryOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseNullaryOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseUnaryView.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InnerProduct.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Dot.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/StableNorm.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Stride.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MapBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Map.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Ref.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Block.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/VectorBlock.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/IndexedView.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Reshaped.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Transpose.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DiagonalMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Diagonal.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DiagonalProduct.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SkewSymmetricMatrix3.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Redux.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Visitor.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/FindCoeff.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Fuzzy.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Swap.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CommaInitializer.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GeneralProduct.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Solve.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Inverse.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SolverBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PermutationMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Transpositions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/TriangularMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SelfAdjointView.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DeviceWrapper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/Parallelizer.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ProductEvaluators.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SolveTriangular.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointProduct.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularSolverVector.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/BandMatrix.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CoreIterators.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ConditionEstimator.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Select.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/VectorwiseOp.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PartialReduxEvaluator.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Random.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Replicate.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Reverse.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArrayWrapper.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/StlIterators.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GlobalFunctions.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/SVD \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/QR \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Cholesky \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Jacobi \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Jacobi/Jacobi.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Jacobi/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/LLT.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/LDLT.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Householder \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/Householder.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/HouseholderSequence.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/BlockHouseholder.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/HouseholderQR.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/FullPivHouseholderQR.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/ColPivHouseholderQR.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/RealSvd2x2.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/UpperBidiagonalization.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/SVDBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/JacobiSVD.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/BDCSVD.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/LU \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/Kernel.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/Image.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/FullPivLU.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/PartialPivLU.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/Determinant.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/InverseImpl.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/arch/InverseSize4.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/OrthoMethods.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/EulerAngles.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Homogeneous.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/RotationBase.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Rotation2D.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Quaternion.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/AngleAxis.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Transform.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Translation.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Scaling.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Hyperplane.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/ParametrizedLine.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/AlignedBox.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Umeyama.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/InternalHeaderCheck.h \
   /opt/ros/humble/include/moveit/robot_model/link_model.h \
   /opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_vector_container.h \
-  /usr/include/eigen3/Eigen/Core \
-  /usr/include/eigen3/Eigen/StdVector \
-  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
-  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Core \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/StdVector \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/StlSupport/StdVector.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/StlSupport/details.h \
   /opt/ros/humble/include/geometric_shapes/geometric_shapes/check_isometry.h \
   /opt/ros/humble/include/moveit/kinematics_base/kinematics_base.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
@@ -1451,8 +1477,52 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc
+  /usr/include/c++/11/bits/fstream.tcc \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Dense \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Geometry \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Eigenvalues \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealSchur.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/EigenSolver.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealSchur.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealQZ.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealQZ.h \
+  /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
 
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealQZ.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/ComplexSchur.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/RealSchur.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Eigenvalues:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Dense:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
@@ -1568,8 +1638,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp:
 
-/opt/ros/humble/include/tf2/tf2/transform_storage.hpp:
-
 /opt/ros/humble/include/tf2/tf2/exceptions.hpp:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp:
@@ -1602,8 +1670,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
 
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp:
-
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp:
 
 /opt/ros/humble/include/rcl_action/rcl_action/goal_state_machine.h:
@@ -1616,6 +1682,10 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:
 
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:
+
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/visibility_control.hpp:
+
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/types.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.hpp:
@@ -1626,17 +1696,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__functions.h:
 
-/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.h:
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__functions.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_c__visibility_control.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 
@@ -1660,8 +1724,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/execute_trajectory__struct.hpp:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
-
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/action_type_support.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__type_support.hpp:
@@ -1669,8 +1731,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap_with_pose__traits.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene_world__traits.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__traits.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_scale__traits.hpp:
 
@@ -1684,15 +1744,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/workspace_parameters__traits.hpp:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__traits.hpp:
-
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__traits.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp:
 
@@ -1726,8 +1782,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_options__struct.hpp:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__struct.hpp:
-
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/trajectory_constraints__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__struct.hpp:
@@ -1745,8 +1799,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/grasp.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
 
@@ -1769,8 +1821,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/visibility_constraint__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_constraint__struct.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/constraints.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__type_support.hpp:
 
@@ -1802,8 +1852,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__builder.hpp:
 
-/opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__struct.hpp:
-
 /opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh__struct.hpp:
 
 /opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__struct.hpp:
@@ -1820,11 +1868,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__struct.hpp:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/robot_state.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory_point__traits.hpp:
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory__traits.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_trajectory__traits.hpp:
 
@@ -1844,15 +1888,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp:
-
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
 
@@ -1866,15 +1906,45 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:
+
+/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_containers.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
+
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
-
 /usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp:
 
@@ -1896,6 +1966,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
+
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
@@ -1906,11 +1978,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
 
@@ -1924,19 +1992,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/execute_trajectory__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
-/usr/include/c++/11/shared_mutex:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__functions.h:
 
@@ -1944,13 +2012,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/AngleAxis.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp:
 
@@ -1972,8 +2042,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
 /usr/include/signal.h:
@@ -1983,10 +2051,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
-
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
@@ -2002,11 +2066,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
 /usr/include/c++/11/bits/locale_conv.h:
 
-/usr/include/eigen3/Eigen/src/Core/Random.h:
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Stride.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp:
 
@@ -2024,23 +2090,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/preprocessor/list/reverse.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:
 
 /usr/include/wctype.h:
 
@@ -2056,8 +2114,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/preprocessor/inc.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
-
 /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
@@ -2070,15 +2126,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Transpose.h:
-
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h:
-
-/usr/include/boost/type_traits/is_const.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
@@ -2094,6 +2144,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/InternalHeaderCheck.h:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -2106,11 +2158,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Replicate.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/UpperBidiagonalization.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+/opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
@@ -2128,27 +2182,31 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl/rcl/event.h:
 
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/LU:
 
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ReshapedMethods.inc:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Rotation2D.h:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
 /opt/ros/humble/include/rcl/rcl/time.h:
 
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
-
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/TernaryFunctors.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
 /opt/ros/humble/include/rcl/rcl/timer.h:
-
-/usr/include/eigen3/Eigen/src/Core/Inverse.h:
 
 /usr/include/boost/mpl/aux_/config/static_constant.hpp:
 
@@ -2168,6 +2226,10 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl/rcl/node.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/TypeCasting.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PartialReduxEvaluator.h:
+
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp:
@@ -2175,10 +2237,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/rcl/rcl/context.h:
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
@@ -2194,19 +2252,33 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/allocated_ptr.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
+
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
 /usr/include/kdl/utilities/kdl-config.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GlobalFunctions.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory_point__traits.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SolverBase.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Quaternion.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -2216,8 +2288,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
-/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
@@ -2225,8 +2295,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/urdfdom_headers/urdf_world/types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
-
-/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__builder.hpp:
 
@@ -2244,9 +2312,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rmw/rmw/rmw.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
+/opt/ros/humble/include/rcl/rcl/error_handling.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.h:
 
@@ -2254,11 +2324,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
-
 /usr/include/boost/integer/integer_mask.hpp:
 
 /usr/include/c++/11/variant:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Array.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
@@ -2266,9 +2336,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
+/opt/ros/humble/include/rcutils/rcutils/types.h:
+
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
-/opt/ros/humble/include/rcutils/rcutils/snprintf.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/MatrixCwiseBinaryOps.inc:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/SVD:
 
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 
@@ -2278,6 +2352,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseTernaryOp.h:
+
 /usr/include/kdl/frames.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
@@ -2286,7 +2362,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rmw/rmw/types.h:
 
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PermutationMatrix.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
@@ -2312,8 +2388,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
 
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__struct.hpp:
@@ -2322,15 +2396,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/macros.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__builder.hpp:
 
@@ -2338,11 +2408,17 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__traits.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Householder:
+
 /usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
+
+/usr/include/tinyxml2.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__struct.hpp:
 
@@ -2368,8 +2444,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/istream:
 
-/usr/include/eigen3/Eigen/src/Core/Stride.h:
-
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
@@ -2379,12 +2453,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__builder.hpp:
-
-/usr/include/c++/11/math.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
 
@@ -2410,19 +2478,21 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/ostream:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/VectorwiseOp.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /usr/include/c++/11/cassert:
 
 /usr/include/c++/11/unordered_set:
 
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/11/iostream:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/Parallelizer.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ForwardDeclarations.h:
 
 /usr/include/boost/random/uniform_real_distribution.hpp:
 
@@ -2452,17 +2522,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/DisableStupidWarnings.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Jacobi:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/backward/binders.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularMatrixMatrix.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -2482,6 +2554,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__traits.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Select.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -2491,8 +2565,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/c++/11/cstring:
 
 /usr/include/c++/11/bits/atomic_futex.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
@@ -2508,9 +2580,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/exception/exception.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointRank2Update.h:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
 
 /usr/include/c++/11/bits/stl_algobase.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/AlignedBox.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularSolverVector.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__traits.hpp:
 
@@ -2522,8 +2600,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp:
 
 /usr/include/boost/mpl/aux_/config/integral.hpp:
@@ -2534,15 +2610,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__struct.hpp:
 
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/c++/11/vector:
-
-/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__traits.hpp:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CoreEvaluators.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -2556,7 +2626,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/Half.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
@@ -2570,8 +2642,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
-
 /usr/include/c++/11/iterator:
 
 /usr/include/boost/config/detail/posix_features.hpp:
@@ -2582,8 +2652,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/array:
@@ -2591,6 +2659,10 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/boost/mpl/limits/arity.hpp:
 
 /usr/include/c++/11/bits/sstream.tcc:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Jacobi/Jacobi.h:
 
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
 
@@ -2602,10 +2674,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
-
 /usr/include/c++/11/debug/assertions.h:
 
 /opt/ros/humble/include/tracetools/tracetools/config.h:
@@ -2614,17 +2682,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
-/usr/include/eigen3/Eigen/SVD:
-
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/usr/include/boost/random/variate_generator.hpp:
 
 /usr/include/linux/close_range.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/InternalHeaderCheck.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
@@ -2640,6 +2710,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
+/usr/include/boost/mpl/aux_/config/msvc.hpp:
+
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
@@ -2647,8 +2719,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
-
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -2676,11 +2746,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/InternalHeaderCheck.h:
+
 /usr/include/boost/mpl/bool_fwd.hpp:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
 /usr/include/c++/11/bits/memoryfwd.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ProductEvaluators.h:
 
 /usr/include/c++/11/bits/stl_function.h:
 
@@ -2690,8 +2764,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__type_support.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__type_support.hpp:
@@ -2699,6 +2771,12 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/urdf/urdf/urdfdom_compatibility.h:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/StdVector:
+
+/usr/include/c++/11/memory:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -2722,9 +2800,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/eigen3/Eigen/src/Core/Ref.h:
-
 /usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularSolverMatrix.h:
 
 /opt/ros/humble/include/moveit/robot_model/planar_joint_model.h:
 
@@ -2732,9 +2812,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
 
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/position_constraint__struct.hpp:
+
+/usr/include/boost/preprocessor/control/expr_iif.hpp:
 
 /usr/include/stdc-predef.h:
 
@@ -2743,6 +2825,14 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+/opt/ros/humble/include/tf2/tf2/visibility_control.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/boost/preprocessor/cat.hpp:
 
@@ -2756,9 +2846,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/random/detail/ptr_helper.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ArrayCwiseBinaryOps.inc:
+
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
 /usr/include/features.h:
 
@@ -2770,11 +2870,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/ios_base.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/BDCSVD.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -2786,15 +2888,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
 /usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -2804,13 +2902,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/system_error:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
 
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/include/c++/11/initializer_list:
 
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_map_container.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+/usr/include/c++/11/iosfwd:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -2819,6 +2917,14 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__builder.hpp:
+
+/usr/include/c++/11/math.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Transpositions.h:
 
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
@@ -2830,7 +2936,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/ctime:
 
-/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/PartialPivLU.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -2842,9 +2948,21 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/random/detail/large_arithmetic.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_vector_container.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/opt/ros/humble/include/tf2/tf2/time.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
+
+/usr/include/libintl.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
@@ -2872,6 +2990,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/StlIterators.h:
+
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
@@ -2884,15 +3004,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/quoted_string.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
+
 /usr/include/math.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/basic_string.tcc:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
 
@@ -2908,9 +3026,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/execute_trajectory.hpp:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
+/opt/ros/humble/include/moveit/robot_model/joint_model_group.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -2922,15 +3038,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/Householder.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
 
@@ -2938,15 +3052,17 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/config/workaround.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
-
 /usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
-/usr/include/c++/11/csignal:
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h:
 
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
+/usr/include/boost/type_traits/is_const.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Solve.h:
+
+/usr/include/c++/11/csignal:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp:
 
@@ -2956,37 +3072,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+/opt/ros/humble/include/tf2/tf2/transform_storage.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/position_constraint__struct.hpp:
-
-/usr/include/boost/preprocessor/control/expr_iif.hpp:
-
-/usr/include/eigen3/Eigen/Cholesky:
-
-/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/QR:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/eigen3/Eigen/src/Core/Assign.h:
-
-/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /usr/include/boost/random/detail/config.hpp:
 
@@ -3006,11 +3104,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/typeinfo:
 
+/usr/include/c++/11/bits/refwrap.h:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/stdint.h:
 
-/usr/include/c++/11/bits/erase_if.h:
+/usr/include/endian.h:
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
@@ -3042,13 +3142,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/eigen3/Eigen/src/Core/Dot.h:
-
 /usr/include/c++/11/typeindex:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -3056,21 +3152,17 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/time.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/RealView.h:
+
 /opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseStorage.h:
+
 /usr/include/boost/mpl/bool.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
@@ -3080,7 +3172,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
+/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DiagonalProduct.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/SVDBase.h:
+
 /usr/include/c++/11/exception:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -3094,7 +3194,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/BlockHouseholder.h:
+
 /opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/StlSupport/details.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -3115,6 +3219,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /opt/ros/humble/include/geometric_shapes/geometric_shapes/check_isometry.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MatrixBase.h:
 
 /usr/include/c++/11/cstdint:
 
@@ -3140,10 +3246,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/utility:
 
-/opt/ros/humble/include/rcl/rcl/arguments.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
 /usr/include/c++/11/cerrno:
 
 /usr/include/c++/11/ext/new_allocator.h:
@@ -3158,10 +3260,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -3173,8 +3271,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
 
 /usr/include/c++/11/functional:
 
@@ -3188,11 +3284,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -3210,37 +3310,37 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/iomanip:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
-
-/usr/include/c++/11/cctype:
-
 /usr/include/c++/11/locale:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /usr/include/ctype.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/CommonCwiseBinaryOps.inc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/robot_state.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ConfigureVectorization.h:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/usr/include/c++/11/numeric:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
-
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
-
-/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
 /usr/include/c++/11/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/c++/11/string_view:
-
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
@@ -3256,15 +3356,23 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
 
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
+
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
 /usr/include/boost/random/detail/generator_bits.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Geometry:
 
 /usr/include/stdio.h:
 
 /usr/include/c++/11/ratio:
 
 /usr/include/boost/random/detail/integer_log2.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/RotationBase.h:
 
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
@@ -3278,7 +3386,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/bits/hashtable.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/ColPivHouseholderQR.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
@@ -3294,15 +3408,29 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/random/detail/seed_impl.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/usr/include/c++/11/cctype:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/AssignmentFunctors.h:
+
 /usr/include/c++/11/bits/move.h:
 
-/usr/include/c++/11/bits/stl_algo.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/MatrixCwiseUnaryOps.inc:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Diagonal.h:
+
+/usr/include/c++/11/iostream:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/LDLT.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
 /usr/include/c++/11/bits/std_abs.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
@@ -3314,7 +3442,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Assert.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
@@ -3332,6 +3460,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/urdfdom_headers/urdf_model/types.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/StlSupport/StdVector.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
@@ -3340,21 +3470,27 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InnerProduct.h:
+
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
 
-/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Visitor.h:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Fill.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/InternalHeaderCheck.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
 
@@ -3376,15 +3512,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/c++/11/set:
 
-/usr/include/eigen3/Eigen/StdVector:
-
 /usr/include/boost/preprocessor/identity.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
 
 /usr/include/boost/mpl/void_fwd.hpp:
 
@@ -3392,13 +3524,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SolveTriangular.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
-
-/usr/include/boost/random/detail/uniform_int_float.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
 /usr/include/c++/11/bits/char_traits.h:
 
@@ -3406,11 +3534,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+/usr/include/boost/random/detail/uniform_int_float.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__functions.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
@@ -3434,21 +3560,21 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/AssignEvaluator.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
@@ -3458,8 +3584,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit/robot_model/robot_model.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/c++/11/bits/unordered_set.h:
@@ -3468,37 +3592,29 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Swap.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
+/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
-/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CoreIterators.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
-
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/move_it_error_codes__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
 
 /usr/include/c++/11/thread:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArrayBase.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp:
 
@@ -3510,19 +3626,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
-/usr/include/c++/11/mutex:
-
-/usr/include/boost/preprocessor/repetition/repeat.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__struct.hpp:
 
 /usr/include/boost/random/detail/polynomial.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/executable_list.hpp:
-
-/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
 
@@ -3530,27 +3638,27 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/na.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/BFloat16.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/MapBase.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /usr/include/boost/mpl/int.hpp:
 
 /usr/include/kdl/utilities/utility.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
-
-/opt/ros/humble/include/tf2/tf2/time.hpp:
-
-/usr/include/libintl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
@@ -3560,27 +3668,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
 /opt/ros/humble/include/moveit/robot_model/link_model.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
-/usr/include/boost/config.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/IO.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
@@ -3600,7 +3700,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -3622,7 +3726,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MathFunctions.h:
+
 /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Meta.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
@@ -3636,21 +3744,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/srdfdom/srdfdom/model.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
 /usr/include/c++/11/climits:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory__traits.hpp:
-
-/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -3659,14 +3757,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/c++/11/bits/allocator.h:
 
 /usr/include/linux/limits.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
-
-/opt/ros/humble/include/rcl/rcl/error_handling.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -3678,9 +3768,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
-
 /opt/ros/humble/include/urdfdom_headers/urdf_model/joint.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/IntegralConstant.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/execute_trajectory__type_support.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ConditionEstimator.h:
 
 /opt/ros/humble/include/urdfdom_headers/urdf_exception/exception.h:
 
@@ -3688,13 +3784,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/srdfdom/srdfdom/visibility_control.h:
 
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
-
-/usr/include/eigen3/Eigen/src/LU/Determinant.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/CommonCwiseUnaryOps.inc:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
 
@@ -3707,8 +3797,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__builder.hpp:
 
 /opt/ros/humble/include/random_numbers/random_numbers.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /usr/include/boost/config/compiler/gcc.hpp:
 
@@ -3724,7 +3812,13 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+
 /usr/include/boost/config/detail/select_platform_config.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__traits.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseUnaryOp.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene_world__struct.hpp:
 
@@ -3746,17 +3840,23 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/integer.hpp:
 
-/usr/include/boost/integer_traits.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /usr/include/boost/static_assert.hpp:
 
 /usr/include/boost/detail/workaround.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/execute_trajectory.hpp:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Constants.h:
+
 /usr/include/boost/random/detail/seed.hpp:
 
 /usr/include/boost/utility/enable_if.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MapBase.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
@@ -3772,17 +3872,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/type_traits/is_integral.hpp:
 
-/usr/include/boost/type_traits/integral_constant.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/InternalHeaderCheck.h:
 
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+/usr/include/boost/type_traits/integral_constant.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/move_it_error_codes__builder.hpp:
 
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Hyperplane.h:
 
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
@@ -3793,6 +3891,10 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /usr/include/boost/config/workaround.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/boost/mpl/integral_c_tag.hpp:
 
@@ -3806,23 +3908,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/assert/source_location.hpp:
 
-/usr/include/boost/current_function.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Solve.h:
-
 /usr/include/boost/config/no_tr1/cmath.hpp:
 
 /usr/include/boost/integer/static_log2.hpp:
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
-/usr/include/boost/random/traits.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/Image.h:
 
-/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+/usr/include/boost/random/traits.hpp:
 
 /usr/include/boost/type_traits/remove_cv.hpp:
 
-/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Fuzzy.h:
 
 /usr/include/boost/random/detail/int_float_pair.hpp:
 
@@ -3830,13 +3928,27 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/type_traits/is_enum.hpp:
 
+/opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__struct.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Jacobi/InternalHeaderCheck.h:
+
 /usr/include/boost/type_traits/intrinsics.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp:
 
 /usr/include/boost/version.hpp:
 
-/usr/include/boost/type_traits/make_unsigned.hpp:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DeviceWrapper.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
@@ -3844,13 +3956,15 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/if.hpp:
 
+/usr/include/boost/mpl/aux_/config/ttp.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/TriangularMatrixVector.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
@@ -3859,6 +3973,12 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Product.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__builder.hpp:
 
@@ -3874,10 +3994,6 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/int_fwd.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:
-
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
@@ -3886,9 +4002,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/InverseImpl.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp:
 
@@ -3898,13 +4014,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/config/nttp.hpp:
 
-/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
-
 /usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/StlIterators.h:
 
 /opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
 
@@ -3914,9 +4026,9 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/preprocessor/params.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
-/usr/include/boost/preprocessor/logical/bool.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseCoeffsBase.h:
 
 /usr/include/boost/preprocessor/debug/error.hpp:
 
@@ -3924,7 +4036,7 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
+/usr/include/boost/preprocessor/logical/and.hpp:
 
 /usr/include/boost/preprocessor/empty.hpp:
 
@@ -3934,11 +4046,11 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NumTraits.h:
+
 /usr/include/boost/preprocessor/control/while.hpp:
 
 /usr/include/boost/preprocessor/detail/check.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
 
 /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap_with_pose__struct.hpp:
 
@@ -3946,19 +4058,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/preprocessor/logical/compl.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
-
 /usr/include/boost/preprocessor/list/fold_right.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
-
 /usr/include/boost/preprocessor/tuple/elem.hpp:
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Core:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/EmulateArray.h:
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
@@ -3978,19 +4090,21 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_support.hpp:
 
 /usr/include/boost/random/detail/const_mod.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/boost/random/detail/disable_warnings.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
-
 /usr/include/boost/random/detail/enable_warnings.hpp:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/trajectory_constraints__traits.hpp:
 
@@ -3998,263 +4112,305 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /usr/include/boost/random/detail/signed_unsigned_tools.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
-
 /usr/include/boost/random/detail/generator_seed_seq.hpp:
 
 /usr/include/boost/random/normal_distribution.hpp:
 
 /usr/include/boost/random/exponential_distribution.hpp:
 
-/opt/ros/humble/include/tf2/tf2/visibility_control.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Version:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/InternalHeaderCheck.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Macros.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+/usr/include/c++/11/mutex:
 
-/usr/include/eigen3/Eigen/Geometry:
+/usr/include/boost/preprocessor/repetition/repeat.hpp:
 
-/usr/include/eigen3/Eigen/Core:
-
-/usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/InternalHeaderCheck.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/orientation_constraint__struct.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+/opt/ros/humble/include/rcutils/rcutils/macros.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/MKL_support.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/StaticAssert.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Redux.h:
 
-/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/XprHelper.h:
 
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Memory.h:
 
-/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/Serializer.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
 
-/usr/include/c++/11/numeric:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/SymbolicIndex.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/MoreMeta.h:
 
-/usr/include/endian.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/RandomImpl.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/MathFunctionsImpl.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/ConjHelper.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/execute_trajectory__type_support.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/Reductions.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/FindCoeff.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/SSE/Complex.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/Settings.h:
 
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
-/opt/ros/humble/include/moveit_kinematics_base_export.h:
+/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/BinaryFunctors.h:
 
-/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
+/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/boost/preprocessor/logical/bool.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/UnaryFunctors.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/NullaryFunctors.h:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:
 
-/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/functors/StlFunctors.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/IndexedViewHelper.h:
 
-/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
+/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__traits.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/ReshapedHelper.h:
 
-/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+/usr/include/boost/random/detail/disable_warnings.hpp:
 
-/usr/include/c++/11/tr1/bessel_function.tcc:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArithmeticSequence.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
+/usr/include/c++/11/bits/erase_if.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DenseBase.h:
 
-/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NestByValue.h:
 
-/usr/include/eigen3/Eigen/src/Core/IO.h:
+/usr/include/c++/11/ext/numeric_traits.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/BlockMethods.inc:
 
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/IndexedViewMethods.inc:
 
-/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseNullaryOp.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/EigenBase.h:
 
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__type_support.hpp:
 
-/usr/include/tinyxml2.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Assign.h:
 
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
+/usr/include/boost/current_function.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/plugins/ArrayCwiseUnaryOps.inc:
 
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
+/usr/include/boost/integer_traits.hpp:
 
-/opt/ros/humble/include/moveit/robot_model/joint_model_group.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/util/BlasUtil.h:
 
-/usr/include/eigen3/Eigen/src/Core/Product.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ReturnByValue.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/NoAlias.h:
 
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/PlainObjectBase.h:
 
-/usr/include/c++/11/tr1/ell_integral.tcc:
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Matrix.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseBinaryOp.h:
 
-/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CwiseUnaryView.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Dot.h:
 
-/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/StableNorm.h:
 
-/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Map.h:
 
-/usr/include/eigen3/Eigen/src/Core/Matrix.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Ref.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Block.h:
 
-/usr/include/eigen3/Eigen/src/Core/Array.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/IndexedView.h:
 
-/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Reshaped.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Transpose.h:
 
-/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/DiagonalMatrix.h:
 
-/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
+/usr/include/c++/11/bits/algorithmfwd.h:
 
-/usr/include/boost/random/variate_generator.hpp:
+/usr/include/c++/11/bits/basic_string.tcc:
 
-/usr/include/eigen3/Eigen/src/Core/Map.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SkewSymmetricMatrix3.h:
 
-/usr/include/eigen3/Eigen/src/Core/Block.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixVector.h:
 
-/usr/include/c++/11/memory:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Swap.h:
 
-/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
+/usr/include/c++/11/bits/fstream.tcc:
 
-/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+/usr/include/boost/type_traits/is_floating_point.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/CommaInitializer.h:
 
-/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
+/usr/include/boost/config.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/GeneralProduct.h:
 
-/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
+/opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Inverse.h:
 
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/TriangularMatrix.h:
 
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/BandMatrix.h:
 
-/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+/usr/include/c++/11/vector:
 
-/usr/include/boost/preprocessor/logical/and.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/SelfAdjointView.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/InternalHeaderCheck.h:
 
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
+/usr/include/c++/11/tr1/legendre_function.tcc:
 
-/usr/include/eigen3/Eigen/src/Core/Select.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/GeneralMatrixMatrix.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
 
-/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/products/SelfadjointProduct.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/executable_list.hpp:
 
-/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_vector_container.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Random.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
-/usr/include/boost/mpl/aux_/config/msvc.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/ArrayWrapper.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/Cholesky:
 
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+/usr/include/c++/11/shared_mutex:
 
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Cholesky/LLT.h:
 
-/usr/include/eigen3/Eigen/QR:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Householder/HouseholderSequence.h:
 
-/usr/include/eigen3/Eigen/Jacobi:
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
-/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
-/usr/include/eigen3/Eigen/Householder:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/HouseholderQR.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
+/opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/eigen3/Eigen/src/Householder/Householder.h:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/QR/FullPivHouseholderQR.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+/usr/include/c++/11/bits/stl_algo.h:
 
-/usr/include/eigen3/Eigen/LU:
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/RealSvd2x2.h:
 
-/usr/include/eigen3/Eigen/src/misc/Kernel.h:
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/InternalHeaderCheck.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/constraints.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/SVD/JacobiSVD.h:
+
+/usr/include/boost/type_traits/make_unsigned.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/misc/Kernel.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/FullPivLU.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/Determinant.h:
+
+/usr/include/c++/11/bits/charconv.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/LU/arch/InverseSize4.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/OrthoMethods.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/EulerAngles.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Homogeneous.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Transform.h:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Translation.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Scaling.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/ParametrizedLine.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Geometry/Umeyama.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
+
+/opt/ros/humble/include/moveit/kinematics_base/kinematics_base.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
 
 /opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/plane__struct.hpp:
 
@@ -4264,43 +4420,19 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
 
-/usr/include/eigen3/Eigen/src/misc/Image.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
-
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
-/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/eigen3/Eigen/src/StlSupport/details.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
-
-/opt/ros/humble/include/moveit/kinematics_base/kinematics_base.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/move_it_error_codes.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/Reverse.h:
+
+/home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks/Eigen/src/Core/VectorBlock.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/opt/ros/humble/include/moveit_kinematics_base_export.h:
 
 /opt/ros/humble/include/moveit/robot_model/fixed_joint_model.h:
 
@@ -4312,26 +4444,8 @@ CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o: /home/user
 
 /opt/ros/humble/include/moveit/transforms/transforms.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
-
-/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_containers.h:
-
-/usr/include/c++/11/iosfwd:
-
-/opt/ros/humble/include/eigen_stl_containers/eigen_stl_containers/eigen_stl_map_container.h:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
-
-/usr/include/c++/11/initializer_list:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a072f7c0443caed9b468.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tiago_manipulation_tasks",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pick_macro_task_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pick_macro_task_node-4105248ec2f3467d3cac.json",
+					"name" : "pick_macro_task_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "place_macro_task_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-place_macro_task_node-97f3168f2b3b8d0bf2f5.json",
+					"name" : "place_macro_task_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tiago_manipulation_tasks_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tiago_manipulation_tasks_uninstall-cd55fc9c9eac30defe19.json",
+					"name" : "tiago_manipulation_tasks_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fb8d07e3954cc7199d40.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/exchange/workspace/build/tiago_manipulation_tasks",
+		"source" : "/home/user/exchange/workspace/src/tiago_manipulation_tasks"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

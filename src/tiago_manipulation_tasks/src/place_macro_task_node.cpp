@@ -15,6 +15,8 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <Eigen/Dense>
+#include <moveit/robot_state/robot_state.h>
 
 class PlaceMacroTaskNode {
 public:
@@ -85,6 +87,25 @@ private:
 
   void executeMacroTask() {
     RCLCPP_INFO(node_->get_logger(), "Avvio analisi di raggiungibilità sui ripiani...");
+    
+    /*
+    Test di Eigen per verificare la corretta integrazione della libreria 
+    try {
+        Eigen::Matrix2d test_matrix;
+        test_matrix << 1.0, 2.0,
+                       3.0, 4.0;
+        
+        double det = test_matrix.determinant();
+        RCLCPP_INFO(node_->get_logger(), "=== TEST EIGEN ===");
+        RCLCPP_INFO(node_->get_logger(), "Matrice 2x2 inizializzata. Determinante calcolato: %.2f (Atteso: -2.00)", det);
+        RCLCPP_INFO(node_->get_logger(), "==================");
+    } catch (const std::exception& e) {
+        RCLCPP_ERROR(node_->get_logger(), "Errore durante il test di Eigen: %s", e.what());
+    }
+
+    */
+
+
 
     // 0. Preparazione configurazione sicura 
     if (!prepareSafePosture()) {
@@ -171,8 +192,9 @@ private:
         std::getline(ss, y_str, ',');
         std::getline(ss, z_str, ',');
 
-        int cell_id = std::stoi(cell_id_str);
+        
         /*
+        int cell_id = std::stoi(cell_id_str);
         // Ignora le celle con ID <= 400 (ripiani bassi)
 
         if (cell_id <= 400) {
@@ -253,6 +275,7 @@ private:
 };
 
 int main(int argc, char** argv) {
+
   rclcpp::init(argc, argv);
   rclcpp::NodeOptions options;
   options.automatically_declare_parameters_from_overrides(true);

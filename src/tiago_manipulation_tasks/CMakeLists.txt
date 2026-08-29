@@ -5,6 +5,8 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
+
 # Ricerca dipendenze
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -37,6 +39,9 @@ ament_target_dependencies(place_macro_task_node
   rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_geometry_msgs
 )
 
+target_include_directories(place_macro_task_node PRIVATE 
+  include/tiago_manipulation_tasks
+)
 
 # Installazione binari
 install(TARGETS

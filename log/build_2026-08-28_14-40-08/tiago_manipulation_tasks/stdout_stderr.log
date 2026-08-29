@@ -1,0 +1,68 @@
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found shape_msgs: 4.9.1 (/opt/ros/humble/share/shape_msgs/cmake)
+-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+-- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.6.0 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 16.0.18 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found controller_manager_msgs: 2.53.1 (/opt/ros/humble/share/controller_manager_msgs/cmake)
+-- Found linkattacher_msgs: 0.0.0 (/home/user/exchange/workspace/install/linkattacher_msgs/share/linkattacher_msgs/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/user/exchange/workspace/src/tiago_manipulation_tasks/include/tiago_manipulation_tasks
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/exchange/workspace/build/tiago_manipulation_tasks
+[35m[1mConsolidate compiler generated dependencies of target place_macro_task_node[0m
+[35m[1mConsolidate compiler generated dependencies of target pick_macro_task_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o[0m
+[ 75%] Built target pick_macro_task_node
+[100%] [32m[1mLinking CXX executable place_macro_task_node[0m
+[100%] Built target place_macro_task_node
+-- Install configuration: ""
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/pick_macro_task_node
+-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/place_macro_task_node
+-- Set runtime path of "/home/user/exchange/workspace/install/tiago_manipulation_tasks/lib/tiago_manipulation_tasks/place_macro_task_node" to ""
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/package_run_dependencies/tiago_manipulation_tasks
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/parent_prefix_path/tiago_manipulation_tasks
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.sh
+-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.sh
+-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/environment/path.dsv
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.bash
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.sh
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.zsh
+-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/local_setup.dsv
+-- Installing: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.dsv
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/ament_index/resource_index/packages/tiago_manipulation_tasks
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig.cmake
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/cmake/tiago_manipulation_tasksConfig-version.cmake
+-- Up-to-date: /home/user/exchange/workspace/install/tiago_manipulation_tasks/share/tiago_manipulation_tasks/package.xml

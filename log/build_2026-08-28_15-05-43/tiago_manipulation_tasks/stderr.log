@@ -1,0 +1,39 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:1[m[K:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:284:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  284 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "=== TEST EIGEN ===");
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:284:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  284 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "=== TEST EIGEN ===");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:285:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  285 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Matrice 2x2 inizializzata. Determinante calcolato: %.2f (Atteso: -2.00)", det);
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:285:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  285 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Matrice 2x2 inizializzata. Determinante calcolato: %.2f (Atteso: -2.00)", det);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:286:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  286 |         RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "==================");
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:286:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  286 |         [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "==================");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:288:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  288 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Errore durante il test di Eigen: %s", e.what());
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:288:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  288 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Errore durante il test di Eigen: %s", e.what());
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
