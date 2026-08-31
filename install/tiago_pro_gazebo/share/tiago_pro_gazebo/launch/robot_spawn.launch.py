@@ -55,9 +55,13 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
         arguments=[
                     "-topic", "robot_description",
                     "-entity", "tiago-pro",
-                    "-x", "5.35", 
-                    "-y", "3.95", 
-                    "-z", "0.08",
+                    #"-x", "5.35", 
+                    #"-y", "3.95", 
+                    #"-z", "0.08",
+                    #"-Y","0.00"
+                    "-x", "0.0", 
+                    "-y", "0.0", 
+                    "-z", "0.0",
                     "-Y","0.00"
                     ],
                     output="screen",
@@ -70,13 +74,17 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
         executable="create",
         output="screen",
         arguments=[
-            "-model",  # <-- CORREZIONE: usa -name invece di -model
+            "-model", 
             LaunchConfiguration("robot_name"),
             "-topic",
             "robot_description",
-            "-x", "5.35", 
-            "-y", "3.95", 
-            "-z", "0.08", 
+            #"-x", "5.35", 
+            #"-y", "3.95", 
+            #"-z", "0.08", 
+            #"-Y", "0.00"
+            "-x", "0.00", 
+            "-y", "0.00", 
+            "-z", "0.00", 
             "-Y", "0.00"
         ],
         condition=LaunchConfigurationEquals('gazebo_version', 'gazebo'),

@@ -1,0 +1,13 @@
+[ 50%] Built target pick_macro_task_node
+[35m[1mConsolidate compiler generated dependencies of target place_macro_task_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o[0m
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PlaceMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:286:30:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kgeometry_msgs::msg::Pose final_pose[m[K’
+  286 |     geometry_msgs::msg::Pose [01;31m[Kfinal_pose[m[K;
+      |                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/place_macro_task_node.cpp:276:30:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Pose final_pose[m[K’ previously declared here
+  276 |     geometry_msgs::msg::Pose [01;36m[Kfinal_pose[m[K;
+      |                              [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/place_macro_task_node.dir/build.make:76: CMakeFiles/place_macro_task_node.dir/src/place_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/place_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

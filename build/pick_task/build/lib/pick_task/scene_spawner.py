@@ -35,7 +35,8 @@ class GazeboToMoveItSpawner(Node):
 
     # COORDINATE INIZIALI DESIDERATE PER IL ROBOT IN GAZEBO (x, y, z, yaw in radianti)
     #self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
-    self.target_robot_pose = {'x': 5.25, 'y': 3.88, 'z': 0.08, 'yaw': 0.0}
+    self.target_robot_pose = {'x': 5.45, 'y': 3.88, 'z': 0.08, 'yaw': 0.0}
+   
     self.robot_model_name = 'tiago-pro'
 
     # Client MoveIt per pulire la Planning Scene
@@ -200,7 +201,7 @@ class GazeboToMoveItSpawner(Node):
               is_attached = True
               break
               
-      # Se lo stato è cambiato, lo stampiamo per il debug
+    
       if is_attached != self.is_cocacola_attached:
           if is_attached:
               self.get_logger().info("MoveIt ha preso la lattina! Sospendo l'aggiornamento da Gazebo.")
@@ -342,6 +343,7 @@ class GazeboToMoveItSpawner(Node):
               f"[SYNC -> BOOKSHELF] Elaborazione '{model_name}' tramite"
               ' parser SDF...'
           )
+         
         obj = self.create_multibox_from_sdf(
             model_name,
             world_pose,

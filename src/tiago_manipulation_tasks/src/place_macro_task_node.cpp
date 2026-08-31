@@ -131,16 +131,15 @@ private:
     }
 
     // Lettura TF del robot sempre necessaria per calcolare i target locali precisi
-    double robot_x = 0.0, robot_y = 0.0, robot_z = 0.0;
+    geometry_msgs::msg::TransformStamped transform_map_to_base;
     try {
-       geometry_msgs::msg::TransformStamped transformStamped = tf_buffer_->lookupTransform(
-            "map", "base_footprint", tf2::TimePointZero, tf2::durationFromSec(2.0));
-        robot_x = transformStamped.transform.translation.x;
-        robot_y = transformStamped.transform.translation.y;
-        robot_z = transformStamped.transform.translation.z;
+        // Chiediamo a ROS di calcolare come un punto in "map" si proietta in "base_footprint"
+        transform_map_to_base = tf_buffer_->lookupTransform(
+            "base_footprint", "odom", tf2::TimePointZero, tf2::durationFromSec(2.0));
     } catch (const tf2::TransformException & ex) {
-        RCLCPP_ERROR(node_->get_logger(), "TF fallita. Uso posizioni fallback.");
-        robot_x = 5.75; robot_y = 4.00; robot_z = 0.0;
+        RCLCPP_ERROR(node_->get_logger(), "TF fallita: %s", ex.what());
+        is_running_ = false;
+        return; // Se fallisce, fermiamo tutto per non mandare il braccio nel vuoto!
     }
 
     auto current_state = arm_group_->getCurrentState();
@@ -189,7 +188,7 @@ private:
             std::string id_str, shelf_str, x_str, y_str, z_str;
             std::getline(ss, id_str, ',');
             int cell_id = std::stoi(id_str);
-            //if (cell_id <= 400) continue; 
+            if (cell_id <= 400) continue; 
 
             std::getline(ss, shelf_str, ',');
             std::getline(ss, x_str, ',');
@@ -200,23 +199,31 @@ private:
             double target_y = std::stod(y_str);
             double target_z = std::stod(z_str);
 
-            double local_target_x = target_x - robot_x;
-            double local_target_y = target_y - robot_y;
-            double local_target_z = (target_z - robot_z) + 0.12;
+           // 1. Passiamo le coordinate del CSV DIRETTAMENTE come assolute (odom)
+            geometry_msgs::msg::Pose pose_in_odom;
+            pose_in_odom.position.x = target_x; 
+            pose_in_odom.position.y = target_y;
+            pose_in_odom.position.z = target_z;
+            //pose_in_odom.orientation.w = 1.0;
+
+         
+
+            // 2. Proiettiamo il punto nel frame del robot tenendo conto della sua rotazione
+            geometry_msgs::msg::Pose target_pose;
+            tf2::doTransform(pose_in_odom, target_pose, transform_map_to_base);
+            // 3. Ora abbiamo le coordinate esatte. Aggiungiamo l'offset in Z.
+
+            //target_pose.orientation = start_pose.pose.orientation;
+            target_pose.position.z += 0.12;
 
             double distance = std::sqrt(
-                std::pow(local_target_x - start_pose.pose.position.x, 2) +
-                std::pow(local_target_y - start_pose.pose.position.y, 2) +
-                std::pow(local_target_z - start_pose.pose.position.z, 2)
+                std::pow(target_pose.position.x - start_pose.pose.position.x, 2) +
+                std::pow(target_pose.position.y - start_pose.pose.position.y, 2) +
+                std::pow(target_pose.position.z - start_pose.pose.position.z, 2)
             );
 
-            geometry_msgs::msg::Pose target_pose;
-            target_pose.position.x = local_target_x;
-            target_pose.position.y = local_target_y;
-            target_pose.position.z = local_target_z;
-            target_pose.orientation = start_pose.pose.orientation;
-
-            arm_group_->setPoseTarget(target_pose);
+            //arm_group_->setPoseTarget(target_pose);
+            arm_group_->setPoseTarget(target_pose); // Pianificazione in frame 'map' per coerenza con la cache
 
             moveit::planning_interface::MoveGroupInterface::Plan plan;
             bool success = (arm_group_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
@@ -261,18 +268,25 @@ private:
     // FASE C: ESECUZIONE DEL PLACE SUL PUNTO MIGLIORE
     RCLCPP_INFO(node_->get_logger(), "Pianificazione verso la posizione finale (X:%.2f, Y:%.2f, Z:%.2f)...", best.x, best.y, best.z);
     
-    geometry_msgs::msg::Pose final_pose;
-    
-    
-    final_pose.position.x = best.x - robot_x;
-    final_pose.position.y = best.y - robot_y;
-    final_pose.position.z = (best.z - robot_z) + 0.12;
-    
+    geometry_msgs::msg::Pose final_odom_pose;
+    final_odom_pose.position.x = best.x;
+    final_odom_pose.position.y = best.y;
+    final_odom_pose.position.z = best.z;
+    final_odom_pose.orientation.w = 1.0;
 
-   
-    final_pose.orientation = start_pose.pose.orientation; // Mantiene la pinza dritta
+    geometry_msgs::msg::Pose final_pose;
+    tf2::doTransform(final_odom_pose, final_pose, transform_map_to_base);
+    final_pose.position.z += 0.12;
+    final_pose.orientation = start_pose.pose.orientation;
+
+    // Questo log ORA deve darti valori piccoli e plausibili (es. X: 0.700, Y: -0.180)!
+    RCLCPP_INFO(node_->get_logger(), "[DEBUG] Coordinate locali ('base_footprint') corrette -> X: %.3f, Y: %.3f, Z: %.3f", 
+                final_pose.position.x, final_pose.position.y, final_pose.position.z);
     
-    arm_group_->setPoseTarget(final_pose);
+    arm_group_->setPositionTarget(final_pose.position.x, final_pose.position.y, final_pose.position.z);
+   
+    //arm_group_->setPoseTarget(final_odom_pose);
+    
     
     moveit_msgs::msg::OrientationConstraint ocm;
     ocm.link_name = arm_group_->getEndEffectorLink(); 
@@ -293,7 +307,7 @@ private:
     arm_group_->setPathConstraints(path_constraints);
 
     arm_group_->setPlanningTime(5.0); 
-    arm_group_->setNumPlanningAttempts(5);
+    arm_group_->setNumPlanningAttempts(15);
     
     moveit::planning_interface::MoveGroupInterface::Plan best_plan;
     if (arm_group_->plan(best_plan) == moveit::core::MoveItErrorCode::SUCCESS) {
