@@ -1,0 +1,4 @@
+Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_description -- -j12 -l12
+Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exchange/workspace/build/pal_pro_gripper_description -- -j12 -l12
+Invoking command in '/home/user/exchange/workspace/build/pal_pro_gripper_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_description
+Invoked command in '/home/user/exchange/workspace/build/pal_pro_gripper_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exchange/workspace/build/pal_pro_gripper_description

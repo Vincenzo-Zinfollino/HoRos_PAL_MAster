@@ -1,0 +1,19 @@
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:[m[K In member function ‘[01m[Kvoid PickMacroTaskNode::executeMacroTask()[m[K’:
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:500:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_link[m[K’ was not declared in this scope
+  500 |       tf2::Matrix3x3 m_curr(q_curr);[01;31m[Kbase_link[m[K
+      |                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:502:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kr_curr[m[K’ was not declared in this scope; did you mean ‘[01m[Km_curr[m[K’?
+  502 |       m_curr.getRPY([01;31m[Kr_curr[m[K, p_curr, y_curr);
+      |                     [01;31m[K^~~~~~[m[K
+      |                     [32m[Km_curr[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:502:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kp_curr[m[K’ was not declared in this scope; did you mean ‘[01m[Km_curr[m[K’?
+  502 |       m_curr.getRPY(r_curr, [01;31m[Kp_curr[m[K, y_curr);
+      |                             [01;31m[K^~~~~~[m[K
+      |                             [32m[Km_curr[m[K
+[01m[K/home/user/exchange/workspace/src/tiago_manipulation_tasks/src/pick_macro_task_node.cpp:502:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_curr[m[K’ was not declared in this scope; did you mean ‘[01m[Km_curr[m[K’?
+  502 |       m_curr.getRPY(r_curr, p_curr, [01;31m[Ky_curr[m[K);
+      |                                     [01;31m[K^~~~~~[m[K
+      |                                     [32m[Km_curr[m[K
+gmake[2]: *** [CMakeFiles/pick_macro_task_node.dir/build.make:76: CMakeFiles/pick_macro_task_node.dir/src/pick_macro_task_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pick_macro_task_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

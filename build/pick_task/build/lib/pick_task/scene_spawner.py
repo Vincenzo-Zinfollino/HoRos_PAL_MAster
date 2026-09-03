@@ -26,7 +26,7 @@ class GazeboToMoveItSpawner(Node):
     )
 
     self.scene_pub = self.create_publisher(PlanningScene, '/planning_scene', 10)
-    self.frame_id = 'base_link'
+    self.frame_id = 'base_footprint'
     self.first_sync_done = False
     self.scene_cleaned = False
     self.robot_reset_done = False
@@ -35,7 +35,7 @@ class GazeboToMoveItSpawner(Node):
 
     # COORDINATE INIZIALI DESIDERATE PER IL ROBOT IN GAZEBO (x, y, z, yaw in radianti)
     #self.target_robot_pose = {'x': 5.35, 'y': 3.95, 'z': 0.08, 'yaw': 0.0}
-    self.target_robot_pose = {'x': 5.45, 'y': 3.88, 'z': 0.08, 'yaw': 0.0}
+    self.target_robot_pose = {'x': 5.45, 'y': 3.88, 'z': 0.0, 'yaw': 0.0}
    
     self.robot_model_name = 'tiago-pro'
 
@@ -299,6 +299,7 @@ class GazeboToMoveItSpawner(Node):
             'BOX',
             [1.0, 0.8, 0.03],
             z_offset=0.80-0.08,
+            
         )
         scene_msg.world.collision_objects.append(obj)
         new_active_ids.add(model_name)
@@ -378,7 +379,7 @@ class GazeboToMoveItSpawner(Node):
       robot_pose: Pose,
       prim_type: str,
       dims: list,
-      z_offset=0.0,
+      z_offset=-0.089,
   ) -> CollisionObject:
     obj = CollisionObject()
     obj.header.frame_id = self.frame_id
