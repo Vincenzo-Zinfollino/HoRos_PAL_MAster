@@ -72,22 +72,23 @@ class ManipulationOrchestrator(Node):
     if self.setup_timer:
       self.setup_timer.cancel()
       
-    ##commentato per test del place decommetare alla fine
-    #self.state = MissionState.PICKING
-    #self.get_logger().info(
-    #   '=== [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)...'
-    #    ' ==='
-    #)
-    #self.pick_req_pub.publish(Bool(data=True))
-    ##### fine del commento per test 
+    #commentato per test del place decommetare alla fine
+    self.state = MissionState.PICKING
+    self.get_logger().info(
+       '=== [FSM -> PICKING] Scena ripristinata! Avvio Macro Task 1 (Pick)...'
+        ' ==='
+    )
+    self.pick_req_pub.publish(Bool(data=True))
+    #fine del commento per test 
 
     #Faccio partire direttamente la parte di place --Rimuovere dopo i test
-    self.state = MissionState.PLACING
-    self.get_logger().info(
-        '=== [FSM -> PLACING] [TEST MODE] Scena pronta! Salto il Pick e avvio test Reachability... ==='
-    )
+    #self.state = MissionState.PLACING
+    
+    #self.get_logger().info(
+    #    '=== [FSM -> PLACING] [TEST MODE] Scena pronta! Salto il Pick e avvio test Reachability... ==='
+    #)
     # Invia il trigger booleano per avviare l'analisi nel nodo C++
-    self.place_req_pub.publish(Bool(data=True))
+    #self.place_req_pub.publish(Bool(data=True))
 
     #--- Fine rimozione 
 

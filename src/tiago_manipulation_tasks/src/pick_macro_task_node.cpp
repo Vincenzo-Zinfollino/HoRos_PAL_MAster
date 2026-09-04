@@ -73,7 +73,7 @@ public:
     arm_group_->setMaxVelocityScalingFactor(0.4);
     arm_group_->setMaxAccelerationScalingFactor(0.4);
     arm_group_->setPlanningTime(5.0);                    // Concede fino a 5s per convergere
-    arm_group_->setNumPlanningAttempts(15);               // Tenta più soluzioni in ambienti con ostacoli
+    //arm_group_->setNumPlanningAttempts(15);               // Tenta più soluzioni in ambienti con ostacoli
     arm_group_->setPlannerId("RRTConnectkConfigDefault"); // Algoritmo robusto per evitare collisioni
 
     RCLCPP_INFO(node_->get_logger(), "=== [MACRO TASK 1: PICK] Pronto su /task/pick_macro_request (Modalità: arm_left 7-DOF) ===");
@@ -651,6 +651,21 @@ auto future_result = grasp_client_->async_send_request(
         RCLCPP_ERROR(node_->get_logger(), "Fallito sollevamento!");
       }
     }
+
+    moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+    std::vector<std::string> objects_to_remove = {"s3_cocacola"};
+    planning_scene_interface.removeCollisionObjects(objects_to_remove);
+
+    if (success) {
+      RCLCPP_INFO(node_->get_logger(), "[1/8] Messa in sicurezza: sollevamento Torso a metà corsa e posa braccio...");
+      success = prepareSafePosture();
+      if (!success) {
+        RCLCPP_ERROR(node_->get_logger(), "Impossibile raggiungere la posa sicura di partenza. Annullamento.");
+        finishMacroTask(false);
+        return;
+      }
+    }
+
 
     // STEP 8: ORIENTAMENTO BASE VERSO LA LIBRERIA (-90 gradi)
     if (success) {

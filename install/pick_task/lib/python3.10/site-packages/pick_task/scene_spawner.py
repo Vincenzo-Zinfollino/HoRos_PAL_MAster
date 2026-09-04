@@ -298,7 +298,8 @@ class GazeboToMoveItSpawner(Node):
             robot_pose,
             'BOX',
             [1.0, 0.8, 0.03],
-            z_offset=0.80-0.08,
+            #z_offset=0.80-0.16,
+            z_offset=0.80,
             
         )
         scene_msg.world.collision_objects.append(obj)
@@ -322,7 +323,7 @@ class GazeboToMoveItSpawner(Node):
               robot_pose,
               'CYLINDER',
               [0.15, 0.02],
-              z_offset=0.00,
+              z_offset=0.08,
           )
           scene_msg.world.collision_objects.append(obj)
           #new_active_ids.add(model_name)

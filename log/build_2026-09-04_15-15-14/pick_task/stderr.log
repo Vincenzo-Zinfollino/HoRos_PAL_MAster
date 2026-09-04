@@ -1,0 +1,5 @@
+  File "/home/user/exchange/workspace/install/pick_task/lib/python3.10/site-packages/pick_task/main_task_node.py", line 82
+    fine del commento per test 
+         ^^^
+SyntaxError: invalid syntax
+

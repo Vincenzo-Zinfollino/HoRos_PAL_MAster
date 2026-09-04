@@ -27,7 +27,8 @@ public:
     arm_group_->setMaxVelocityScalingFactor(0.3);
     arm_group_->setMaxAccelerationScalingFactor(0.3);
     arm_group_->setPoseReferenceFrame("base_footprint");
-    arm_group_->setPlanningTime(0.25); 
+    arm_group_->setPlanningTime(0.55); 
+    arm_group_->setPlannerId("PRMstarkConfigDefault");
 
     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
@@ -59,6 +60,8 @@ private:
 
   bool prepareSafePosture() {
     RCLCPP_INFO(node_->get_logger(), "Posizionamento arm_left in configurazione sicura (7 DOF)...");
+     arm_group_->setPlanningTime(0.8);
+      
     arm_group_->setStartStateToCurrentState();
     arm_group_->setGoalJointTolerance(0.05);
 
@@ -123,6 +126,8 @@ private:
 
   void executeMacroTask() {
     RCLCPP_INFO(node_->get_logger(), "=== AVVIO PROCEDURA PLACE ===");
+
+    
     
     if (!prepareSafePosture()) {
         RCLCPP_ERROR(node_->get_logger(), "Impossibile raggiungere Safe Posture. Abortito.");
@@ -188,7 +193,7 @@ private:
             std::string id_str, shelf_str, x_str, y_str, z_str;
             std::getline(ss, id_str, ',');
             int cell_id = std::stoi(id_str);
-            if (cell_id <= 400) continue; 
+            //if (cell_id <= 400) continue; 
 
             std::getline(ss, shelf_str, ',');
             std::getline(ss, x_str, ',');
@@ -204,7 +209,7 @@ private:
             pose_in_odom.position.x = target_x; 
             pose_in_odom.position.y = target_y;
             pose_in_odom.position.z = target_z;
-            //pose_in_odom.orientation.w = 1.0;
+            pose_in_odom.orientation.w = 1.0;
 
          
 
@@ -223,10 +228,31 @@ private:
             );
 
             //arm_group_->setPoseTarget(target_pose);
-            arm_group_->setPoseTarget(target_pose); // Pianificazione in frame 'map' per coerenza con la cache
+            //arm_group_->setPoseTarget(target_pose); // Pianificazione in frame 'map' per coerenza con la cache
+            arm_group_->setPositionTarget(target_pose.position.x, target_pose.position.y, target_pose.position.z);
+            /*
+            moveit_msgs::msg::OrientationConstraint ocm_scan;
+            ocm_scan.link_name = arm_group_->getEndEffectorLink();
+            ocm_scan.header.frame_id = arm_group_->getPlanningFrame();
+            ocm_scan.orientation = start_pose.pose.orientation; // Dritta, come alla partenza
+            ocm_scan.absolute_x_axis_tolerance = 0.8; 
+            ocm_scan.absolute_y_axis_tolerance = 0.8;
+            ocm_scan.absolute_z_axis_tolerance = 3.14; // <-- Permette di "storcere" il polso
+            ocm_scan.weight = 1.0;
+
+            moveit_msgs::msg::Constraints scan_constraints;
+            scan_constraints.orientation_constraints.push_back(ocm_scan);
+            arm_group_->setPathConstraints(scan_constraints);
+            */
+            // Tempo extra per scansionare geometrie strette
+            arm_group_->setPlanningTime(0.8);
+            //arm_group_->setNumPlanningAttempts(2);
 
             moveit::planning_interface::MoveGroupInterface::Plan plan;
             bool success = (arm_group_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
+
+            arm_group_->clearPathConstraints(); //necessario
+
             
             double yoshikawa = 0.0;
             if (success && !plan.trajectory_.joint_trajectory.points.empty()) {
@@ -276,7 +302,7 @@ private:
 
     geometry_msgs::msg::Pose final_pose;
     tf2::doTransform(final_odom_pose, final_pose, transform_map_to_base);
-    final_pose.position.z += 0.12;
+    final_pose.position.z += 0.10; // 0.12 Offset per evitare collisioni con il piano di appoggio
     final_pose.orientation = start_pose.pose.orientation;
 
     // Questo log ORA deve darti valori piccoli e plausibili (es. X: 0.700, Y: -0.180)!
@@ -295,8 +321,8 @@ private:
     // Obblighiamo il robot a mantenere l'orientamento di partenza (Safe Posture)
     ocm.orientation = start_pose.pose.orientation;
 
-    ocm.absolute_x_axis_tolerance = 1; 
-    ocm.absolute_y_axis_tolerance = 1; 
+    ocm.absolute_x_axis_tolerance = 0.3; 
+    ocm.absolute_y_axis_tolerance = 0.3; 
     ocm.absolute_z_axis_tolerance = 3.14; 
     ocm.weight = 1.0;
 
@@ -305,8 +331,8 @@ private:
     
     // Applichiamo il vincolo al gruppo
     arm_group_->setPathConstraints(path_constraints);
-
-    arm_group_->setPlanningTime(5.0); 
+    
+    arm_group_->setPlanningTime(8.0); 
     arm_group_->setNumPlanningAttempts(15);
     
     moveit::planning_interface::MoveGroupInterface::Plan best_plan;
