@@ -8,6 +8,8 @@
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
+#include <linkattacher_msgs/srv/detach_link.hpp>
 #include <chrono>
 #include <thread>
 #include <fstream>
@@ -32,6 +34,8 @@ public:
 
     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
+    detach_client_ = node_->create_client<linkattacher_msgs::srv::DetachLink>("/DETACHLINK");
 
     completed_pub_ = node_->create_publisher<std_msgs::msg::Bool>("/task/place_macro_completed", 10);
     request_sub_ = node_->create_subscription<std_msgs::msg::Bool>(
@@ -77,6 +81,20 @@ private:
       success = (arm_group_->execute(plan) == moveit::core::MoveItErrorCode::SUCCESS);
     } 
     return success;
+  }
+
+  bool executeCartesianPath(const std::vector<geometry_msgs::msg::Pose>& waypoints, bool avoid_collisions = true) {
+      moveit_msgs::msg::RobotTrajectory trajectory;
+      double eef_step = 0.005; // Risoluzione: 5 mm
+      double jump_threshold = 0.0;
+      
+      double fraction = arm_group_->computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory, avoid_collisions);
+      RCLCPP_INFO(node_->get_logger(), "Percorso cartesiano completato al %.2f%%", fraction * 100.0);
+      
+      if (fraction > 0.90) { 
+          return (arm_group_->execute(trajectory) == moveit::core::MoveItErrorCode::SUCCESS);
+      }
+      return false;
   }
 
   // 1. Verifica se la mappa in cache è valida confrontando i giunti attuali
@@ -339,6 +357,50 @@ private:
     if (arm_group_->plan(best_plan) == moveit::core::MoveItErrorCode::SUCCESS) {
         RCLCPP_INFO(node_->get_logger(), "Esecuzione traiettoria ottima in corso...");
         arm_group_->execute(best_plan);
+
+        // 1. DISCESA IN CARTESIANO (1 cm)
+        RCLCPP_INFO(node_->get_logger(), "Eseguo abbassamento cartesiano di 1 cm...");
+        arm_group_->setStartStateToCurrentState();
+        std::vector<geometry_msgs::msg::Pose> waypoints;
+        geometry_msgs::msg::Pose current_pose = arm_group_->getCurrentPose().pose;
+        current_pose.position.z -= 0.01; 
+        waypoints.push_back(current_pose);
+        
+        // Disabilitiamo temporaneamente le collisioni per appoggiare la lattina al legno
+        executeCartesianPath(waypoints, false); 
+        rclcpp::sleep_for(std::chrono::milliseconds(500));
+
+        // 2. SGANCIO FISICO IN GAZEBO
+        RCLCPP_INFO(node_->get_logger(), "Richiedo sgancio fisico (Gazebo /DETACHLINK)...");
+        auto detach_req = std::make_shared<linkattacher_msgs::srv::DetachLink::Request>();
+        detach_req->model1_name = "tiago-pro";
+        detach_req->link1_name = "arm_left_7_link";
+        detach_req->model2_name = "s3_cocacola";
+        detach_req->link2_name = "link_cocacola";
+
+        if (detach_client_->wait_for_service(std::chrono::seconds(1))) {
+            detach_client_->async_send_request(detach_req);
+        }
+
+        // 3. SGANCIO LOGICO IN MOVEIT
+        RCLCPP_INFO(node_->get_logger(), "Aggiornamento logico della Planning Scene (MoveIt)...");
+        moveit_msgs::msg::AttachedCollisionObject attached_object;
+        attached_object.object.id = "s3_cocacola";
+        attached_object.link_name = arm_group_->getEndEffectorLink(); 
+        attached_object.object.operation = attached_object.object.REMOVE;
+        
+        moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+        planning_scene_interface.applyAttachedCollisionObject(attached_object);
+        rclcpp::sleep_for(std::chrono::milliseconds(500));
+
+        // 4. RITORNO IN HOME
+        RCLCPP_INFO(node_->get_logger(), "Operazione conclusa. Ritorno in Safe Posture...");
+        prepareSafePosture();
+
+
+
+
+
         std_msgs::msg::Bool res;
         res.data = true; 
         completed_pub_->publish(res);
@@ -349,6 +411,7 @@ private:
         completed_pub_->publish(res);
     }
 
+
     is_running_ = false;
   }
 
@@ -357,6 +420,7 @@ private:
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr completed_pub_;
+  rclcpp::Client<linkattacher_msgs::srv::DetachLink>::SharedPtr detach_client_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr request_sub_;
   bool is_running_;
 };

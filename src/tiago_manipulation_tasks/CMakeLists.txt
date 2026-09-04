@@ -36,7 +36,7 @@ ament_target_dependencies(pick_macro_task_node
 # --- MACRO TASK 2: PLACE ON SHELF ---
 add_executable(place_macro_task_node src/place_macro_task_node.cpp)
 ament_target_dependencies(place_macro_task_node
-  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_geometry_msgs
+  rclcpp tf2_ros geometry_msgs shape_msgs sensor_msgs std_msgs gazebo_msgs moveit_msgs moveit_ros_planning_interface moveit_core nav_msgs tf2  tf2_geometry_msgs linkattacher_msgs
 )
 
 target_include_directories(place_macro_task_node PRIVATE 
